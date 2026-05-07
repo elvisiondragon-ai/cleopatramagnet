@@ -2658,6 +2658,9 @@ const DarkFeminineTSX = () => {
                     {/* HERO */}
                     <section id="df-hero">
                         <div className="df-wrap">
+                            <div style={{ textAlign: 'center', marginBottom: '32px' }}>
+                                <img src="/cleo-nobg.png" alt="Cleopatra Logo" style={{ width: '80px', height: '80px', filter: 'drop-shadow(0 0 10px rgba(139,92,246,0.3))' }} />
+                            </div>
                             <div className="df-hero-badge">{sc.heroBadge}</div>
                             <h1 className="df-hero-h1">
                                 <span>{sc.heroH1a}</span>
