@@ -543,13 +543,13 @@ const IstriCarousel = ({ story, assets }: { story: any; assets: any }) => {
 };
 
 const DarkFeminineTSX = () => {
-    const [searchParams, setSearchParams] = useSearchParams();
+    const [searchParams] = useSearchParams();
     const hasIstri = searchParams.has('istri');
     const hasSoftlife = searchParams.has('softlife');
     const hasDisc = searchParams.has('disc');
     const hasValue = searchParams.has('value') || window.location.search.includes('value') || searchParams.has('pay') || window.location.search.includes('pay');
     // === New Winning Ad Parameters (copy-only, images TBD) ===
-    const hasPresence = searchParams.has('presence');           // Single/General — df_0412_g5
+
     const hasPerubahan = searchParams.has('perubahan');         // General — winner-Satu_Perubahan
     const hasHighvalue = searchParams.has('highvalue');         // General — angle11
     const hasNongames = searchParams.has('nongames');           // Single — DF_Ghosted_Lagi
@@ -1170,6 +1170,7 @@ const DarkFeminineTSX = () => {
                     desc: 'Ini bukan tips kencan atau motivasi pagi. Ini protokol tertua di dunia yang membuat penguasa rela mempertaruhkan segalanya. Sebuah sistem terukur—dari cara masuk ruangan, cara diam, hingga cara berbicara yang kini bisa Anda kuasai.'
                 }
             ]
+        },
     };
 
     // === SEGMENT OVERRIDES (?istri / ?softlife / ?single / new winners) ===
