@@ -7,12 +7,26 @@
         var V = '1.0.16';
         window.__APP_VERSION__ = V;
         var url = new URL(window.location.href);
-        if (url.searchParams.get('v') !== V) {
+        var cacheVer = localStorage.getItem('v_cache');
+        
+        if (url.searchParams.get('v') !== V || cacheVer !== V) {
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.getRegistrations().then(function(regs) {
+              for(var i=0; i<regs.length; i++) regs[i].unregister();
+            });
+          }
+          if ('caches' in window) {
+            caches.keys().then(function(names) {
+              for(var i=0; i<names.length; i++) caches.delete(names[i]);
+            });
+          }
+          localStorage.setItem('v_cache', V);
           url.searchParams.set('v', V);
           window.location.replace(url.toString());
         } else {
           url.searchParams.delete('v');
-          history.replaceState(null, '', url.pathname + (url.search === '?' ? '' : url.search) + url.hash);
+          var newUrl = url.pathname + (url.search === '?' ? '' : url.search) + url.hash;
+          history.replaceState(null, '', newUrl);
         }
       })();
     </script>

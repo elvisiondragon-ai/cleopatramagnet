@@ -4,21 +4,8 @@ import './index.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { AnalyticsTracker } from './components/AnalyticsTracker';
 
-// ==========================================
-// Single source of truth: var V in index.html — only change there
+// APP_VERSION is handled in index.html
 export const APP_VERSION = (window as any).__APP_VERSION__ as string;
-// ==========================================
-
-if (localStorage.getItem('v_cache') !== APP_VERSION) {
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.getRegistrations().then(regs => regs.forEach(r => r.unregister()));
-  }
-  if ('caches' in window) {
-    caches.keys().then(names => names.forEach(n => caches.delete(n)));
-  }
-  localStorage.setItem('v_cache', APP_VERSION);
-  setTimeout(() => window.location.reload(), 500);
-}
 
 const App = React.lazy(() => import('./App'));
 

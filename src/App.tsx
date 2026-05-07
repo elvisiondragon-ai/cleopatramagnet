@@ -436,6 +436,43 @@ const contentData: any = {
         faqH2Span: "Ditanyakan?",
         faqCta: "YA, SAYA SIAP BERUBAH →",
         faqSub: "🚀 Dikirim INSTAN ke WhatsApp kamu",
+        paramCleopatra: {
+            label: "FAKTA SEJARAH",
+            h2a: "Kebenaran tentang Sang",
+            h2b: "Legenda Cleopatra",
+            items: [
+                {
+                    imgKey: 'df_cleopatra_deleted_notes',
+                    title: 'Sejarah Telah Menghapus Fakta Ini',
+                    desc: 'Di sekolah, kita diajarkan Cleopatra adalah simbol kecantikan. Itu bohong. Plutarch—sejarawan Yunani yang menulis tentangnya—menggambarkannya sebagai wanita dengan penampilan "biasa saja". Tapi dia menguasai sesuatu yang tidak ada di buku pelajaran: Kharisma yang membuat raja bertekuk lutut.'
+                },
+                {
+                    imgKey: 'df_cleopatra_pelakor',
+                    title: 'Pelakor Takut Pada Wanita Berkharisma',
+                    desc: 'Pelakor tidak takut pada wanita cantik, karena kecantikan bisa ditandingi. Tapi kharisma tidak bisa. Cleopatra membuktikan ini 2.000 tahun lalu. Tidak ada wanita yang berani "merebut" pria yang sudah masuk ke orbitnya.'
+                },
+                {
+                    imgKey: 'df_cleopatra_kings_list',
+                    title: '5 Raja Paling Berkuasa Berlutut',
+                    desc: 'Julius Caesar, Marcus Antonius, Ptolemy, Herodes, Pompeius. Lima penguasa kelas dunia kehilangan logika mereka di hadapan satu wanita biasa. Bukan karena wajah, tapi karena dia menguasai sistem kharisma yang membuat siapapun merasa penting.'
+                },
+                {
+                    imgKey: 'df_cleopatra_ordinary_extraordinary',
+                    title: 'Kekuatan Tak Tertandingi Wanita "Biasa"',
+                    desc: 'Sejarawan menulis dia bukan yang tercantik di Mesir, tapi dia paling tidak bisa dilupakan. Dia tahu cara membuat dirinya menjadi satu-satunya yang ada di pikiran orang lain tanpa meminta, tanpa memaksa, tanpa berteriak minta diperhatikan.'
+                },
+                {
+                    imgKey: 'df_cleopatra_imagine_if',
+                    title: 'Suami Anda Memandang Anda Seperti Caesar',
+                    desc: 'Bayangkan suami Anda pulang ke rumah—dan matanya langsung mencari Anda. Bukan karena gaun baru, tapi karena ada sesuatu dalam cara Anda hadir yang membuatnya terpesona dan memandang Anda layaknya sosok yang tidak tergantikan.'
+                },
+                {
+                    imgKey: 'df_cleopatra_protocol_5000',
+                    title: 'Protokol Kharisma 5.000 Tahun',
+                    desc: 'Ini bukan tips kencan atau motivasi pagi. Ini protokol tertua di dunia yang membuat penguasa rela mempertaruhkan segalanya. Sebuah sistem terukur—dari cara masuk ruangan, cara diam, hingga cara berbicara yang kini bisa Anda kuasai.'
+                }
+            ]
+        },
         stickyCta: "PESAN SEKARANG",
         stickyText: "🌙 52 Jurus —",
         stickyPrice: "Rp199,000",
@@ -1133,43 +1170,6 @@ const DarkFeminineTSX = () => {
                     after: 'Saya sadar saya selalu memberi semua dalam percakapan pertama — bercerita panjang, tertawa keras, langsung memberi solusi atas masalah mereka. Setelah saya terapkan jurus mystery dan jeda, dosen pembimbing saya mengundang saya makan malam private (saya sopan menolak), dan dua teman lama tiba-tiba "menyadari" saya. Salah satunya sekarang pacar saya.',
                 },
             ],
-        },
-        paramCleopatra: {
-            label: "FAKTA SEJARAH",
-            h2a: "Kebenaran tentang Sang",
-            h2b: "Legenda Cleopatra",
-            items: [
-                {
-                    imgKey: 'df_cleopatra_deleted_notes',
-                    title: 'Sejarah Telah Menghapus Fakta Ini',
-                    desc: 'Di sekolah, kita diajarkan Cleopatra adalah simbol kecantikan. Itu bohong. Plutarch—sejarawan Yunani yang menulis tentangnya—menggambarkannya sebagai wanita dengan penampilan "biasa saja". Tapi dia menguasai sesuatu yang tidak ada di buku pelajaran: Kharisma yang membuat raja bertekuk lutut.'
-                },
-                {
-                    imgKey: 'df_cleopatra_pelakor',
-                    title: 'Pelakor Takut Pada Wanita Berkharisma',
-                    desc: 'Pelakor tidak takut pada wanita cantik, karena kecantikan bisa ditandingi. Tapi kharisma tidak bisa. Cleopatra membuktikan ini 2.000 tahun lalu. Tidak ada wanita yang berani "merebut" pria yang sudah masuk ke orbitnya.'
-                },
-                {
-                    imgKey: 'df_cleopatra_kings_list',
-                    title: '5 Raja Paling Berkuasa Berlutut',
-                    desc: 'Julius Caesar, Marcus Antonius, Ptolemy, Herodes, Pompeius. Lima penguasa kelas dunia kehilangan logika mereka di hadapan satu wanita biasa. Bukan karena wajah, tapi karena dia menguasai sistem kharisma yang membuat siapapun merasa penting.'
-                },
-                {
-                    imgKey: 'df_cleopatra_ordinary_extraordinary',
-                    title: 'Kekuatan Tak Tertandingi Wanita "Biasa"',
-                    desc: 'Sejarawan menulis dia bukan yang tercantik di Mesir, tapi dia paling tidak bisa dilupakan. Dia tahu cara membuat dirinya menjadi satu-satunya yang ada di pikiran orang lain tanpa meminta, tanpa memaksa, tanpa berteriak minta diperhatikan.'
-                },
-                {
-                    imgKey: 'df_cleopatra_imagine_if',
-                    title: 'Suami Anda Memandang Anda Seperti Caesar',
-                    desc: 'Bayangkan suami Anda pulang ke rumah—dan matanya langsung mencari Anda. Bukan karena gaun baru, tapi karena ada sesuatu dalam cara Anda hadir yang membuatnya terpesona dan memandang Anda layaknya sosok yang tidak tergantikan.'
-                },
-                {
-                    imgKey: 'df_cleopatra_protocol_5000',
-                    title: 'Protokol Kharisma 5.000 Tahun',
-                    desc: 'Ini bukan tips kencan atau motivasi pagi. Ini protokol tertua di dunia yang membuat penguasa rela mempertaruhkan segalanya. Sebuah sistem terukur—dari cara masuk ruangan, cara diam, hingga cara berbicara yang kini bisa Anda kuasai.'
-                }
-            ]
         },
     };
 
