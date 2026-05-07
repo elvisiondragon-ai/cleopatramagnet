@@ -1,9 +1,17 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 
 const DEBUG_IMAGES = false;
-const DbgImg = ({ src, alt, className, style, label }: { src: string; alt?: string; className?: string; style?: React.CSSProperties; label: string }) => (
+const DbgImg = ({ src, alt, className, style, label, priority }: { src: string; alt?: string; className?: string; style?: React.CSSProperties; label: string; priority?: boolean }) => (
     <div style={{ position: 'relative', display: 'block', lineHeight: 0 }}>
-        <img src={src} alt={alt} className={className} style={{ display: 'block', width: '100%', ...style }} />
+        <img
+            src={src}
+            alt={alt}
+            className={className}
+            loading={priority ? 'eager' : 'lazy'}
+            fetchPriority={priority ? 'high' : 'low'}
+            decoding={priority ? 'sync' : 'async'}
+            style={{ display: 'block', width: '100%', ...style }}
+        />
         {DEBUG_IMAGES && (
             <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', zIndex: 5 }}>
                 <span style={{ background: 'rgba(0,0,0,0.72)', color: '#FFD700', fontSize: '22px', fontWeight: 900, padding: '8px 18px', borderRadius: '10px', letterSpacing: '0.5px', textAlign: 'center', wordBreak: 'break-all', maxWidth: '90%' }}>{label}</span>
@@ -1994,6 +2002,33 @@ const DarkFeminineTSX = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    // Background preload: after page is idle, silently fetch all images into browser cache
+    // so they're instant when user scrolls to them
+    useEffect(() => {
+        const allSrcs = Object.values(assetsMap.id) as string[];
+        // Skip the hero (df08) — it's already eagerly loaded
+        const heroSrc = assetsMap.id.df08;
+        const toPreload = allSrcs.filter(src => src !== heroSrc);
+
+        const preloadBatch = (srcs: string[]) => {
+            srcs.forEach(src => {
+                const img = new Image();
+                img.src = src;
+            });
+        };
+
+        // Use requestIdleCallback if available, else fallback to setTimeout
+        if ('requestIdleCallback' in window) {
+            // Split into 2 batches so we don't spike on load
+            const half = Math.ceil(toPreload.length / 2);
+            (window as any).requestIdleCallback(() => preloadBatch(toPreload.slice(0, half)));
+            (window as any).requestIdleCallback(() => preloadBatch(toPreload.slice(half)));
+        } else {
+            setTimeout(() => preloadBatch(toPreload), 2000);
+        }
+    }, []);
+
+
     return (
         <div style={{ position: 'relative' }}>
             <Toaster />
@@ -2655,7 +2690,7 @@ const DarkFeminineTSX = () => {
                             <p className="df-hero-sub">{sc.heroSub}</p>
                             {segment !== 'istri' && (
                                 <div className="df-img-box">
-                                    <DbgImg src={assets.df08} alt="Dark Feminine" label="df08" style={{ width: '100%', aspectRatio: '1/1', display: 'block', borderRadius: '18px', objectFit: 'cover' }} />
+                                    <DbgImg src={assets.df08} alt="Dark Feminine" label="df08" priority style={{ width: '100%', aspectRatio: '1/1', display: 'block', borderRadius: '18px', objectFit: 'cover' }} />
                                 </div>
                             )}
                             <div className="df-trust-badges">
