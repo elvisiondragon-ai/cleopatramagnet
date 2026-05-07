@@ -2002,31 +2002,7 @@ const DarkFeminineTSX = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    // Background preload: after page is idle, silently fetch all images into browser cache
-    // so they're instant when user scrolls to them
-    useEffect(() => {
-        const allSrcs = Object.values(assetsMap.id) as string[];
-        // Skip the hero (df08) — it's already eagerly loaded
-        const heroSrc = assetsMap.id.df08;
-        const toPreload = allSrcs.filter(src => src !== heroSrc);
 
-        const preloadBatch = (srcs: string[]) => {
-            srcs.forEach(src => {
-                const img = new Image();
-                img.src = src;
-            });
-        };
-
-        // Use requestIdleCallback if available, else fallback to setTimeout
-        if ('requestIdleCallback' in window) {
-            // Split into 2 batches so we don't spike on load
-            const half = Math.ceil(toPreload.length / 2);
-            (window as any).requestIdleCallback(() => preloadBatch(toPreload.slice(0, half)));
-            (window as any).requestIdleCallback(() => preloadBatch(toPreload.slice(half)));
-        } else {
-            setTimeout(() => preloadBatch(toPreload), 2000);
-        }
-    }, []);
 
 
     return (
