@@ -188,17 +188,10 @@ import angle7 from './assets/darkfem/indo_image/angle7-Sebelum_vs_Sesudah.png';
 import winnerSatuPerubahan from './assets/darkfem/indo_image/winner-Satu_Perubahan-SENT.jpg';
 import winnerCrAd from './assets/darkfem/indo_image/Cr_Ad_DarkFem_A1_MALAM_INI,_CEWEK_"TE_1773316980_2026-03-12-ca3ded6f710055046854af8069d5876f-SENT.jpg';
 
-// Asset Imports for EN
-import df01En from './assets/darkfem/english_image/df01_paradox_en.png';
-import df04En from './assets/darkfem/english_image/df04_secret_she_knows_en.png';
-import df08En from './assets/darkfem/english_image/df08_fantasy_screen_en.png';
-import df09En from './assets/darkfem/english_image/df09_wake_up_en.png';
 
-// Asset Imports for PH
-import df01Ph from './assets/darkfem/philippines_image/df01_ph_paradox.png';
-import df04Ph from './assets/darkfem/philippines_image/df04_ph_friendzone.png';
-import df08Ph from './assets/darkfem/philippines_image/df08_ph_secret.png';
-import df09Ph from './assets/darkfem/philippines_image/df09_ph_wakeup.png';
+// Asset Imports for ID (remaining)
+// (All ID imports are already above)
+
 
 const assetsMap: any = {
     id: {
@@ -267,14 +260,6 @@ const assetsMap: any = {
         p_visible_df_0424_ad05_istri_sexmati,
         p_visible_istrivisible_01_perabot_v3_1777554172954,
         p_visible_istrivisible_02_potong_rambut_v3_1777554256681
-    },
-    en: {
-        df01: df01En, df04: df04En,
-        df08: df08En, df09: df09En,
-    },
-    ph: {
-        df01: df01Ph, df04: df04Ph,
-        df08: df08Ph, df09: df09Ph,
     }
 };
 
@@ -453,230 +438,8 @@ const contentData: any = {
         faqSub: "🚀 Dikirim INSTAN ke WhatsApp kamu",
         stickyCta: "PESAN SEKARANG",
         stickyText: "🌙 52 Jurus —",
-        stickyPrice: "Rp199.000",
+        stickyPrice: "Rp199,000",
         btnWa: "https://wa.me/6281234567890?text=Halo%20saya%20mau%20order%20Dark%20Feminine",
-    },
-    en: {
-        agitText: <>You were taught from childhood: be nice, don't flirt, wait for Prince Charming. <strong>AND WHAT HAPPENED?</strong> You became everyone's favorite therapist while he chose someone else.<br /><br /><ul className="agitation-list"><li>The loyal one → left behind.</li><li>The patient one → walked over.</li><li>The understanding one → seen as weak.</li></ul><br />But the "average" girl? Gets <span className="highlight">EVERYTHING</span>.<br /><br />Not because she's pretty. Not because she's lucky.<br />Because she <span className="highlight">KNOWS something you were NEVER taught.</span></>,
-        solText: <>A complete guide to feminine attraction based on modern psychology. From the art of mystery, push-pull dynamics, to building an aura that makes men <strong>UNABLE to stop thinking about you</strong>.<br /><br />Not cheap tips. Not "just be yourself" advice.<br />But <strong>KNOWLEDGE</strong> that truly <strong>CHANGES your frequency.</strong></>,
-        checks: [
-            <>The Art of <strong>MYSTERY</strong> — how to be unpredictable</>,
-            <><strong>PUSH-PULL</strong> Dynamics — attract and repel simultaneously</>,
-            <>Body language that makes him <strong>UNABLE to look away</strong></>,
-            <>Emotional control — you hold the power</>,
-            <><strong>Abundance Mindset</strong> — stop chasing, start ATTRACTING</>,
-            <><strong>Silent Power</strong> — the strength of SILENCE</>,
-            <><strong>Sexual Market Value</strong> — how to raise yours</>,
-            <><strong>Text Game</strong> — make him addicted from texts</>,
-        ],
-        checksPlus: "+ 44 more moves...",
-        testis: [
-            { text: "I swear, just 2 weeks practicing move 7... the guy who ghosted me SUDDENLY DM'd again. I didn't do ANYTHING. Just stayed SILENT. Turns out that's the secret 😭🔥", name: "Anisa, 24", time: "2 days ago" },
-            { text: "My husband who used to ignore me is now ANXIOUS when I leave the house. Not possessive. But because he's starting to FEAR LOSING ME. Just move 1 already this powerful.", name: "Sari, 31", time: "5 days ago" },
-            { text: "My ex married someone else. 6 months later I applied dark feminine, I got a guy 10x more handsome and rich. And guess what? My ex now STALKS my IG every day. Karma is real 💅", name: "Rina, 27", time: "1 week ago" },
-        ],
-        bonuses: [
-            { icon: "🌙", title: "Femme Fatale Secrets (140 pages)", desc: "Secrets to making him obsessed — from inner confidence to the art of subtle (legal) influence", price: "Rp97,000" },
-            { icon: "💜", title: "Femme Fatale Course (68 pages)", desc: "Transformation program from nice girl to dark feminine — step by step", price: "Rp127,000" },
-            { icon: "📅", title: "30-Day Workbook (73 pages)", desc: "Daily challenges to build your attraction in 30 days", price: "Rp97,000" },
-            { icon: "🗡️", title: "The Art of Seduction — Robert Greene (31 pages)", desc: "Summary of the most legendary seduction strategies in history", price: "Rp77,000" },
-            { icon: "👑", title: "High Value Woman (22 pages)", desc: "Quick guide to becoming a high-value woman", price: "Rp57,000" },
-            { icon: "✨", title: "Simply Irresistible (272 pages)", desc: "Unleash your inner siren — complete guide from case studies of history's most captivating women", price: "Rp147,000" },
-            { icon: "🔥", title: "How to Please Your Man (29 pages)", desc: "Bedroom secrets that make him SUBMIT and ADDICTED", price: "Rp97,000", isHighlight: true, highlightText: "A taboo book often sold separately for hundreds of thousands, teaching you bedroom secrets to please a man... included here for FREE as a bonus." },
-            { icon: "💋", title: "Purple Sheets (61 pages)", desc: "Guide to ultimate pleasure — techniques no one has taught you", price: "Rp97,000" },
-            { icon: "👸", title: "Cleopatra's Secret Charisma (71 pages)", desc: "Cleopatra's secret to conquering kings, not through physical beauty, but her charismatic allure that made her appear as the most beautiful woman in the world.", price: "Rp200,000" },
-        ],
-        valueRows: [
-            { title: "Main Ebook: 52 Dark Feminine Moves (156 pages)", price: "Rp199,000" },
-            { title: "Bonus 1: Femme Fatale Secrets (140 pages)", price: "Rp97,000" },
-            { title: "Bonus 2: Femme Fatale Course (68 pages)", price: "Rp127,000" },
-            { title: "Bonus 3: 30-Day Workbook (73 pages)", price: "Rp97,000" },
-            { title: "Bonus 4: The Art of Seduction (31 pages)", price: "Rp77,000" },
-            { title: "Bonus 5: High Value Woman (22 pages)", price: "Rp57,000" },
-            { title: "Bonus 6: Simply Irresistible (272 pages)", price: "Rp147,000" },
-            { title: "Bonus 7: How to Please Your Man (29 pages)", price: "Rp97,000" },
-            { title: "Bonus 8: Purple Sheets (61 pages)", price: "Rp97,000" },
-            { title: "Bonus 9: Cleopatra's Secret Charisma (71 pages)", price: "Rp200,000" },
-        ],
-        exclItems: [
-            "Women who still believe 'waiting for the right one' is enough",
-            "Those who refuse to change and only complain",
-            "Those looking for instant results with zero effort",
-            "Those not ready to leave the old 'nice girl' behind",
-        ],
-        winningGallery: {
-            title: "",
-            sub: "",
-            images: []
-        },
-        faqs: [
-            { q: "How do I access it?", a: "After payment, the ebook is sent to your WhatsApp within 5 minutes. HTML format, readable on phone, tablet, or computer." },
-            { q: "Is this safe and private?", a: "100% private. No product name on the payment receipt. Everything delivered digitally and discreetly." },
-            { q: "Does this teach you to be a homewrecker?", a: "NO. Dark Feminine teaches you to be a HIGH VALUE WOMAN who understands the psychology of attraction. Not to be a bad person, but to be VALUABLE." },
-            { q: "How long until I see results?", a: "Most readers feel a change within 2-4 weeks of consistent practice. Moves 1-7 are already powerful enough." },
-            { q: "Does this apply for hijab-wearing / religious women?", a: "Yes. Dark Feminine is not about clothing or physical appearance. It's about AURA, MYSTERY, and MINDSET. Many of our readers wear hijab." },
-        ],
-        pains: [
-            { icon: "😔", text: <>Always the 'best friend' but <strong>NEVER</strong> the first choice</> },
-            { icon: "💔", text: <>Left or cheated on despite being loyal and good</> },
-            { icon: "😤", text: <>Jealous of 'average' girls who get dream boyfriends</> },
-            { icon: "📱", text: <>Watching drama at 2AM secretly wishing to <strong>BE her</strong></> },
-            { icon: "🔄", text: <>Always attracting toxic guys — ghosted after 3 months</> },
-            { icon: "😶", text: <>Labeled 'too nice' which really means 'too <strong>BORING</strong>'</> },
-        ],
-        urgency: (t: React.ReactNode) => <>⚡ SPECIAL PRICE — Ends in {t} ⚡</>,
-        heroBadge: "👑 DarkFeminine - Cleopatra Magnet",
-        heroH1a: "Become the Woman",
-        heroH1b: "He Can't Forget",
-        heroSub: "52 secret attraction moves never taught by your mother, teachers, or anyone.",
-        heroCta: "GET 52 SECRET MOVES NOW →",
-        socialProof: "women have proven it",
-        socialProofNum: "4,200+ women",
-        painLabel: "BE HONEST WITH YOURSELF",
-        painH2a: "Have You Ever",
-        painH2b: "Felt All of This?",
-        agitH2a: 'Why Does the "Average Girl"',
-        agitH2b: "Get the CEO?",
-        solLabel: "THE ANSWER",
-        solH2a: "Dark Feminine",
-        solH2b: "52 Secret Moves",
-        contentsLabel: "WHAT YOU'LL LEARN",
-        contentsH2: "52 Complete Attraction Moves",
-        contentsH2Span: "Complete",
-        testiLabel: "THEY'VE PROVEN IT",
-        testiH2: "Real Results from",
-        testiH2Span: "4,200+ Women",
-        bonusLabel: "EXCLUSIVE BONUSES",
-        bonusH2: "9 Bonuses Worth",
-        bonusH2Span: "Rp995,000",
-        priceLabel: "LIFETIME INVESTMENT",
-        priceH2: "Get Everything",
-        priceTodayLabel: "Today's Price",
-        savingsBadge: "🎉 Save 80% — Limited Offer!",
-        priceCta: "GET IT NOW — Rp199,000",
-        priceSub: "📲 Delivered INSTANTLY to your WhatsApp",
-        exclH2: "Dark Feminine is NOT for:",
-        exclCta: '"This is ONLY for women READY to take control of their life."',
-        faqLabel: "FAQ",
-        faqH2: "Questions?",
-        faqH2Span: "Anything?",
-        faqCta: "YES, I'M READY TO CHANGE →",
-        faqSub: "📲 Delivered INSTANTLY to your WhatsApp",
-        stickyCta: "ORDER NOW",
-        stickyText: "🌙 52 Moves —",
-        stickyPrice: "Rp199,000",
-        btnWa: "https://wa.me/6281234567890?text=Hello%20I%20want%20to%20order%20Dark%20Feminine",
-    },
-    ph: {
-        agitText: <>Tinuruan ka mula bata pa: maging mabait, huwag lumandi, maghintay kay Prince Charming. <strong>AT ANO ANG NANGYARI?</strong> Naging paboritong therapist ka habang siya ay pumili ng iba.<br /><br /><ul className="agitation-list"><li>Ang tapat → iniwan.</li><li>Ang pasensyosa → tinapakan.</li><li>Ang maunawain → tinuring na mahina.</li></ul><br />Pero ang "ordinaryong" babae? Nakukuha ang <span className="highlight">LAHAT</span>.<br /><br />Hindi dahil maganda siya. Hindi dahil swerte siya.<br />Kundi dahil may <span className="highlight">ALAM SIYANG HINDI MO NATUTUNAN kailanman.</span></>,
-        solText: <>Isang kumpletong gabay sa pambabaeng pang-akit batay sa modernong sikolohiya. Mula sa sining ng misteryo, push-pull dynamics, hanggang sa pagbuo ng aura na gagawing <strong>HINDI kana niya mawalay sa kanyang isip</strong>.<br /><br />Hindi murang tips. Hindi payong "maging totoo sa sarili".<br />Kundi isang <strong>KAALAMAN</strong> na tunay na <strong>MAGBABAGO sa iyong dalas (frequency).</strong></>,
-        checks: [
-            <>Ang Sining ng <strong>MISTERYO</strong> — paano maging hindi mahuhulaan</>,
-            <><strong>PUSH-PULL</strong> Dynamics — mang-akit at magtulak nang sabay</>,
-            <>Body language na gagawing <strong>HINDI siya makatingin sa iba</strong></>,
-            <>Pagkontrol ng emosyon — ikaw ang may hawak ng kapangyarihan</>,
-            <><strong>Abundance Mindset</strong> — tumigil sa paghahabol, magsimulang MANG-AKIT</>,
-            <><strong>Silent Power</strong> — ang lakas ng KATAHIMIKAN</>,
-            <><strong>Sexual Market Value</strong> — paano pataasin ang halaga mo</>,
-            <><strong>Text Game</strong> — gawin siyang adik sa mga text mo</>,
-        ],
-        checksPlus: "+ 44 pang mga hakbang...",
-        testis: [
-            { text: "Grabe, 2 linggo ko palang pina-practice ang move 7... yung lalaking nag-ghost sakin BIGLANG nag-DM ulit. Wala akong ginawa. NANAHIMIK lang ako. Yun pala ang sikreto 😭🔥", name: "Anisa, 24", time: "2 araw ang nakalipas" },
-            { text: "Ang asawa kong laging walang paki, ngayon ALIGAGA kapag aalis ako ng bahay. Hindi pagiging possessive. Kundi dahil nagsisimula siyang MATAKOT NA MAWALA AKO. Move 1 pa lang sobrang lakas na.", name: "Sari, 31", time: "5 araw ang nakalipas" },
-            { text: "Kinabukasan ng ex ko, ikinasal siya sa iba. Makalipas ang 6 na buwan, sinubukan ko ang dark feminine, at nakakuha ako ng lalaking 10x na mas gwapo at mayaman. At alam niyo ba? Ini-ISTALK ako ngayon ng ex ko araw-araw. Karma is real 💅", name: "Rina, 27", time: "1 linggo ang nakalipas" },
-        ],
-        bonuses: [
-            { icon: "🌙", title: "Femme Fatale Secrets (140 pahina)", desc: "Mga sikreto para gawin siyang baliw sa iyo — mula sa kumpiyansa sa sarili hanggang sa sining ng banayad (na legal) na impluwensya", price: "Rp97,000" },
-            { icon: "💜", title: "Femme Fatale Course (68 pahina)", desc: "Programa ng transpormasyon mula sa mabait na babae hanggang sa dark feminine — hakbang-hakbang", price: "Rp127,000" },
-            { icon: "📅", title: "30-Day Workbook (73 pahina)", desc: "Pang-araw-araw na hamon upang buuin ang iyong pang-akit sa loob ng 30 araw", price: "Rp97,000" },
-            { icon: "🗡️", title: "The Art of Seduction — Robert Greene (31 pahina)", desc: "Buod ng mga pinakalegendaryong estratehiya sa pang-aakit sa kasaysayan", price: "Rp77,000" },
-            { icon: "👑", title: "High Value Woman (22 pahina)", desc: "Mabilisang gabay upang maging babaeng may mataas na halaga", price: "Rp57,000" },
-            { icon: "✨", title: "Simply Irresistible (272 pahina)", desc: "Palabasin ang iyong angking pang-akit — kumpletong gabay mula sa mga case study ng mga pinakanakakabighaning babae sa kasaysayan", price: "Rp147,000" },
-            { icon: "🔥", title: "How to Please Your Man (29 pahina)", desc: "Mga sikreto sa kwarto na magpapabaliw at magpapasuko sa kanya", price: "Rp97,000", isHighlight: true, highlightText: "Isang taboo na aklat na madalas ibinebenta nang hiwalay sa libu-libong halaga, nagtuturo ng mga sikreto sa kwarto upang mapasaya ang lalaki... isinama rito nang LIBRE bilang bonus." },
-            { icon: "💋", title: "Selimut Ungu (61 pahina)", desc: "Gabay sa sukdulang sarap — mga teknik na hindi itinuro ninuman", price: "Rp97,000" },
-            { icon: "👸", title: "Cleopatra's Secret Charisma (71 pahina)", desc: "Ang lihim ni Cleopatra sa pananakop ng mga hari, hindi sa pisikal na kagandahan, kundi sa kanyang charismatic na alindog na nagmukha siyang pinakamagandang babae sa mundo.", price: "Rp200,000" },
-        ],
-        valueRows: [
-            { title: "Main Ebook: 52 Dark Feminine Moves (156 pahina)", price: "Rp199,000" },
-            { title: "Bonus 1: Femme Fatale Secrets (140 pahina)", price: "Rp97,000" },
-            { title: "Bonus 2: Femme Fatale Course (68 pahina)", price: "Rp127,000" },
-            { title: "Bonus 3: 30-Day Workbook (73 pahina)", price: "Rp97,000" },
-            { title: "Bonus 4: The Art of Seduction (31 pahina)", price: "Rp77,000" },
-            { title: "Bonus 5: High Value Woman (22 pahina)", price: "Rp57,000" },
-            { title: "Bonus 6: Simply Irresistible (272 pahina)", price: "Rp147,000" },
-            { title: "Bonus 7: How to Please Your Man (29 pahina)", price: "Rp97,000" },
-            { title: "Bonus 8: Purple Sheets (61 pahina)", price: "Rp97,000" },
-            { title: "Bonus 9: Cleopatra's Secret Charisma (71 pahina)", price: "Rp200,000" },
-        ],
-        exclItems: [
-            "Mga babaeng naniniwala pa rin na sapat na ang 'maghintay sa tamang tao'",
-            "Mga taong tumatangging magbago at puro reklamo lamang",
-            "Mga naghahanap ng instant na resulta na walang kasamang pagsisikap",
-            "Mga hindi pa handang talikuran ang lumang pagiging 'mabait' at 'boring'",
-        ],
-        winningGallery: {
-            title: "",
-            sub: "",
-            images: []
-        },
-        faqs: [
-            { q: "Paano ko ito maa-access?", a: "Pagkatapos ng pagbabayad, ipapadala ang ebook sa iyong WhatsApp sa loob ng 5 minuto. Sa format na HTML, na mababasa sa telepono, tablet, o computer." },
-            { q: "Ito ba ay ligtas at pribado?", a: "100% pribado. Walang pangalan ng produkto sa resibo ng pagbabayad. Ang lahat ay ihinahatid sa digital at pribadong paraan." },
-            { q: "Tinuturuan ba nito akong manira ng relasyon?", a: "HINDI. Itinuturo ng Dark Feminine na maging isang HIGH VALUE WOMAN na nakakaintindi ng sikolohiya ng pang-akit. Hindi upang maging masamang tao, kundi upang maging MAHALAGA." },
-            { q: "Gaano katagal bago ko makita ang resulta?", a: "Pansin ng karamihan sa aming mambabasa ang pagbabago sa loob ng 2-4 linggo ng tuloy-tuloy na pagsasanay. Ang Move 1-7 ay sapat na para makita ang malaking pagbabago." },
-            { q: "Maaari ba itong gamitin ng mga relihiyosong babae?", a: "Oo. Ang Dark Feminine ay hindi tungkol sa damit o panlabas na anyo. Ito ay tungkol sa AURA, MISTERYO, at PANANAW SA BUHAY. Marami sa aming mga mambabasa ay nakahi-jab." },
-        ],
-        pains: [
-            { icon: "😔", text: <>Laging 'best friend' pero <strong>HINDI</strong> kailanman ang unang pili</> },
-            { icon: "💔", text: <>Iniwan o niloko kahit tapat at mabuti ka</> },
-            { icon: "😤", text: <>Naiinggit sa mga 'ordinaryong' babae na nakukuha ang mga pangarap mong lalaki</> },
-            { icon: "📱", text: <>Nanunuod ng drama ng 2AM at palihim na hinahangad na <strong>MAGING katulad niya</strong></> },
-            { icon: "🔄", text: <>Laging nakakaakit ng toxic na lalaki — ghinost pagkatapos ng 3 buwan</> },
-            { icon: "😶", text: <>Binansagang 'sobrang bait' na ang tunay na ibig sabihin ay 'sobrang <strong>NAKAKAINIP</strong>'</> },
-        ],
-        urgency: (t: React.ReactNode) => <>⚡ SPECIAL PRICE — Matatapos sa {t} ⚡</>,
-        heroBadge: "👑 DarkFeminine - Cleopatra Magnet",
-        heroH1a: "Maging Babaeng",
-        heroH1b: "Hindi Niya Makakalimutan",
-        heroSub: "52 sikretong hakbang sa pang-aakit na hindi itinuro kailanman ng iyong ina, guro, o sinuman.",
-        heroCta: "KUNIN ANG 52 SIKRETONG HAKBANG NGAYON →",
-        socialProof: "na babae ang nagpatunay",
-        socialProofNum: "4,200+ babae",
-        painLabel: "MAGING TAPAT SA IYONG SARILI",
-        painH2a: "Naranasan Mo Na Ba",
-        painH2b: "Ang Lahat Nang Ito?",
-        agitH2a: 'Bakit Yung "Ordinaryong Babae"',
-        agitH2b: "Ang Nakakuha Ng CEO?",
-        solLabel: "ANG SAGOT",
-        solH2a: "Dark Feminine",
-        solH2b: "52 Sikretong Hakbang",
-        contentsLabel: "ANG IYONG MATUTUTUNAN",
-        contentsH2: "52 Kumpletong Hakbang",
-        contentsH2Span: "Pang-akit",
-        testiLabel: "NAPATUNAYAN NA NILA",
-        testiH2: "Tunay na Resulta Mula",
-        testiH2Span: "Sa 4,200+ Babae",
-        bonusLabel: "EKSKLUSIBONG BONUSES",
-        bonusH2: "9 Bonus na Nagkakahalaga ng",
-        bonusH2Span: "Rp995,000",
-        priceLabel: "PANGHABAMBUHAY NA INVESTMENT",
-        priceH2: "Kunin Ang Lahat",
-        priceTodayLabel: "Presyo Ngayon",
-        savingsBadge: "🎉 Makatipid ng 80% — Limitadong Alok!",
-        priceCta: "KUNIN NA NGAYON — Rp199,000",
-        priceSub: "📲 Ipapasa IMMEDIATELY sa iyong WhatsApp",
-        exclH2: "Ang Dark Feminine ay HINDI para sa:",
-        exclCta: '"Ito ay PARA LAMANG sa mga babaeng HANDA ng hawakan ang kontrol sa kanilang buhay."',
-        faqLabel: "Mga Madalas Itanong",
-        faqH2: "Mayroon Pa Bang",
-        faqH2Span: "Tanong?",
-        faqCta: "OO, HANDA NA AKONG MAGBAGO →",
-        faqSub: "📲 Ipapasa IMMEDIATELY sa iyong WhatsApp",
-        stickyCta: "UMORDER NGAYON",
-        stickyText: "🌙 52 Hakbang —",
-        stickyPrice: "Rp199,000",
-        btnWa: "https://wa.me/6281234567890?text=Hello%20Gusto%20kong%20umorder%20ng%20Dark%20Feminine",
     }
 };
 
@@ -690,20 +453,6 @@ const MOCK_REVIEWS = [
     { name: "wulansari.***@gmail.com", rating: 5, text: "Single mom 2 anak. Udah pasrah ga bakal ada yang mau. Baca ebook ini, praktekin jurus mystery... dalam 3 bulan ada 4 cowok mapan yang serius approach. Yang gue pilih? Dokter. Dan dia SAYANG banget sama anak-anak gue 🥹💜", lang: "id", country: "MY", flag: "🇲🇾", created_at: "2026-03-08 14:10:00" },
     { name: "tasya.luth***@yahoo.com", rating: 4, text: "Anak kuliahan yang selalu jadi 'sahabat'. Cowok yang gue suka malah curhat soal cewek lain ke gue. Setelah apply jurus 3 dan 7, DIA YANG NEMBAK DULUAN. Kurang satu bintang karena materinya lumayan panjang buat dibaca wkwk.", lang: "id", country: "SG", flag: "🇸🇬", created_at: "2026-03-08 08:22:00" },
     { name: "fitri.hiday***@gmail.com", rating: 5, text: "Nikah 8 tahun, suami udah kayak robot. Pulang kerja langsung HP. Gue praktekin jurus hot-cold selama 2 minggu... dia PANIK. Sekarang tiap weekend dia yang PLAN date night. Bahkan mulai kirim bunga lagi kayak waktu pacaran 🌹😍", lang: "id", country: "ID", flag: "🇮🇩", created_at: "2026-03-07 19:33:00" },
-    { name: "jessica.m***@gmail.com", rating: 5, text: "The abundance mindset chapter changed my life! I stopped chasing and now he's the one double texting.", lang: "en", country: "SG", flag: "🇸🇬", created_at: "2026-03-07 11:11:00" },
-    { name: "maria.vic***@yahoo.com", rating: 4, text: "Push-pull dynamics is literally magic. Used it on a guy who was pulling away, and he asked me out the next day.", lang: "en", country: "PH", flag: "🇵🇭", created_at: "2026-03-06 16:20:00" },
-    { name: "lucy_h***@hotmail.com", rating: 5, text: "Never thought psychology could be applied to dating this effectively. Highly recommend!", lang: "en", country: "MY", flag: "🇲🇾", created_at: "2026-03-06 10:05:00" },
-    { name: "tara.wil***@gmail.com", rating: 5, text: "I tried the mystery techniques and it drove my husband crazy in a good way. We feel like newlyweds again.", lang: "en", country: "SG", flag: "🇸🇬", created_at: "2026-03-05 22:45:00" },
-    { name: "chloe.m***@gmail.com", rating: 3, text: "Good book, but some techniques take a lot of confidence to pull off. Still practicing. Not a magical overnight fix.", lang: "en", country: "PH", flag: "🇵🇭", created_at: "2026-03-05 08:12:00" },
-    { name: "kathy.smit***@yahoo.com", rating: 5, text: "Worth every penny. The bonuses alone are worth more than the price.", lang: "en", country: "SG", flag: "🇸🇬", created_at: "2026-03-04 14:55:00" },
-    { name: "emily.r***@gmail.com", rating: 5, text: "This actually works. I was skeptical but the text game examples are spot on.", lang: "en", country: "MY", flag: "🇲🇾", created_at: "2026-03-04 09:30:00" },
-    { name: "sarah.b***@hotmail.com", rating: 4, text: "The Femme Fatale Secrets bonus is my favorite. Unleashed a side of me I didn't know existed.", lang: "en", country: "PH", flag: "🇵🇭", created_at: "2026-03-03 20:18:00" },
-    { name: "amelia.col***@gmail.com", rating: 5, text: "My SMV definitely went up after reading this. Men treat me with so much more respect now.", lang: "en", country: "SG", flag: "🇸🇬", created_at: "2026-03-03 12:40:00" },
-    { name: "maya.l***@yahoo.com", rating: 5, text: "I love how practical the 30-day workbook is. Keeps you accountable.", lang: "en", country: "MY", flag: "🇲🇾", created_at: "2026-03-02 18:22:00" },
-    { name: "rachel.d***@gmail.com", rating: 3, text: "Informative, but I wish there were more video examples of the body language.", lang: "en", country: "PH", flag: "🇵🇭", created_at: "2026-03-02 09:12:00" },
-    { name: "natalie.j***@hotmail.com", rating: 5, text: "This is the holy grail for women who are tired of being the 'nice girl'.", lang: "en", country: "SG", flag: "🇸🇬", created_at: "2026-03-01 16:45:00" },
-    { name: "olivia.k***@gmail.com", rating: 5, text: "Great insights on emotional control. Helps not just in dating but in career too.", lang: "en", country: "MY", flag: "🇲🇾", created_at: "2026-02-28 11:30:00" },
-    { name: "helen.p***@yahoo.com", rating: 5, text: "I read Robert Greene's book before, but this summarizes it perfectly for modern dating.", lang: "en", country: "PH", flag: "🇵🇵", created_at: "2026-02-27 15:20:00" },
     { name: "cindy.99***@gmail.com", rating: 4, text: "Bahasanya gampang dimengerti. Bonusnya banyak banget dan sangat membantu.", lang: "id", country: "ID", flag: "🇮🇩", created_at: "2026-02-27 10:05:00" },
     { name: "nadila.sd***@gmail.com", rating: 5, text: "Dari sekedar 'teman curhat' sekarang aku jadi prioritas utama. Nangis banget akhirnya ngerti cara mainnya.", lang: "id", country: "MY", flag: "🇲🇾", created_at: "2026-02-26 21:18:00" },
     { name: "bella.put***@yahoo.com", rating: 5, text: "Aku nerapin ilmu ini ke gebetan yang toxic, akhirnya aku yang pegang kendali sekarang.", lang: "id", country: "SG", flag: "🇸🇬", created_at: "2026-02-25 14:40:00" },
@@ -795,10 +544,6 @@ const IstriCarousel = ({ story, assets }: { story: any; assets: any }) => {
 
 const DarkFeminineTSX = () => {
     const [searchParams, setSearchParams] = useSearchParams();
-    const hasEn = searchParams.has('en');
-    const hasSg = searchParams.has('sg');
-    const hasId = searchParams.has('id');
-    const hasPh = searchParams.has('ph');
     const hasIstri = searchParams.has('istri');
     const hasSoftlife = searchParams.has('softlife');
     const hasDisc = searchParams.has('disc');
@@ -813,33 +558,23 @@ const DarkFeminineTSX = () => {
     const hasIstriVisible = searchParams.has('istrivisible');   // Istri — df_0412_i4
     const isIstriSegment = hasIstri || hasIstriFear || hasIstriLegacy || hasIstriVisible;
     const segment = isIstriSegment ? 'istri' : 'default';
-    const initLang = hasEn ? 'en' : (hasSg ? 'sg' : (hasPh ? 'ph' : (hasId ? 'id' : (searchParams.get('lang') === 'en' ? 'en' : 'id'))));
-    const [lang, setLang] = useState<'id' | 'en' | 'sg' | 'ph'>(initLang as 'id' | 'en' | 'sg' | 'ph');
+    const [lang, setLang] = useState<'id'>('id');
 
-    const handleLangChange = (newLang: 'id' | 'en' | 'sg' | 'ph') => {
+    const handleLangChange = (newLang: 'id') => {
         setLang(newLang);
         setSearchParams({ [newLang]: '' });
-
-        // Auto-select PayPal if English is chosen
-        if (newLang === 'en' || newLang === 'sg' || newLang === 'ph') {
-            setPayment("PAYPAL");
-        } else {
-            setPayment("QRIS");
-        }
+        setPayment("QRIS");
     };
 
     // Calculate base product name based on language/country parameter
     const getBaseProductName = () => {
-        if (lang === 'en') return "Dark Feminine EN";
-        if (lang === 'sg') return "Universal Dark Feminine SG";
-        if (lang === 'ph') return "Universal Dark Feminine PH";
         return "Universal Dark Feminine ID"; // Default ID
     };
 
     const [name, setName] = useState("");
     const [phone, setPhone] = useState("");
     const [email, setEmail] = useState("");
-    const [payment, setPayment] = useState(initLang === 'en' || initLang === 'sg' || initLang === 'ph' ? "PAYPAL" : "QRIS");
+    const [payment, setPayment] = useState("QRIS");
     const [retailOpen, setRetailOpen] = useState(false);
     const [addUpsell, setAddUpsell] = useState(0); // 0=base, 1=+LoveMagnet, 2=Ultimate
     const { toast } = useToast();
@@ -1056,7 +791,7 @@ const DarkFeminineTSX = () => {
 
     const priceID = addUpsell === 2 ? 399000 : addUpsell === 1 ? (hasDisc ? 200000 : 249000) : 199000;
     const priceUSD = addUpsell === 2 ? 30 : addUpsell === 1 ? 19 : 15;
-    const isEnglish = lang === 'en' || lang === 'sg' || lang === 'ph';
+    const isEnglish = false;
     const finalAmount = isEnglish ? priceUSD : priceID;
     const finalCurrency = isEnglish ? 'USD' : 'IDR';
 
@@ -1308,8 +1043,8 @@ const DarkFeminineTSX = () => {
     }, [email, phone, name, PIXEL_ID]);
 
     const contentLang = lang; // Since all 3 (id, en, ph) exist now, map directly OR map sg back to en
-    const c = contentData[contentLang === 'sg' ? 'en' : contentLang];
-    const assets = assetsMap[contentLang === 'sg' ? 'en' : contentLang];
+    const c = contentData[contentLang];
+    const assets = assetsMap[contentLang];
 
     // === SEGMENT OVERRIDES (?istri / ?softlife / ?single / new winners) ===
 
@@ -2465,15 +2200,7 @@ const DarkFeminineTSX = () => {
         }
         @keyframes dfUrgencyMove { 0% { background-position: 0% 0%; } 100% { background-position: 200% 0%; } }
         
-        #df-lang-btn {
-          position: fixed; top: 52px; right: 16px; z-index: 9998;
-          background: var(--bg-card); border: 1px solid var(--purple);
-          color: var(--cream); font-size: 14px; font-weight: 700;
-          padding: 8px 14px; border-radius: 20px; cursor: pointer;
-          letter-spacing: 0.04em; transition: all 0.2s; outline: none;
-          appearance: none;
-        }
-        #df-lang-btn:focus { border-color: var(--gold-light); }
+
 
         #df-hero {
           min-height: 88vh; display: flex; align-items: center;
@@ -3465,7 +3192,7 @@ const DarkFeminineTSX = () => {
                             {/* Display Reviews */}
                             <div>
                                 {[...dbReviews, ...MOCK_REVIEWS]
-                                    .filter(r => (!r.lang || r.lang === (lang === 'sg' || lang === 'ph' ? 'en' : lang) || (lang === 'id' && r.lang === 'id')) && (r.comment || r.text) && (r.comment?.trim() !== '' || r.text?.trim() !== ''))
+                                    .filter(r => (!r.lang || r.lang === lang) && (r.comment || r.text) && (r.comment?.trim() !== '' || r.text?.trim() !== ''))
                                     .slice(0, showReviewsCount).map((r, i) => (
                                         <div key={i} style={{ background: 'var(--bg-section)', borderRadius: '12px', padding: '16px', marginBottom: '12px', border: '1px solid rgba(255,255,255,0.05)' }}>
                                             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '8px' }}>
@@ -3851,8 +3578,6 @@ const DarkFeminineTSX = () => {
                     {/* FLOATING WHATSAPP BUTTON — kirim URL asal + pertanyaan manfaat spesifik per persona */}
                     <a
                         href={`https://wa.me/62895325633487?text=${encodeURIComponent(
-                            lang === 'ph' ? `Hello kak, galing ako sa ${window.location.href} — anong benefits ang makukuha ko?` :
-                            lang !== 'id' ? `Hi, I'm coming from ${window.location.href} — what benefits will I get from this ebook?` :
                             (segment === 'istri' && hasValue) ? `Halo kak, saya dari ${window.location.href}\n\nSaya istri yang udah lama struggle. Apa benefit paket Ultimate Rp399.000 untuk istri seperti saya? Workbook 30 hari-nya beneran bisa ngebalikin suami yang udah cuek?` :
                             segment === 'istri' ? `Halo kak, saya dari ${window.location.href}\n\nSaya seorang istri. Manfaat apa yang saya dapat dari ebook Dark Feminine ini? Bisa ngembaliin rasa peduli suami yang udah berasa kayak orang asing?` :
                             (hasSoftlife && hasValue) ? `Halo kak, saya dari ${window.location.href}\n\nSaya pengen jadi wanita Soft Life yang dimanjakan tanpa banyak gaya. Apa benefit paket Ultimate Rp399.000 untuk capai itu? Workbook 30 hari-nya ngajarin apa?` :
