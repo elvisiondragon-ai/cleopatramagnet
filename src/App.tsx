@@ -1041,12 +1041,7 @@ const DarkFeminineTSX = () => {
     const assets = assetsMap[contentLang];
 
     // === SEGMENT OVERRIDES (?istri / ?softlife / ?single / new winners) ===
-
-    // ?presence — Persona "Magnetic Presence" (Juara 1: df_0412_g5, 28 sales) — Single/General
-    // Tema: Kekuatan "diam" yang mematikan. Wanita yang masuk ruangan dan auranya bicara.
-    // Berhenti mengejar perhatian — mulai menjadi pusat perhatian secara alami.
-    // IMAGES: TBD — user akan menambahkan asset story setelah review copy.
-    const presenceContent = (hasPresence && segment !== 'istri') ? {
+    const presenceObject = {
         heroBadge: "👑 DarkFeminine - Cleopatra Magnet",
         heroH1a: "Dia Tidak Bicara.",
         heroH1b: "Tapi Seluruh Ruangan Memperhatikannya.",
@@ -1175,8 +1170,9 @@ const DarkFeminineTSX = () => {
                     desc: 'Ini bukan tips kencan atau motivasi pagi. Ini protokol tertua di dunia yang membuat penguasa rela mempertaruhkan segalanya. Sebuah sistem terukur—dari cara masuk ruangan, cara diam, hingga cara berbicara yang kini bisa Anda kuasai.'
                 }
             ]
-        },
-    } : null;
+    };
+
+    // === SEGMENT OVERRIDES (?istri / ?softlife / ?single / new winners) ===
 
     // ?perubahan — Persona "Energy Shift Transformation" (winner-Satu_Perubahan, 8 sales) — General
     // Tema: Perubahan internal kecil dengan dampak masif. Frekuensi wanita yang tadinya
@@ -1941,8 +1937,6 @@ const DarkFeminineTSX = () => {
         ? { ...c, ...segmentContent, ...istriVisibleContent }
         : segmentContent
         ? { ...c, ...segmentContent }
-        : presenceContent
-        ? { ...c, ...presenceContent }
         : perubahanContent
         ? { ...c, ...perubahanContent }
         : highvalueContent
@@ -1951,7 +1945,7 @@ const DarkFeminineTSX = () => {
         ? { ...c, ...nongamesContent }
         : softlifeContent
         ? { ...c, ...softlifeContent }
-        : c;
+        : { ...c, ...presenceObject };
 
     const [countdown, setCountdown] = useState("00:00:00");
     const [scrollProgress, setScrollProgress] = useState(0);
