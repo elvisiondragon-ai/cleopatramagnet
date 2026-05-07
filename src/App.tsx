@@ -558,13 +558,7 @@ const DarkFeminineTSX = () => {
     const hasIstriVisible = searchParams.has('istrivisible');   // Istri — df_0412_i4
     const isIstriSegment = hasIstri || hasIstriFear || hasIstriLegacy || hasIstriVisible;
     const segment = isIstriSegment ? 'istri' : 'default';
-    const [lang, setLang] = useState<'id'>('id');
-
-    const handleLangChange = (newLang: 'id') => {
-        setLang(newLang);
-        setSearchParams({ [newLang]: '' });
-        setPayment("QRIS");
-    };
+    const lang = 'id';
 
     // Calculate base product name based on language/country parameter
     const getBaseProductName = () => {
@@ -2653,11 +2647,7 @@ const DarkFeminineTSX = () => {
                         <span>{c.urgency(<span style={{ fontFamily: 'var(--font-display)', fontSize: '18px', letterSpacing: '0.08em', color: 'var(--gold-light)' }}>{countdown}</span>)}</span>
                     </div>
 
-                    <select id="df-lang-btn" value={lang} onChange={(e) => handleLangChange(e.target.value as any)}>
-                        <option value="id">🇮🇩 Indonesia</option>
-                        <option value="en">🇬🇧 English</option>
-                        <option value="ph">🇵🇭 Philippines</option>
-                    </select>
+
 
                     {/* HERO */}
                     <section id="df-hero">
