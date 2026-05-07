@@ -1,0 +1,163 @@
+// ==========================================
+// Single source of truth: var V in index.html — only change there
+export const APP_VERSION = (window as any).__APP_VERSION__ as string;
+// ==========================================
+
+if (localStorage.getItem('v_cache') !== APP_VERSION) {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(regs => regs.forEach(r => r.unregister()));
+  }
+  if ('caches' in window) {
+    caches.keys().then(names => names.forEach(n => caches.delete(n)));
+  }
+  localStorage.setItem('v_cache', APP_VERSION);
+  setTimeout(() => window.location.reload(), 500);
+}
+
+import ReactDOM from 'react-dom/client'
+import React, { Suspense } from 'react'
+import './index.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { AnalyticsTracker } from './components/AnalyticsTracker';
+
+// Lazy Loaded (Primary Landing Pages - Lazy Load)
+const DisplayPage = React.lazy(() => import('./display.tsx'));
+const UangPanasLanding = React.lazy(() => import('./id_ebook/ebook_uangpanas.tsx'));
+const EbookFeminineLanding = React.lazy(() => import('./id_ebook/ebook_feminine.tsx'));
+const NotFound = React.lazy(() => import('./NotFound.tsx'));
+
+// Lazy Loaded (Secondary Pages - Load on Click)
+const EbookAdhdLanding = React.lazy(() => import('./id_ebook/ebook_adhd.tsx'));
+const ArifEbookLanding = React.lazy(() => import('./id_ebook/ebook_arif.tsx'));
+const EbookElvisionPaymentPage = React.lazy(() => import('./id_ebook/ebook_elvision.tsx'));
+const EbookGriefLanding = React.lazy(() => import('./id_ebook/ebook_grief.tsx'));
+const EbookPercayaDiriLP = React.lazy(() => import('./id_ebook/ebook_percayadiri.tsx'));
+const EbookTrackerLanding = React.lazy(() => import('./id_ebook/ebook_tracker.tsx'));
+const ELVision15K = React.lazy(() => import('./id_ebook/vip_15jt.tsx'));
+const Proteam = React.lazy(() => import('./proteam.tsx'));
+const IntroLanding = React.lazy(() => import('./intro.tsx'));
+const Rajaranjang = React.lazy(() => import('./universal/rajaranjang.tsx'));
+const DarkFeminine = React.lazy(() => import('./universal/darkfeminine.tsx'));
+const HotAffiliate = React.lazy(() => import('./universal/hotaffiliate.tsx'));
+const SmartParenting = React.lazy(() => import('./universal/smartparenting.tsx'));
+const WomenConsultant = React.lazy(() => import('./universal/womenconsultant.tsx'));
+const Parenting = React.lazy(() => import('./id_ebook/parenting.tsx'));
+const SahamLanding = React.lazy(() => import('./id_ebook/saham.tsx'));
+const CryptoLanding = React.lazy(() => import('./id_ebook/crypto.tsx'));
+
+// Moved from elvisiongroup
+const Usa3000 = React.lazy(() => import('./usa/usa_3000.tsx'));
+const UsaPay3000 = React.lazy(() => import('./usa/usa_pay3000.tsx'));
+const Usa3000Survey = React.lazy(() => import('./usa/usa_3000survey.tsx'));
+const UsaPaypal = React.lazy(() => import('./usa/usa_paypal.tsx'));
+const UsaEbookHealth = React.lazy(() => import('./usa/usa_ebookhealth.tsx'));
+const UsaEbookFeminine = React.lazy(() => import('./usa/usa_ebookfeminine.tsx'));
+const UsaPaypalFinish = React.lazy(() => import('./usa/usa_paypal_finish.tsx'));
+
+// SG
+const SgElvision = React.lazy(() => import('./sg/sg_elvision.tsx'));
+
+// Audio Product
+const AudioProductPayment = React.lazy(() => import('./checkout/audio_product.tsx'));
+
+// Ultima Static Page
+const Ultima = () => (
+  <iframe
+    src="/ultima.html"
+    className="w-full h-screen border-none"
+    title="Ultima"
+    style={{ position: 'fixed', top: 0, left: 0, bottom: 0, right: 0, width: '100%', height: '100%', border: 'none', margin: 0, padding: 0, overflow: 'hidden', zIndex: 999999 }}
+  />
+);
+
+// Loading Fallback — background matched per route to eliminate white/black flash
+const LoadingFallback = () => {
+  const path = window.location.pathname;
+  const darkRoutes = ['/womenconsultant', '/darkfeminine', '/hotaffiliate', '/smartparenting', '/rajaranjang', '/ebook_feminine', '/ebook_uangpanas', '/ebook_percayadiri'];
+  const isDark = darkRoutes.some(r => path.startsWith(r));
+  const bg = isDark ? '#0D0A14' : '#ffffff';
+  return (
+    <div style={{ minHeight: '100vh', background: bg, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{ width: 24, height: 24, border: `2px solid ${isDark ? '#D4A84B' : '#999'}`, borderTopColor: 'transparent', borderRadius: '50%', animation: 'spin 0.7s linear infinite' }} />
+      <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
+    </div>
+  );
+};
+
+const App = () => {
+  // Prefetch secondary pages in background
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      import('./universal/womenconsultant.tsx');
+      import('./universal/darkfeminine.tsx');
+      import('./id_ebook/ebook_elvision.tsx');
+      import('./id_ebook/vip_15jt.tsx');
+      import('./usa/usa_3000.tsx');
+      import('./usa/usa_pay3000.tsx');
+      import('./usa/usa_3000survey.tsx');
+      import('./usa/usa_paypal.tsx');
+      import('./usa/usa_ebookhealth.tsx');
+      import('./usa/usa_ebookfeminine.tsx');
+      import('./usa/usa_paypal_finish.tsx');
+      import('./sg/sg_elvision.tsx');
+      import('./checkout/audio_product.tsx');
+      import('./components/address_en.tsx');
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <Routes>
+      <Route path="/" element={<DarkFeminine />} />
+      <Route path="/intro" element={<IntroLanding />} />
+      <Route path="/ebook_uangpanas" element={<UangPanasLanding />} />
+      <Route path="/ebook_feminine" element={<EbookFeminineLanding />} />
+      <Route path="/ebook_feminine/v2" element={<EbookFeminineLanding />} />
+      <Route path="/ebook_adhd" element={<EbookAdhdLanding />} />
+      <Route path="/ebook_arif" element={<ArifEbookLanding />} />
+      <Route path="/ebook_elvision" element={<EbookElvisionPaymentPage />} />
+      <Route path="/ebook_grief" element={<EbookGriefLanding />} />
+      <Route path="/ebook_percayadiri" element={<EbookPercayaDiriLP />} />
+      <Route path="/ebook_tracker" element={<EbookTrackerLanding />} />
+      <Route path="/vip_15jt" element={<ELVision15K />} />
+      <Route path="/proteam" element={<Proteam />} />
+      <Route path="/rajaranjang" element={<Rajaranjang />} />
+      <Route path="/darkfeminine" element={<DarkFeminine />} />
+      <Route path="/hotaffiliate" element={<HotAffiliate />} />
+      <Route path="/smartparenting" element={<SmartParenting />} />
+      <Route path="/womenconsultant" element={<WomenConsultant />} />
+      <Route path="/id_parenting" element={<Parenting />} />
+      <Route path="/saham" element={<SahamLanding />} />
+      <Route path="/crypto" element={<CryptoLanding />} />
+
+      {/* Moved from elvisiongroup */}
+      <Route path="/usa_3000" element={<Usa3000 />} />
+      <Route path="/usa_pay3000" element={<UsaPay3000 />} />
+      <Route path="/usa_3000survey" element={<Usa3000Survey />} />
+      <Route path="/usa_paypal" element={<UsaPaypal />} />
+      <Route path="/usa_ebookhealth" element={<UsaEbookHealth />} />
+      <Route path="/usa_ebookfeminine" element={<UsaEbookFeminine />} />
+      <Route path="/usa_paypal_finish" element={<UsaPaypalFinish />} />
+
+      {/* SG */}
+      <Route path="/sg_elvision" element={<SgElvision />} />
+
+      {/* Audio */}
+      <Route path="/audio" element={<AudioProductPayment />} />
+
+      {/* Ultima */}
+      <Route path="/ultima" element={<Ultima />} />
+
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  );
+};
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <BrowserRouter>
+    <AnalyticsTracker />
+    <Suspense fallback={<LoadingFallback />}>
+      <App />
+    </Suspense>
+  </BrowserRouter>,
+)

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- iOS Safari hard cache-bust — ONLY change APP_VERSION here when deploying -->
+    <script>
+      (function() {
+        var V = '1.0.16';
+        window.__APP_VERSION__ = V;
+        var url = new URL(window.location.href);
+        if (url.searchParams.get('v') !== V) {
+          url.searchParams.set('v', V);
+          window.location.replace(url.toString());
+        } else {
+          url.searchParams.delete('v');
+          history.replaceState(null, '', url.pathname + (url.search === '?' ? '' : url.search) + url.hash);
+        }
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="eL Vision Group Ecosystem" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/logoaiv2.png" />
+
+    <!-- OG / WhatsApp share -->
+    <meta property="og:title" content="eL Vision Group" />
+    <meta property="og:description" content="eL Vision Group Ecosystem" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://ai.elvisiongroup.com/og_logo.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://ai.elvisiongroup.com/og_logo.jpg" />
+
+    <title>eL Vision AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" 
+      rel="stylesheet" 
+      media="print" 
+      onload="this.media='all'"
+    >
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" 
+      rel="stylesheet" 
+      media="print" 
+      onload="this.media='all'"
+    >
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    </noscript>
+
+    <!-- Console Log Suppression (Executed before other scripts) -->
+    <script>
+      (function() {
+        var originalLog = console.log;
+        var originalWarn = console.warn;
+        var originalInfo = console.info;
+        var originalError = console.error;
+        var originalDebug = console.debug;
+
+        var suppressPatterns = [
+          'Download the React DevTools',
+          '🔗 Supabase connecting to',
+          "You are sending a non-standard event 'TimeSpent'",
+          'TimeSpent'
+        ];
+
+        function shouldSuppress(args) {
+          for (var i = 0; i < args.length; i++) {
+            var arg = args[i];
+            if (typeof arg === 'string') {
+              for (var j = 0; j < suppressPatterns.length; j++) {
+                if (arg.indexOf(suppressPatterns[j]) !== -1) return true;
+              }
+            }
+          }
+          return false;
+        }
+
+        console.log = function() {
+          if (!shouldSuppress(arguments)) originalLog.apply(console, arguments);
+        };
+        console.warn = function() {
+          if (!shouldSuppress(arguments)) originalWarn.apply(console, arguments);
+        };
+        console.info = function() {
+          if (!shouldSuppress(arguments)) originalInfo.apply(console, arguments);
+        };
+        console.error = function() {
+          if (!shouldSuppress(arguments)) originalError.apply(console, arguments);
+        };
+        console.debug = function() {
+          if (!shouldSuppress(arguments)) originalDebug.apply(console, arguments);
+        };
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
