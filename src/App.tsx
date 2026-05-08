@@ -2861,11 +2861,7 @@ const DarkFeminineTSX = () => {
                                     <span>{sc.paramHowItWorks.h2a}</span>
                                     <span className="df-newline df-gold">{sc.paramHowItWorks.h2b}</span>
                                 </h2>
-                                {sc.paramHowItWorks.imgKey && assets[sc.paramHowItWorks.imgKey] && (
-                                    <div className="df-img-box" style={{ borderRadius: '16px' }}>
-                                        <DbgImg src={assets[sc.paramHowItWorks.imgKey]} alt={sc.paramHowItWorks.label} label={sc.paramHowItWorks.imgKey} style={{ width: '100%', aspectRatio: '1/1', display: 'block', borderRadius: '18px', objectFit: 'cover' }} />
-                                    </div>
-                                )}
+
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginTop: '16px' }}>
                                     {sc.paramHowItWorks.steps.map((step: any, i: number) => (
                                         <div key={i} style={{ background: 'var(--bg-card)', border: '1px solid rgba(139,92,246,0.3)', borderRadius: '16px', padding: '20px 18px', display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
