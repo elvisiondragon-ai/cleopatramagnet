@@ -3112,16 +3112,16 @@ const DarkFeminineTSX = () => {
                             </p>
 
                             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px', background: 'rgba(201,153,26,0.1)', padding: '16px', borderRadius: '12px', border: '1px solid rgba(201,153,26,0.3)' }}>
-                                <div style={{ fontSize: '42px', fontWeight: 700, color: 'var(--gold-light)', lineHeight: 1 }}>4.8</div>
+                                <div style={{ fontSize: '42px', fontWeight: 700, color: 'var(--gold-light)', lineHeight: 1 }}>5.0</div>
                                 <div>
                                     <div style={{ display: 'flex', color: 'var(--gold-light)' }}>
                                         <Star fill="currentColor" size={20} />
                                         <Star fill="currentColor" size={20} />
                                         <Star fill="currentColor" size={20} />
                                         <Star fill="currentColor" size={20} />
-                                        <Star fill="currentColor" size={20} style={{ opacity: 0.8 }} />
+                                        <Star fill="currentColor" size={20} />
                                     </div>
-                                    <div style={{ fontSize: '14px', color: 'var(--cream)', marginTop: '4px' }}>Review 4.8++ from 2000 Ladies..</div>
+                                    <div style={{ fontSize: '14px', color: 'var(--cream)', marginTop: '4px' }}>Review 5 ⭐ from 2000 Ladies..</div>
                                 </div>
                             </div>
 
