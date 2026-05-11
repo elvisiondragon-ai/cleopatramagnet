@@ -273,7 +273,7 @@ const assetsMap: any = {
 
 const contentData: any = {
     id: {
-        agitText: <>Lo diajarin dari kecil: jadi anak baik, jangan menggoda, tunggu dijemput bola. <strong>DAN APA HASILNYA?</strong> Lo jadi teman curhat favorit sementara dia milih yang lain.<br /><br /><ul className="agitation-list"><li>Yang setia → ditinggalin.</li><li>Yang sabar → diinjak.</li><li>Yang pengertian → dianggap lemah.</li></ul><br />Tapi cewek yang "biasa aja"? Dapat <span className="highlight">SEGALANYA</span>.<br /><br />Bukan karena dia cantik. Bukan karena dia beruntung.<br />Tapi karena dia <span className="highlight">PAHAM sesuatu yang TIDAK PERNAH lo pelajari.</span></>,
+        agitText: <>Lo diajarin dari kecil: jadi anak baik, jangan menggoda, tunggu dijemput bola. <strong>DAN APA HASILNYA?</strong><br /><br />Lo balas chat dalam 5 detik. Dia balas chat lo dalam 5 JAM — kalau balas. Lo selalu ada saat dia butuh. Tapi saat lo butuh? <strong>"Sorry, lagi sibuk."</strong><br /><br /><ul className="agitation-list"><li>Yang setia → ditinggalin tanpa penjelasan.</li><li>Yang sabar → dianggap LEMAH dan diinjak.</li><li>Yang pengertian → dijadikan OPSI, bukan prioritas.</li></ul><br />Tapi cewek yang "biasa aja"? Dapat <span className="highlight">SEGALANYA</span>. Dapat pria yang rela meninggalkan segalanya demi dia.<br /><br />Bukan karena dia cantik. Bukan karena dia beruntung.<br />Tapi karena dia <span className="highlight">PAHAM sesuatu yang TIDAK PERNAH diajarkan padamu.</span><br /><br />Dan setiap minggu yang berlalu tanpa kamu mengubah FREKUENSI-mu — adalah seminggu lagi wanita lain mendapatkan apa yang seharusnya <strong>milikmu</strong>. Pria tidak menunggu. Kesempatan tidak menunggu. <strong>Dan satu tahun dari sekarang, kamu akan duduk di tempat yang sama, scrolling feed yang sama, menangisi orang yang sama.</strong><br /><br />Kecuali kamu memutuskan HARI INI adalah hari terakhir kamu hidup tanpa ILMU ini.</>,
         solText: <>Panduan lengkap daya tarik wanita yang ditulis berdasarkan psikologi modern. Dari seni misteri, push-pull dynamics, sampai cara membangun aura yang bikin pria <strong>TIDAK BISA berhenti memikirkan kamu</strong>.<br /><br />Bukan tips murahan. Bukan saran "jadilah diri sendiri".<br />Tapi <strong>ILMU</strong> yang benar-benar <strong>MENGUBAH frekuensi kamu.</strong><br /><br /><div style={{background:'rgba(139,92,246,0.08)',border:'1px solid rgba(139,92,246,0.25)',borderRadius:'16px',padding:'20px 18px',marginTop:'8px'}}><div style={{fontSize:'13px',fontWeight:700,letterSpacing:'0.12em',textTransform:'uppercase',color:'var(--purple-light)',marginBottom:'12px'}}>Rahasia yang Tidak Pernah Diajarkan</div><p style={{marginBottom:'12px'}}>Otak pria secara biologis <strong>diprogram untuk mengejar</strong> — bukan untuk menghargai yang terlalu mudah didapat. Bukan salahmu. Bukan salah dia. Ini <strong>cara kerja otaknya.</strong></p><p style={{marginBottom:'12px'}}>Ketika kamu terlalu available, terlalu baik, terlalu predictable — otaknya secara otomatis <strong>mengkategorikan kamu sebagai "aman"</strong>. Dan yang aman tidak membuat jantungnya berdegup.</p><p style={{marginBottom:'0'}}>Dark Feminine bukan tentang menjadi jahat. Ini tentang memahami <strong>frekuensi yang mengaktifkan bagian otaknya</strong> yang paling dalam — bagian yang membuatnya <em>tidak bisa berhenti memikirkanmu</em>. Inilah yang selama ini kamu cari. Dan inilah yang kami ajarkan.</p></div></>,
         checks: [
             <>Seni <strong>MISTERI</strong> — bagaimana jadi wanita yang tidak bisa ditebak</>,
@@ -342,22 +342,32 @@ const contentData: any = {
             { q: "Apakah berlaku untuk yang berjilbab / religius?", a: "Ya. Dark Feminine bukan soal pakaian atau penampilan fisik. Ini tentang AURA, MISTERI, dan CARA BERPIKIR. Banyak pembaca kami yang berjilbab." },
         ],
         pains: [
-            { icon: "😔", text: <>Selalu jadi "teman curhat" tapi bukan <strong>PILIHAN</strong> siapapun</> },
-            { icon: "💔", text: <>Ditinggal atau diselingkuhi padahal sudah <strong>baik dan setia</strong></> },
-            { icon: "😤", text: <>Iri sama wanita yang "biasa aja" tapi hidupnya lebih <strong>diperhatikan</strong></> },
-            { icon: "📱", text: <>Nonton drama pelakor jam 2 pagi dan diam-diam <strong>pengen jadi DIA</strong></> },
-            { icon: "🔄", text: <>Selalu attract yang salah — di-ghosted, diabaikan, atau tidak dihargai</> },
-            { icon: "😶", text: <>Diberi label "terlalu baik" — yang artinya <strong>terlalu BORING</strong></> },
-            { icon: "🛏️", text: <>Tidur di samping seseorang tapi merasa <strong>lebih sendirian</strong> dari sebelumnya</> },
-            { icon: "📵", text: <>Sadar HP-nya lebih dapat <strong>perhatian</strong> daripada kamu</> },
-            { icon: "😞", text: <>Sudah lakukan segalanya dengan benar — tapi tetap <strong>tidak dilihat</strong></> },
-            { icon: "🪞", text: <>Lupa kapan terakhir kali merasa seperti <strong>WANITA</strong> — bukan hanya ibu, istri, atau karyawan</> },
+            { icon: "⏱️", text: <>Kamu balas chatnya dalam 5 detik. Dia balas chatmu dalam <strong>5 JAM</strong> — kalau balas.</> },
+            { icon: "💔", text: <>Dia cerita masalah hidupnya ke kamu sampai jam 1 pagi. <strong>Besoknya dia nembak cewek lain.</strong></> },
+            { icon: "😤", text: <>Wanita yang "biasa aja" dapat pria mapan. Kamu yang lebih cantik dan pintar <strong>dapat ghosting.</strong></> },
+            { icon: "🍽️", text: <>Kamu booking restoran, beli baju baru, pakai parfum terbaik — dia cancel 2 jam sebelumnya: <strong>"Capek, rain check ya."</strong></> },
+            { icon: "🔄", text: <>Polanya selalu sama: 3 minggu intens, lalu menghilang. <strong>Orangnya beda, sakitnya sama.</strong></> },
+            { icon: "😶", text: <>Teman-temanmu bilang kamu "terlalu baik untuk cowok manapun." Terjemahan: kamu <strong>MEMBOSANKAN.</strong></> },
+            { icon: "📵", text: <>Dia punya waktu 2 jam scroll sosmed, tapi giliran kamu ajak ngobrol? <strong>"Nanti ya."</strong></> },
+            { icon: "🛏️", text: <>Tidur di samping seseorang tapi merasa <strong>lebih sendirian</strong> dari sebelumnya. Sentuhannya terasa mekanis.</> },
+            { icon: "👁️", text: <>Dia like foto wanita lain di IG. Chat dari istrinya sendiri <strong>cuma di-read.</strong></> },
+            { icon: "⏳", text: <>Setiap minggu yang berlalu tanpa kamu berubah — adalah seminggu lagi <strong>wanita lain mendapatkan apa yang seharusnya milikmu.</strong></> },
         ],
         stories: [
             {
                 img: 'df04',
                 title: 'Selalu Jadi Pelabuhan. Tidak Pernah Jadi Tujuan.',
-                body: `Dia cerita soal masalah hidupnya ke kamu sampai jam 1 pagi. Kamu dengarkan. Kamu support. Kamu kasih saran terbaik.\n\nDan keesokan harinya? Dia nembak cewek lain.\n\nKamu bingung. Marah. Tapi kamu tetap reply chat-nya. Karena kamu pikir — mungkin kalau kamu cukup sabar, cukup baik, cukup setia... akhirnya dia akan sadar.\n\nTapi itu tidak pernah terjadi. Karena kebaikan tanpa STRATEGI hanya akan membuat kamu jadi opsi, bukan prioritas.`
+                body: `Dia cerita soal masalah hidupnya ke kamu sampai jam 1 pagi. Kamu dengarkan. Kamu support. Kamu kasih saran terbaik.\n\nDan keesokan harinya? Dia nembak cewek lain.\n\nKamu bingung. Marah. Tapi kamu tetap reply chat-nya. Karena kamu pikir — mungkin kalau kamu cukup sabar, cukup baik, cukup setia... akhirnya dia akan sadar.\n\nTapi itu tidak pernah terjadi. Karena kebaikan tanpa STRATEGI hanya akan membuat kamu jadi opsi, bukan prioritas.\n\nDan yang paling menyakitkan? Wanita yang dia pilih... BIASA SAJA. Tidak secantik kamu. Tidak sepintar kamu. Tapi dia menguasai sesuatu yang tidak pernah kamu pelajari.`
+            },
+            {
+                img: 'df04',
+                title: 'Kamu Lebih Cantik, Lebih Pintar. Tapi Dia Pilih Yang Lain.',
+                body: `Ini yang paling membingungkan: kamu objektif lebih menarik. Karir lebih bagus. Lebih berpendidikan. Teman-temanmu bingung kenapa kamu masih single.\n\nTapi pria yang kamu suka — selalu memilih wanita yang "biasa saja." Wanita yang tidak lebih cantik, tidak lebih pintar, tidak lebih sukses darimu.\n\nDan pertanyaannya menghantam seperti palu: "Apa yang dia punya yang aku tidak?"\n\nJawabannya bukan di wajah. Bukan di tubuh. Bukan di prestasi. Tapi di FREKUENSI yang dia pancarkan tanpa sadar — frekuensi yang membuat otak pria secara biologis terkunci padanya. Frekuensi yang membuatnya TIDAK BISA DITINGGALKAN.\n\nCleopatra membuktikan ini 2.000 tahun lalu. Dia bukan yang tercantik di Mesir. Tapi 5 raja berlutut. Karena kharisma > kecantikan.`
+            },
+            {
+                img: 'df04',
+                title: 'Polanya Selalu Sama. Orangnya Beda, Sakitnya Identik.',
+                body: `Minggu pertama: dia chat terus, perhatian penuh, kamu merasa "ini dia yang beda."\n\nMinggu kedua: masih intens, tapi mulai ada jeda yang lebih lama antara balasan.\n\nMinggu ketiga: dia mulai "sibuk." Meeting. Lembur. Acara keluarga. Selalu ada alasan.\n\nMinggu keempat: ghosting. Tanpa penjelasan. Tanpa goodbye. Hilang seperti kamu tidak pernah ada.\n\nDan 3 bulan kemudian — pola itu terulang. Dengan orang berbeda. Tapi alurnya identik. Copy-paste.\n\nIni bukan nasib buruk. Ini bukan "belum ketemu jodoh." Ini adalah FREKUENSI yang kamu pancarkan tanpa sadar — frekuensi yang membuat otaknya mengkategorikanmu sebagai "aman" dan "pasti." Dan otak pria secara biologis BERHENTI mengejar yang sudah pasti.\n\nKabar baiknya? Frekuensi itu bisa diubah. Dalam 14 hari.`
             },
         ],
         wifeSection: {
@@ -408,17 +418,17 @@ const contentData: any = {
         },
         urgency: (t: React.ReactNode) => <>⚡ HARGA SPESIAL — Berakhir dalam {t} ⚡</>,
         heroBadge: "👑 DarkFeminine - Cleopatra Magnet",
-        heroH1a: "Jadilah Wanita yang",
-        heroH1b: "Tidak Bisa Dilupakan",
-        heroSub: "52 jurus rahasia daya tarik yang tidak pernah diajarkan ibu, guru, atau siapapun.",
+        heroH1a: "Kamu Sudah Melakukan Segalanya Dengan Benar.",
+        heroH1b: "Tapi Tetap Tidak Dipilih.",
+        heroSub: "Untuk wanita yang lelah jadi 'teman terbaik'. Yang selalu balas chat paling cepat, selalu ada saat dibutuhkan — tapi tidak pernah menjadi PILIHAN. Dan untuk istri yang tidur di samping seseorang tapi merasa sendirian. Bukan karena kamu kurang cantik. Tapi karena ada satu ILMU yang tidak pernah diajarkan ibu, guru, atau siapapun.",
         heroCta: "DAPATKAN 52 JURUS SEKARANG →",
         socialProof: "sudah membuktikan",
         socialProofNum: "4.200+ wanita",
-        painLabel: "JUJUR SAMA DIRI SENDIRI",
-        painH2a: "Kamu Pernah Merasakan",
-        painH2b: "Ini Semua?",
-        agitH2a: 'Kenapa yang "Rendah"',
-        agitH2b: "Malah Dapat CEO?",
+        painLabel: "KENYATAAN YANG TIDAK BERANI KAMU AKUI",
+        painH2a: "Kamu Sudah Tahu Ini Semua.",
+        painH2b: "Hanya Belum Berani Mengakuinya.",
+        agitH2a: 'Kenapa Yang "Biasa Saja"',
+        agitH2b: "Malah Dapat Segalanya?",
         solLabel: "JAWABANNYA",
         solH2a: "Dark Feminine",
         solH2b: "52 Jurus Rahasia",
