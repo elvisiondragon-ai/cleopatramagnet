@@ -2119,10 +2119,22 @@ const DarkFeminineTSX = () => {
                                     <span style={{ fontSize: '22px', fontWeight: 700, fontFamily: 'monospace', color: '#060A12' }}>{paymentData.payCode}</span>
                                     <button onClick={() => { navigator.clipboard.writeText(paymentData.payCode); alert('Tersalin!'); }} style={{ background: 'none', border: 'none', cursor: 'pointer' }}><Copy size={22} color="#C9991A" /></button>
                                 </div>
-                                {['ALFAMART', 'ALFAMIDI', 'INDOMARET'].includes(paymentData.paymentMethod) && (
+                                {['ALFAMART', 'ALFAMIDI', 'INDOMARET'].includes(paymentData.paymentMethod) ? (
                                     <div style={{ marginTop: '12px', padding: '12px', background: '#f8f9fa', borderRadius: '8px', borderLeft: '4px solid #C9991A', fontSize: '14px', color: '#333', lineHeight: 1.5 }}>
                                         <strong>Langkah Pembayaran:</strong><br />
                                         Pergi ke <strong>{paymentData.paymentMethod === 'INDOMARET' ? 'Indomaret' : (paymentData.paymentMethod === 'ALFAMART' ? 'Alfamart' : 'Alfamidi')}</strong> terdekat, ke kasir berikan kode virtual ini untuk dibayar. Dalam 1 menit setelah dibayar, transaksi akan otomatis selesai dan produk ebook dikirim ke WhatsApp dan email Anda.
+                                    </div>
+                                ) : (
+                                    <div style={{ marginTop: '12px', padding: '12px', background: '#f8f9fa', borderRadius: '8px', borderLeft: '4px solid #C9991A', fontSize: '14px', color: '#333', lineHeight: 1.5 }}>
+                                        <strong>Langkah Pembayaran:</strong><br />
+                                        {paymentData.paymentMethod === 'BCAVA' ? (
+                                            <>Buka aplikasi <strong>m-BCA</strong>, pilih menu <strong>m-Transfer</strong> &gt; <strong>BCA Virtual Account</strong>. Copy-Paste nomor di atas dan selesaikan pembayaran sesuai nominal.</>
+                                        ) : (
+                                            <>Buka aplikasi Mobile Banking / ATM anda, pilih menu <strong>Transfer</strong> &gt; <strong>Virtual Account</strong>. Salin nomor di atas dan bayar sesuai nominal total di atas.</>
+                                        )}
+                                        <div style={{ marginTop: '8px', fontSize: '12px', color: '#5E7491', fontWeight: 600 }}>
+                                            *Otomatis terverifikasi dalam 1-2 menit.
+                                        </div>
                                     </div>
                                 )}
                             </div>
