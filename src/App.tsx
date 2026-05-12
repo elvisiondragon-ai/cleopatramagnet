@@ -1,24 +1,36 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 
-const DEBUG_IMAGES = false;
-const DbgImg = ({ src, alt, className, style, label, priority }: { src: string; alt?: string; className?: string; style?: React.CSSProperties; label: string; priority?: boolean }) => (
-    <div style={{ position: 'relative', display: 'block', lineHeight: 0 }}>
-        <img
-            src={src}
-            alt={alt}
-            className={className}
-            loading={priority ? 'eager' : 'lazy'}
-            fetchPriority={priority ? 'high' : 'low'}
-            decoding={priority ? 'sync' : 'async'}
-            style={{ display: 'block', width: '100%', ...style }}
-        />
-        {DEBUG_IMAGES && (
-            <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', zIndex: 5 }}>
-                <span style={{ background: 'rgba(0,0,0,0.72)', color: '#FFD700', fontSize: '22px', fontWeight: 900, padding: '8px 18px', borderRadius: '10px', letterSpacing: '0.5px', textAlign: 'center', wordBreak: 'break-all', maxWidth: '90%' }}>{label}</span>
-            </div>
-        )}
-    </div>
-);
+const DEBUG_IMAGES = true;
+const DbgImg = ({ src, alt, className, style, label, priority }: { src: string; alt?: string; className?: string; style?: React.CSSProperties; label: string; priority?: boolean }) => {
+    const [copied, setCopied] = useState(false);
+    return (
+        <div style={{ position: 'relative', display: 'block', lineHeight: 0 }}>
+            <img
+                src={src}
+                alt={alt}
+                className={className}
+                loading={priority ? 'eager' : 'lazy'}
+                fetchPriority={priority ? 'high' : 'low'}
+                decoding={priority ? 'sync' : 'async'}
+                style={{ display: 'block', width: '100%', ...style }}
+            />
+            {DEBUG_IMAGES && (
+                <div 
+                    onClick={() => {
+                        navigator.clipboard.writeText(label);
+                        setCopied(true);
+                        setTimeout(() => setCopied(false), 1000);
+                    }}
+                    style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', zIndex: 5, background: 'rgba(0,0,0,0.2)' }}
+                >
+                    <span style={{ background: 'rgba(0,0,0,0.85)', color: copied ? '#4ADE80' : '#FFD700', fontSize: '22px', fontWeight: 900, padding: '8px 18px', borderRadius: '10px', letterSpacing: '0.5px', textAlign: 'center', wordBreak: 'break-all', maxWidth: '90%', transition: 'color 0.2s' }}>
+                        {copied ? 'COPIED!' : label}
+                    </span>
+                </div>
+            )}
+        </div>
+    );
+};
 import { useSearchParams } from 'react-router-dom';
 import { supabase } from "./integrations/supabase/client";
 import {
@@ -117,9 +129,9 @@ import p_presence_presence_02_invisible_dunia_v2_1777550999292 from './assets/da
 import df_cleopatra_deleted_notes from './assets/darkfem/cleo/df_cleopatra_deleted_notes_1778144424565.webp';
 import df_cleopatra_imagine_if from './assets/darkfem/cleo/df_cleopatra_imagine_if_1778144214311.webp';
 import df_cleopatra_kings_list from './assets/darkfem/cleo/df_cleopatra_kings_list_1778143886051.webp';
-import df_cleopatra_ordinary_extraordinary from './assets/darkfem/cleo/df_cleopatra_ordinary_extraordinary_1778144499585.webp';
 import df_cleopatra_pelakor from './assets/darkfem/cleo/df_cleopatra_pelakor_1778143864099.webp';
 import df_cleopatra_protocol_5000 from './assets/darkfem/cleo/df_cleopatra_protocol_5000_v2_1778149279607.webp';
+import single_perhatian_cleopatra1 from './assets/darkfem/cleo/single_perhatian_cleopatra1.webp';
 // -- perubahan
 import p_perubahan_df_0424_ad14_istri_gantirambut from './assets/darkfem/parameter/perubahan/df_0424_ad14_istri_gantirambut.webp';
 import p_perubahan_perubahan_01_satu_shift_v2_1777551074543 from './assets/darkfem/parameter/perubahan/perubahan_01_satu_shift_v2_1777551074543.webp';
@@ -235,7 +247,7 @@ const assetsMap: any = {
         p_presence_presence_01_diam_membunuh_1777550881301,
         p_presence_presence_01_diam_membunuh_v2_1777550965342,
         p_presence_presence_02_invisible_dunia_v2_1777550999292,
-        df_cleopatra_deleted_notes, df_cleopatra_imagine_if, df_cleopatra_kings_list, df_cleopatra_ordinary_extraordinary, df_cleopatra_pelakor, df_cleopatra_protocol_5000,
+        df_cleopatra_deleted_notes, df_cleopatra_imagine_if, df_cleopatra_kings_list, df_cleopatra_pelakor, df_cleopatra_protocol_5000,
         p_perubahan_df_0424_ad14_istri_gantirambut,
         p_perubahan_perubahan_01_satu_shift_v2_1777551074543,
         p_perubahan_perubahan_02_frekuensi_salah_v2_1777551089169,
@@ -475,11 +487,6 @@ const contentData: any = {
                     desc: 'Julius Caesar, Marcus Antonius, Ptolemy, Herodes, Pompeius. Lima penguasa kelas dunia kehilangan logika mereka di hadapan satu wanita biasa. Bukan karena wajah, tapi karena dia menguasai sistem kharisma yang membuat siapapun merasa penting.'
                 },
                 {
-                    imgKey: 'df_cleopatra_ordinary_extraordinary',
-                    title: 'Kekuatan Tak Tertandingi Wanita "Biasa"',
-                    desc: 'Sejarawan menulis dia bukan yang tercantik di Mesir, tapi dia paling tidak bisa dilupakan. Dia tahu cara membuat dirinya menjadi satu-satunya yang ada di pikiran orang lain tanpa meminta, tanpa memaksa, tanpa berteriak minta diperhatikan.'
-                },
-                {
                     imgKey: 'df_cleopatra_imagine_if',
                     title: 'Suami Anda Memandang Anda Seperti Caesar',
                     desc: 'Bayangkan suami Anda pulang ke rumah—dan matanya langsung mencari Anda. Bukan karena gaun baru, tapi karena ada sesuatu dalam cara Anda hadir yang membuatnya terpesona dan memandang Anda layaknya sosok yang tidak tergantikan.'
@@ -606,6 +613,7 @@ const DarkFeminineTSX = () => {
     // === New Winning Ad Parameters (copy-only, images TBD) ===
 
     const hasPerubahan = searchParams.has('perubahan');         // General — winner-Satu_Perubahan
+    const hasPerhatian = searchParams.has('perhatian');         // General — stop meminta perhatian, cleopatra magnet
     const hasHighvalue = searchParams.has('highvalue');         // General — angle11
     const hasNongames = searchParams.has('nongames');           // Single — DF_Ghosted_Lagi
     const hasIstriFear = searchParams.has('istrifear');         // Istri — df_0424_ad04
@@ -1923,16 +1931,6 @@ const DarkFeminineTSX = () => {
                 body: `Setiap kali dia bilang "uangnya lagi diputar untuk bisnis," atau "masih banyak pengeluaran kantor," kamu percaya. Kamu potong budget skincare-mu, kamu tunda beli tas impianmu, kamu hitung setiap rupiah demi masa depan anak-anak.\n\nDi saat yang sama, wanita itu sedang tertawa sambil memilih furnitur untuk apartemen barunya. Pakai uang siapa? Uang suamimu.`
             },
             {
-                imgs: ['newIstri6'],
-                title: 'SENTUHANNYA HANYA KEWAJIBAN.',
-                body: `Pernahkah kamu merasa, saat dia memelukmu, dia tidak benar-benar "ada"?\n\nSentuhannya terasa mekanis. Kata-kata manisnya terdengar seperti naskah yang sudah dihafal. Di tempat tidur, dia ingin segalanya cepat selesai. Bukan karena dia capek kerja, tapi karena pikirannya sudah terbang ke wanita lain.`
-            },
-            {
-                imgs: ['newIstri8'],
-                title: 'ANAKMU SUDAH TAHU AYAHNYA KHIANAT.',
-                body: `Kamu pikir "bertahan demi anak" adalah tindakan mulia. Tapi sadarkah kamu bahwa anakmu sebenarnya sudah tahu?\n\nDi mata mereka, kamu tidak sedang berkorban. Kamu sedang mengajarkan mereka bagaimana caranya menjadi korban. Tunjukkan pada mereka bagaimana seorang Ratu bertindak.`
-            },
-            {
                 imgs: ['newIstri11'],
                 title: 'JANGAN JADI PILIHAN KEDUA DI RUMAHMU SENDIRI.',
                 body: `Kamu mengorbankan segalanya demi keluarga. Tapi dia mengorbankan keluarganya demi wanita lain.\n\nJangan hanya menunggu. Pahami psikologi daya tarik dan rebut kembali kendali yang selama ini hilang.`
@@ -1946,6 +1944,53 @@ const DarkFeminineTSX = () => {
         ],
     } : null;
 
+    // ?perhatian — Jangan Mengemis Perhatian (Cleopatra Magnet)
+    const perhatianContent = (hasPerhatian && segment !== 'istri') ? {
+        heroImage: single_perhatian_cleopatra1,
+        heroBadge: "👑 DarkFeminine - Cleopatra Magnet",
+        heroH1a: "Berhenti Mengemis Waktunya.",
+        heroH1b: "Jadilah Alasan Dia Tidak Bisa Pergi.",
+        heroSub: "Untuk kamu yang lelah jadi yang selalu menunggu balasan chat, yang selalu inisiatif mengajak jalan, dan yang selalu 'mengerti' kesibukannya. Cleopatra tidak pernah meminta perhatian. Dia memanipulasi ruang agar pria yang memberikannya dengan sukarela.",
+        painLabel: "FAKTA PAHIT TENTANG MEMINTA PERHATIAN",
+        painH2a: "Semakin Kamu Meminta,",
+        painH2b: "Semakin Dia Merasa 'Aman' Mengabaikanmu.",
+        stories: [
+            {
+                imgs: ['p_softlife_df_0413_ba_wife_s1_v2_1776175429720'],
+                title: 'Tragedi Wanita Yang "Terlalu Tersedia".',
+                body: `Kamu balas chatnya dalam hitungan detik. Kamu kosongkan jadwalmu demi dia. Kamu marah saat dia cuek, lalu memaafkannya saat dia memberi remah-remah perhatian.\n\nDan apa yang kamu dapat? Dia semakin sibuk. Semakin lama membalas. Semakin sering membatalkan janji.\n\nKarena di mata biologisnya, kamu sudah "aman". Otaknya tidak mendeteksi resiko kehilangan, jadi dia memindahkan fokusnya pada hal lain. Kamu bukan lagi prioritas, kamu hanya cadangan.`
+            },
+            {
+                imgs: ['p_softlife_df_0413_ba_wife_s2_v2_1776175446156'],
+                title: 'Mengemis Perhatian Adalah Pembunuh Ketertarikan.',
+                body: `Setiap kali kamu bertanya "Kenapa kamu berubah?", "Kamu masih sayang aku nggak?", atau protes karena dia asik main game—kamu tidak sedang memperbaiki hubungan.\n\nKamu sedang menghancurkan sisa-sisa daya tarikmu.\n\nLaki-laki didesain untuk mengejar. Ketika kamu yang terus mengejar, meminta, dan menuntut, kamu membunuh insting terkuatnya. Dia bukan tidak bisa memberi perhatian, dia hanya tidak merasa PERLU memberikannya padamu.`
+            },
+            {
+                imgs: ['p_softlife_Campaign_Test_df_0412_g2'],
+                title: 'Teknik Cleopatra: Magnet Yang Menarik Tanpa Bersuara.',
+                body: `Cleopatra tidak menangis saat Julius Caesar sibuk. Dia tidak spam chat menuntut kepastian.\n\nDia menguasai seni "Kehadiran yang Absen". Dia menciptakan ruang kosong yang memaksa pria untuk mengisinya.\n\nDengan protokol ini, kamu akan berhenti bertindak sebagai pengejar. Kamu akan membalik dinamika. Dalam 21 hari, dia yang akan mulai bertanya-tanya: "Kenapa kamu jadi dingin?", "Kamu lagi sibuk apa?", "Kok chatku nggak dibalas?".`
+            }
+        ],
+        pains: [
+            { icon: "📱", text: <>Menunggu berjam-jam untuk <strong>balasan chat</strong>, sementara kamu lihat dia online.</> },
+            { icon: "😢", text: <>Selalu kamu yang <strong>memulai percakapan</strong> dan merencanakan kencan.</> },
+            { icon: "🎭", text: <>Kamu protes dia cuek, dia minta maaf, <strong>tapi besoknya diulangi lagi</strong>.</> },
+            { icon: "🪞", text: <>Merasa <strong>kehilangan harga diri</strong> karena terus menerus mengemis perhatian dari orang yang sama.</> },
+            { icon: "⚖️", text: <>Kamu menjadikan dia pusat duniamu, sementara kamu hanya <strong>salah satu opsi</strong> di dunianya.</> },
+            { icon: "👑", text: <>Saatnya membalik keadaan: <strong>Biarkan dia yang mengejar, cemas, dan berjuang mendapatkanmu.</strong></> },
+        ],
+        wifeSection: {
+            ...c.wifeSection,
+            items: c.wifeSection.items.filter((item: any) => {
+                const imgStr = item.imgs.join(',');
+                return !imgStr.includes('singleC2S4') && 
+                       !imgStr.includes('singleC5S1') && 
+                       !imgStr.includes('newIstri6') && 
+                       !imgStr.includes('newIstri8');
+            })
+        }
+    } : null;
+
     // Merge: segment overrides on top of base content. Specific istri winners stack on top
     // of the istri segment base; general winners stack on top of default base.
     const sc: any = istriFearContent
@@ -1956,6 +2001,8 @@ const DarkFeminineTSX = () => {
         ? { ...c, ...segmentContent, ...istriVisibleContent }
         : segmentContent
         ? { ...c, ...segmentContent }
+        : perhatianContent
+        ? { ...c, ...perhatianContent }
         : perubahanContent
         ? { ...c, ...perubahanContent }
         : highvalueContent
@@ -2690,9 +2737,16 @@ const DarkFeminineTSX = () => {
                             </h1>
                             <p className="df-hero-sub">{sc.heroSub}</p>
                             {segment !== 'istri' && (
-                                <div className="df-img-box">
-                                    <DbgImg src={assets.df08} alt="Dark Feminine" label="df08" priority style={{ width: '100%', aspectRatio: '1/1', display: 'block', borderRadius: '18px', objectFit: 'cover' }} />
-                                </div>
+                                <>
+                                    <div className="df-img-box">
+                                        <DbgImg src={assets.df08} alt="Dark Feminine" label="df08" priority style={{ width: '100%', aspectRatio: '1/1', display: 'block', borderRadius: '18px', objectFit: 'cover' }} />
+                                    </div>
+                                    {sc.heroImage && (
+                                        <div className="df-img-box" style={{ marginTop: '32px' }}>
+                                            <DbgImg src={sc.heroImage} alt="Hero Content" label="single_perhatian_cleopatra1" style={{ width: '100%', borderRadius: '18px', objectFit: 'cover' }} />
+                                        </div>
+                                    )}
+                                </>
                             )}
                             <div className="df-trust-badges">
                                 <span>🔒 100% Privasi</span><span>⚡ Instan</span><span>📱 Akses Seumur Hidup</span>
@@ -2937,7 +2991,7 @@ const DarkFeminineTSX = () => {
                                     {sc.paramCleopatra.items.map((item: any, i: number) => (
                                         item.imgKey && assets[item.imgKey] && (
                                             <div key={i} style={{ background: 'var(--bg-card)', border: '1px solid rgba(201,153,26,0.3)', borderRadius: '18px', overflow: 'hidden' }}>
-                                                <img src={assets[item.imgKey]} alt={item.title} style={{ width: '100%', display: 'block' }} loading="lazy" />
+                                                <DbgImg src={assets[item.imgKey]} alt={item.title} label={item.imgKey} style={{ width: '100%', display: 'block' }} />
                                                 <div style={{ padding: '24px 20px' }}>
                                                     <h3 style={{ fontSize: '18px', fontWeight: 800, color: 'var(--cream)', marginBottom: '12px', lineHeight: 1.3 }}>
                                                         {item.title}
@@ -2991,11 +3045,11 @@ const DarkFeminineTSX = () => {
                         <div className="df-wrap df-fade-in">
                             <div className="df-section-label">{c.testiLabel}</div>
                             <h2 className="df-section-h2">{c.testiH2} <span className="df-gold">{c.testiH2Span}</span></h2>
-                            {lang === 'id' && segment === 'default' && c.wifeSection?.beforeAfterSingle && (
-                                <IstriCarousel story={c.wifeSection.beforeAfterSingle} assets={assets} />
+                            {lang === 'id' && segment === 'default' && sc.wifeSection?.beforeAfterSingle && (
+                                <IstriCarousel story={sc.wifeSection.beforeAfterSingle} assets={assets} />
                             )}
-                            {lang === 'id' && segment === 'default' && c.wifeSection?.beforeAfterIstri && (
-                                <IstriCarousel story={c.wifeSection.beforeAfterIstri} assets={assets} />
+                            {lang === 'id' && segment === 'default' && sc.wifeSection?.beforeAfterIstri && (
+                                <IstriCarousel story={sc.wifeSection.beforeAfterIstri} assets={assets} />
                             )}
                         </div>
                     </section>
@@ -3029,9 +3083,6 @@ const DarkFeminineTSX = () => {
                         <div className="df-wrap df-fade-in">
                             <div className="df-section-label">{c.priceLabel}</div>
                             <h2 className="df-section-h2">{c.priceH2} <span className="df-gold">{lang === 'id' ? 'Hari Ini' : (lang === 'ph' ? 'Ngayon' : 'Today')}</span></h2>
-                            <div className="df-img-box">
-                                <DbgImg src={assets.df08} alt="Pricing Visual" label="df08" style={{ width: '100%', aspectRatio: '1/1', display: 'block', borderRadius: '18px', objectFit: 'cover' }} />
-                            </div>
                             <div style={{ marginTop: '24px' }}>
                                 <p style={{ textAlign: 'center', fontSize: '15px', color: 'var(--muted)', marginTop: '10px' }}>{c.priceSub}</p>
                                 <div className="df-trust-badges">
