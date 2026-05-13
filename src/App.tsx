@@ -2153,7 +2153,7 @@ const DarkFeminineTSX = () => {
                                 <p style={{ fontSize: '13px', color: '#5E7491', fontStyle: 'italic', marginBottom: '20px', lineHeight: 1.4 }}>
                                     *Robot kami selalu cek per interval 10 menit, jadi maximal 10 menit setelah kk transfer paling lambat
                                 </p>
-                                <a href={`https://wa.me/62898004002?text=${encodeURIComponent(`Hai Kak renata saya sudah transfer ini Buktinya.. (upload bukti transfer anda) - Ref: ${paymentData.tripay_reference}`)}`} target="_blank" rel="noreferrer" style={{ textDecoration: 'none', display: 'block' }}>
+                                <a href={`https://wa.me/62895325633487?text=${encodeURIComponent(`Hai Kak renata saya sudah transfer ini Buktinya.. (upload bukti transfer anda) - Ref: ${paymentData.tripay_reference}`)}`} target="_blank" rel="noreferrer" style={{ textDecoration: 'none', display: 'block' }}>
                                     <button className="pay-btn-confirm">Konfirmasi via WhatsApp</button>
                                 </a>
                             </div>
@@ -3645,7 +3645,7 @@ const DarkFeminineTSX = () => {
 
                     {/* FLOATING WHATSAPP BUTTON — kirim URL asal + pertanyaan manfaat spesifik per persona */}
                     <a
-                        href={`https://wa.me/62898004002?text=${encodeURIComponent(
+                        href={`https://wa.me/62895325633487?text=${encodeURIComponent(
                             (segment === 'istri' && hasValue) ? `Halo kak, saya dari ${window.location.href}\n\nSaya istri yang udah lama struggle. Apa benefit paket Ultimate Rp399.000 untuk istri seperti saya? Workbook 30 hari-nya beneran bisa ngebalikin suami yang udah cuek?` :
                             segment === 'istri' ? `Halo kak, saya dari ${window.location.href}\n\nSaya seorang istri. Manfaat apa yang saya dapat dari ebook Dark Feminine ini? Bisa ngembaliin rasa peduli suami yang udah berasa kayak orang asing?` :
                             (hasSoftlife && hasValue) ? `Halo kak, saya dari ${window.location.href}\n\nSaya pengen jadi wanita Soft Life yang dimanjakan tanpa banyak gaya. Apa benefit paket Ultimate Rp399.000 untuk capai itu? Workbook 30 hari-nya ngajarin apa?` :
