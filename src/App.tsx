@@ -166,7 +166,7 @@ import p_nonggames_df_0424_ad09_single_selingkuhan from './assets/darkfem/parame
 import p_nonggames_df_0424_ad11_single_direktur_v2 from './assets/darkfem/parameter/nonggames/df_0424_ad11_single_direktur_v2.webp';
 import p_nonggames_nongames_01_ghosted_lagi_v2_1777551270430 from './assets/darkfem/parameter/nonggames/nongames_01_ghosted_lagi_v2_1777551270430.webp';
 import p_nonggames_nongames_02_predictable_v2_1777551327348 from './assets/darkfem/parameter/nonggames/nongames_02_predictable_v2_1777551327348.webp';
-import p_nonggames_ghosting_revenge from './assets/darkfem/parameter/nonggames/df_s05_ghosting_revenge_1778441902743.png';
+import p_nonggames_ghosting_revenge from './assets/darkfem/parameter/nonggames/df_s05_ghosting_revenge_1778441902743.webp';
 // -- visible
 import p_visible_df_0424_ad05_istri_sexmati from './assets/darkfem/parameter/visible/df_0424_ad05_istri_sexmati.webp';
 import p_visible_istrivisible_01_perabot_v3_1777554172954 from './assets/darkfem/parameter/visible/istrivisible_01_perabot_v3_1777554172954.webp';
@@ -1532,6 +1532,19 @@ const DarkFeminineTSX = () => {
         </div>
         Semua terjelaskan di sini. Dari cara mengubah frekuensi agar pria merasa kehilangan <em>sebelum</em> mereka pergi, hingga cara membuat mereka mengejar mati-matian. <strong>Giliran kamu yang memegang kendali.</strong>
         </>,
+        wifeSection: {
+            ...c.wifeSection,
+            items: c.wifeSection.items.filter((item: any) => {
+                const imgStr = item.imgs ? item.imgs.join(',') : (item.img || '');
+                return !imgStr.includes('singleC5S1') && 
+                       !imgStr.includes('newIstri9') && 
+                       !imgStr.includes('newIstri6') && 
+                       !imgStr.includes('newIstri8') &&
+                       !imgStr.includes('newIstri11') &&
+                       !imgStr.includes('df_cleopatra_imagine_if');
+            }),
+            beforeAfterIstri: null
+        }
     } : null;
 
     // ?istrifear — Persona "Cold Betrayal Realization" (df_0424_ad04, 8 sales) — Istri (Fear)
