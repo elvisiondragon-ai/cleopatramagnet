@@ -372,12 +372,12 @@ const contentData: any = {
                 body: `Dia cerita soal masalah hidupnya ke kamu sampai jam 1 pagi. Kamu dengarkan. Kamu support. Kamu kasih saran terbaik.\n\nDan keesokan harinya? Dia nembak cewek lain.\n\nKamu bingung. Marah. Tapi kamu tetap reply chat-nya. Karena kamu pikir — mungkin kalau kamu cukup sabar, cukup baik, cukup setia... akhirnya dia akan sadar.\n\nTapi itu tidak pernah terjadi. Karena kebaikan tanpa STRATEGI hanya akan membuat kamu jadi opsi, bukan prioritas.\n\nDan yang paling menyakitkan? Wanita yang dia pilih... BIASA SAJA. Tidak secantik kamu. Tidak sepintar kamu. Tapi dia menguasai sesuatu yang tidak pernah kamu pelajari.`
             },
             {
-                img: 'df04',
+                img: 'p_nonggames_df_0424_ad02_centangbiru_v2',
                 title: 'Kamu Lebih Cantik, Lebih Pintar. Tapi Dia Pilih Yang Lain.',
                 body: `Ini yang paling membingungkan: kamu objektif lebih menarik. Karir lebih bagus. Lebih berpendidikan. Teman-temanmu bingung kenapa kamu masih single.\n\nTapi pria yang kamu suka — selalu memilih wanita yang "biasa saja." Wanita yang tidak lebih cantik, tidak lebih pintar, tidak lebih sukses darimu.\n\nDan pertanyaannya menghantam seperti palu: "Apa yang dia punya yang aku tidak?"\n\nJawabannya bukan di wajah. Bukan di tubuh. Bukan di prestasi. Tapi di FREKUENSI yang dia pancarkan tanpa sadar — frekuensi yang membuat otak pria secara biologis terkunci padanya. Frekuensi yang membuatnya TIDAK BISA DITINGGALKAN.\n\nCleopatra membuktikan ini 2.000 tahun lalu. Dia bukan yang tercantik di Mesir. Tapi 5 raja berlutut. Karena kharisma > kecantikan.`
             },
             {
-                img: 'df04',
+                img: 'p_nonggames_nongames_01_ghosted_lagi_v2_1777551270430',
                 title: 'Polanya Selalu Sama. Orangnya Beda, Sakitnya Identik.',
                 body: `Minggu pertama: dia chat terus, perhatian penuh, kamu merasa "ini dia yang beda."\n\nMinggu kedua: masih intens, tapi mulai ada jeda yang lebih lama antara balasan.\n\nMinggu ketiga: dia mulai "sibuk." Meeting. Lembur. Acara keluarga. Selalu ada alasan.\n\nMinggu keempat: ghosting. Tanpa penjelasan. Tanpa goodbye. Hilang seperti kamu tidak pernah ada.\n\nDan 3 bulan kemudian — pola itu terulang. Dengan orang berbeda. Tapi alurnya identik. Copy-paste.\n\nIni bukan nasib buruk. Ini bukan "belum ketemu jodoh." Ini adalah FREKUENSI yang kamu pancarkan tanpa sadar — frekuensi yang membuat otaknya mengkategorikanmu sebagai "aman" dan "pasti." Dan otak pria secara biologis BERHENTI mengejar yang sudah pasti.\n\nKabar baiknya? Frekuensi itu bisa diubah. Dalam 14 hari.`
             },
