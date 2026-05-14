@@ -166,6 +166,7 @@ import p_nonggames_df_0424_ad09_single_selingkuhan from './assets/darkfem/parame
 import p_nonggames_df_0424_ad11_single_direktur_v2 from './assets/darkfem/parameter/nonggames/df_0424_ad11_single_direktur_v2.webp';
 import p_nonggames_nongames_01_ghosted_lagi_v2_1777551270430 from './assets/darkfem/parameter/nonggames/nongames_01_ghosted_lagi_v2_1777551270430.webp';
 import p_nonggames_nongames_02_predictable_v2_1777551327348 from './assets/darkfem/parameter/nonggames/nongames_02_predictable_v2_1777551327348.webp';
+import p_nonggames_ghosting_revenge from './assets/darkfem/parameter/nonggames/df_s05_ghosting_revenge_1778441902743.png';
 // -- visible
 import p_visible_df_0424_ad05_istri_sexmati from './assets/darkfem/parameter/visible/df_0424_ad05_istri_sexmati.webp';
 import p_visible_istrivisible_01_perabot_v3_1777554172954 from './assets/darkfem/parameter/visible/istrivisible_01_perabot_v3_1777554172954.webp';
@@ -277,6 +278,7 @@ const assetsMap: any = {
         p_nonggames_df_0424_ad11_single_direktur_v2,
         p_nonggames_nongames_01_ghosted_lagi_v2_1777551270430,
         p_nonggames_nongames_02_predictable_v2_1777551327348,
+        p_nonggames_ghosting_revenge,
         p_visible_df_0424_ad05_istri_sexmati,
         p_visible_istrivisible_01_perabot_v3_1777554172954,
         p_visible_istrivisible_02_potong_rambut_v3_1777554256681
@@ -1519,6 +1521,17 @@ const DarkFeminineTSX = () => {
         agitH2a: "Kenapa Kamu Terus-Menerus",
         agitH2b: "Menjadi Korban Ghosting?",
         agitText: <>Kamu diajarkan untuk selalu "available", membalas chat dengan cepat, dan jujur menunjukkan rasa suka. <strong>TAPI APA HASILNYA?</strong><br /><br />Otak pria secara biologis kehilangan rasa penasaran saat seorang wanita terlalu mudah ditebak dan terlalu "aman". Saat kamu selalu ada kapanpun dia butuh, secara perlahan dia mulai melihatmu sebagai <strong>opsi pasti</strong>, bukan sesuatu yang berharga untuk diperjuangkan.<br /><br />Pria meng-ghosting bukan karena kamu kurang cantik atau kurang baik. Mereka pergi karena tidak ada <strong>tarikan misteri</strong> yang memaksa otaknya untuk tetap mengejar.<br /><br />Pernah dengar cerita tentang wanita yang di-ghosting, lalu tiba-tiba pria itu kembali mencarinya dan memohon-mohon beberapa bulan kemudian? Itu bukan kebetulan. Itu adalah saat wanita tersebut mengubah frekuensinya menjadi <strong>frekuensi Cleopatra</strong>.<br /><br />Saatnya berhenti menjadi korban dan mulai <strong>memegang kendali penuh</strong>. Setelah mempraktikkan ilmu ini, bukan kamu yang akan menunggu chatnya... tapi <strong>dia yang akan gelisah menunggu balasanmu.</strong></>,
+        solText: <>Ini <strong>bukan</strong> ebook yang menyuruhmu bersabar, memaafkan, atau "mencintai diri sendiri" sambil menangis di kamar.<br /><br />Ini adalah <strong>riset mendalam tentang Cleopatra</strong> — bagaimana seorang wanita yang biasa saja mampu membuat 5 raja terkuat bertekuk lutut. Dan bagaimana ilmu yang sama bisa dipakai untuk membalikkan keadaan pada pria yang berani membuangmu.<br /><br />
+        <div style={{background:'rgba(139,92,246,0.08)',border:'1px solid rgba(139,92,246,0.25)',borderRadius:'16px',padding:'20px 18px',marginTop:'24px', marginBottom: '24px'}}>
+            <div style={{fontSize:'13px',fontWeight:700,letterSpacing:'0.12em',textTransform:'uppercase',color:'var(--purple-light)',marginBottom:'12px'}}>Studi Kasus: Andini (26 Tahun)</div>
+            <img src={assets.p_nonggames_ghosting_revenge} alt="Review Andini" style={{width: '100%', borderRadius: '12px', marginBottom: '16px', border: '1px solid rgba(255,255,255,0.1)'}} />
+            <p style={{marginBottom:'12px', fontStyle: 'italic', color: '#EEE5C8'}}>“Saya masih ingat rasanya. Seminggu full dia ilang. Padahal sebelumnya telponan tiap malam. Dada saya sesak. Bolak-balik cek HP kayak orang gila. Saya ngerasa saya jelek banget, gak berharga.”</p>
+            <p style={{marginBottom:'12px'}}>Andini menemukan buku ini dalam keadaan hancur. Dia mempraktikkan <strong>Jurus 14: The Art of Invisible Withdrawal</strong> dan <strong>Jurus 22: The Frequency of a Prize</strong>.</p>
+            <p style={{marginBottom:'12px'}}>Bulan pertama: Dia menahan diri. Mengubah cara merespon di sosmed. Mengubah <em>vibe</em> yang dia pancarkan.<br/>Bulan kedua: Cowok yang ghosting dia tiba-tiba reply story-nya dengan emot api. Andini cuma read.<br/>Minggu depannya cowok itu nelfon 3 kali sehari, ngemis minta ketemu.</p>
+            <p style={{marginBottom:'0'}}><strong>“Rasanya gila banget,”</strong> kata Andini. <strong>“Cowok yang kemaren bikin saya nangis darah, sekarang dia yang anxiety nunggu balasan saya. Dan jujur? Sekarang saya yang gak tertarik, karena ada 2 cowok lain yang jauh lebih mapan yang lagi ngejar saya.”</strong></p>
+        </div>
+        Semua terjelaskan di sini. Dari cara mengubah frekuensi agar pria merasa kehilangan <em>sebelum</em> mereka pergi, hingga cara membuat mereka mengejar mati-matian. <strong>Giliran kamu yang memegang kendali.</strong>
+        </>,
     } : null;
 
     // ?istrifear — Persona "Cold Betrayal Realization" (df_0424_ad04, 8 sales) — Istri (Fear)
