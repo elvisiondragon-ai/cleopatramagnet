@@ -616,6 +616,7 @@ const DarkFeminineTSX = () => {
     const hasPerhatian = searchParams.has('perhatian');         // General — stop meminta perhatian, cleopatra magnet
     const hasHighvalue = searchParams.has('highvalue');         // General — angle11
     const hasNongames = searchParams.has('nongames');           // Single — DF_Ghosted_Lagi
+    const hasGhosting = searchParams.has('ghosting');           // Single — Ghosting Victim
     const hasIstriFear = searchParams.has('istrifear');         // Istri — df_0424_ad04
     const hasIstriLegacy = searchParams.has('istrilegacy');     // Istri — istritest10
     const hasIstriVisible = searchParams.has('istrivisible');   // Istri — df_0412_i4
@@ -1498,6 +1499,28 @@ const DarkFeminineTSX = () => {
         },
     } : null;
 
+    // ?ghosting — Persona Ghosted
+    const ghostingContent = hasGhosting ? {
+        heroBadge: "👑 DarkFeminine - Reversing The Chase",
+        heroH1a: "Di-Ghosting Tanpa Penjelasan?",
+        heroH1b: "Buat Dia Mengemis Perhatianmu.",
+        heroSub: "Untuk kamu yang ditinggalkan begitu saja saat sedang sayang-sayangnya. Jangan mengemis. Jangan spam chat. Balikkan keadaan dengan ilmu ini, dan lihat pria yang membuangmu tiba-tiba memohon untuk kembali.",
+        painLabel: "RASA SAKIT YANG MEMBINGUNGKAN",
+        painH2a: "Kemarin Masih Bilang Sayang.",
+        painH2b: "Hari Ini Hilang Tanpa Jejak.",
+        pains: [
+            { icon: "👻", text: <>Dia tiba-tiba <strong>menghilang</strong> tanpa alasan, padahal kemarin masih sangat intens.</> },
+            { icon: "📱", text: <>Chat cuma di-read, padahal dia <strong>aktif online</strong> dan posting story.</> },
+            { icon: "❓", text: <>Otakmu tersiksa dengan pertanyaan: <strong>"Apa salahku? Apa aku kurang cantik?"</strong></> },
+            { icon: "🛑", text: <>Kamu menahan diri untuk tidak chat duluan, tapi <strong>hancur perlahan dari dalam.</strong></> },
+            { icon: "🤡", text: <>Merasa bodoh karena sudah <strong>membuka hati</strong> dan percaya pada janji manisnya.</> },
+            { icon: "🔄", text: <>Pola berulang: Pria datang, memberi harapan, lalu <strong>pergi saat kamu mulai sayang.</strong></> },
+        ],
+        agitH2a: "Kenapa Kamu Terus-Menerus",
+        agitH2b: "Menjadi Korban Ghosting?",
+        agitText: <>Kamu diajarkan untuk selalu "available", membalas chat dengan cepat, dan jujur menunjukkan rasa suka. <strong>TAPI APA HASILNYA?</strong><br /><br />Otak pria secara biologis kehilangan rasa penasaran saat seorang wanita terlalu mudah ditebak dan terlalu "aman". Saat kamu selalu ada kapanpun dia butuh, secara perlahan dia mulai melihatmu sebagai <strong>opsi pasti</strong>, bukan sesuatu yang berharga untuk diperjuangkan.<br /><br />Pria meng-ghosting bukan karena kamu kurang cantik atau kurang baik. Mereka pergi karena tidak ada <strong>tarikan misteri</strong> yang memaksa otaknya untuk tetap mengejar.<br /><br />Pernah dengar cerita tentang wanita yang di-ghosting, lalu tiba-tiba pria itu kembali mencarinya dan memohon-mohon beberapa bulan kemudian? Itu bukan kebetulan. Itu adalah saat wanita tersebut mengubah frekuensinya menjadi <strong>frekuensi Cleopatra</strong>.<br /><br />Saatnya berhenti menjadi korban dan mulai <strong>memegang kendali penuh</strong>. Setelah mempraktikkan ilmu ini, bukan kamu yang akan menunggu chatnya... tapi <strong>dia yang akan gelisah menunggu balasanmu.</strong></>,
+    } : null;
+
     // ?istrifear — Persona "Cold Betrayal Realization" (df_0424_ad04, 8 sales) — Istri (Fear)
     // Tema: Realita pahit perselingkuhan. Rasa takut digantikan oleh wanita yang lebih muda
     // atau bahkan biasa saja. Mengambil kendali sebelum terlambat.
@@ -2011,6 +2034,8 @@ const DarkFeminineTSX = () => {
         ? { ...c, ...nongamesContent }
         : softlifeContent
         ? { ...c, ...softlifeContent }
+        : ghostingContent
+        ? { ...c, ...ghostingContent }
         : { ...c, ...presenceObject };
 
     const [countdown, setCountdown] = useState("00:00:00");
