@@ -126,6 +126,8 @@ import p_presence_presence_01_diam_membunuh_1777550881301 from './assets/darkfem
 import p_presence_presence_01_diam_membunuh_v2_1777550965342 from './assets/darkfem/parameter/presence/presence_01_diam_membunuh_v2_1777550965342.webp';
 import p_presence_presence_02_invisible_dunia_v2_1777550999292 from './assets/darkfem/parameter/presence/presence_02_invisible_dunia_v2_1777550999292.webp';
 // -- cleopatra
+import p_presence_softlife_v2 from './assets/darkfem/parameter/presence/df7_softlife_v2_1778043092102.webp';
+import p_presence_cleopatra_secret from './assets/darkfem/parameter/presence/df7_cleopatra_secret_1778043057002.webp';
 import df_cleopatra_deleted_notes from './assets/darkfem/cleo/df_cleopatra_deleted_notes_1778144424565.webp';
 import df_cleopatra_imagine_if from './assets/darkfem/cleo/df_cleopatra_imagine_if_1778144214311.webp';
 import df_cleopatra_kings_list from './assets/darkfem/cleo/df_cleopatra_kings_list_1778143886051.webp';
@@ -248,6 +250,7 @@ const assetsMap: any = {
         p_presence_presence_01_diam_membunuh_1777550881301,
         p_presence_presence_01_diam_membunuh_v2_1777550965342,
         p_presence_presence_02_invisible_dunia_v2_1777550999292,
+        p_presence_softlife_v2, p_presence_cleopatra_secret,
         df_cleopatra_deleted_notes, df_cleopatra_imagine_if, df_cleopatra_kings_list, df_cleopatra_pelakor, df_cleopatra_protocol_5000,
         p_perubahan_df_0424_ad14_istri_gantirambut,
         p_perubahan_perubahan_01_satu_shift_v2_1777551074543,
@@ -287,8 +290,17 @@ const assetsMap: any = {
 
 const contentData: any = {
     id: {
-        agitText: <>Lo diajarin dari kecil: jadi anak baik, jangan menggoda, tunggu dijemput bola. <strong>DAN APA HASILNYA?</strong><br /><br />Lo balas chat dalam 5 detik. Dia balas chat lo dalam 5 JAM — kalau balas. Lo selalu ada saat dia butuh. Tapi saat lo butuh? <strong>"Sorry, lagi sibuk."</strong><br /><br /><ul className="agitation-list"><li>Kenapa yang terlalu baik SELALU ditinggalkan? Karena Cleopatra tidak demikian — dia mampu setia, tapi dengan <strong>kendali penuh.</strong></li><li>Kenapa yang sabar justru diinjak? Karena Cleopatra tahu: kesabaran tanpa <strong>posisi tawar</strong> adalah kelemahan.</li><li>Kenapa yang pengertian dijadikan opsi? Karena Cleopatra paham: pengertian harus DIBERIKAN, bukan <strong>dijadikan default.</strong></li></ul><br />Tapi cewek yang "biasa aja"? Dapat <span className="highlight">SEGALANYA</span>. Dapat pria yang rela meninggalkan segalanya demi dia.<br /><br />Pernah lihat suami yang sukses, ganteng, dan <strong>sangat setia pada istrinya</strong> — meski istrinya tidak sangat cantik? Pernah bertanya kenapa? <strong>Itulah frekuensi Cleopatra yang sedang bekerja.</strong><br /><br />Dan setiap minggu yang berlalu tanpa kamu menguasai frekuensi ini — adalah seminggu lagi wanita lain mendapatkan apa yang seharusnya <strong>milikmu</strong>. Pria tidak menunggu. Kesempatan tidak menunggu. <strong>Dan satu tahun dari sekarang, kamu akan duduk di tempat yang sama, scrolling feed yang sama, menangisi orang yang sama.</strong><br /><br />Kecuali kamu memutuskan HARI INI adalah hari terakhir kamu hidup tanpa ILMU ini.</>,
-        solText: <>Ini <strong>bukan</strong> ebook psikologi biasa. Ini bukan tips kencan dari TikTok atau motivasi pagi yang kamu lupakan besoknya.<br /><br />Ini adalah <strong>riset mendalam tentang Cleopatra</strong> — bagaimana seorang wanita "biasa saja" secara fisik mampu menaklukkan 5 raja paling berkuasa di dunia: Julius Caesar, Marcus Antonius, Ptolemy, Herodes, dan Pompeius. <strong>Lima penguasa dunia. Satu wanita.</strong><br /><br />Dan ternyata — sistem kharisma Cleopatra ini secara tidak langsung sudah digunakan oleh para wanita yang mampu menaklukkan para VVIP man sepanjang sejarah.<br /><br /><div style={{background:'rgba(139,92,246,0.08)',border:'1px solid rgba(139,92,246,0.25)',borderRadius:'16px',padding:'20px 18px',marginTop:'8px'}}><div style={{fontSize:'13px',fontWeight:700,letterSpacing:'0.12em',textTransform:'uppercase',color:'var(--purple-light)',marginBottom:'12px'}}>Pernahkah Kamu Memperhatikan Ini?</div><p style={{marginBottom:'12px'}}>Pernah lihat suami yang <strong>sukses, ganteng, dan sangat setia pada istrinya</strong> — padahal istrinya tidak sangat cantik? Pernah bertanya-tanya mengapa pria seperti itu begitu tunduk dan tidak pernah tergoda?</p><p style={{marginBottom:'12px'}}><strong>Itulah isi ebook ini.</strong> Cleopatra Magnet selama ini — tanpa disadari — digunakan oleh mereka: <strong>istri-istri pemenang</strong>. Wanita yang pria-nya tidak berani melirik wanita lain. Bukan karena ancaman. Tapi karena frekuensi istrinya membuat wanita lain terasa <em>tidak relevan.</em></p><p style={{marginBottom:'0'}}>Semua terjelaskan di sini. Dari cara Cleopatra masuk ruangan, cara dia diam, cara dia membuat pria tidak bisa berhenti memikirkannya — diterjemahkan ke <strong>52 jurus praktis</strong> yang bisa kamu terapkan mulai hari ini. <strong>Giliran kamu membuktikannya.</strong></p></div></>,
+        agitText: <>Kamu diajari bahwa untuk dicintai, kamu harus berkorban, harus selalu ada, dan harus "menunjukkan" ketertarikanmu. <strong>ITU ADALAH KEBOHONGAN TERBESAR.</strong><br /><br />Ketika kamu terlalu mudah ditebak, selalu tersedia, dan terlalu eager, otak pria memprosesmu sebagai "barang murah" yang tidak perlu diperjuangkan. Mereka tidak tertantang. Tidak ada misteri. <strong>Tidak ada Magnetic Presence.</strong><br /><br />Wanita dengan Magnetic Presence tidak pernah mencari validasi. Saat dia diam, ketenangannya membunuh ego pria. Saat dia memandang, pria merasa dihakimi sekaligus terpesona. Dia tidak mengejar—dia menarik.<br /><br />Dan kabar buruknya: selama kamu masih memancarkan energi "butuh perhatian", kamu akan terus menarik pria yang hanya ingin mempermainkanmu, atau lebih parah... <strong>diabaikan sepenuhnya.</strong></>,
+        solText: <>Ini bukan sekadar tips "cara balas chat" dari TikTok. Ini adalah <strong>sistem psikologi kelas atas</strong> yang disembunyikan oleh wanita-wanita elit yang selalu mendapatkan apapun yang mereka inginkan.<br /><br />Dengan mempraktekkan Magnetic Presence, kamu akan mengubah frekuensi internalmu. Kamu akan memancarkan energi yang membuat pria secara biologis <strong>terobsesi</strong> untuk memenangkan perhatianmu.<br /><br />
+        <div style={{background:'rgba(139,92,246,0.08)',border:'1px solid rgba(139,92,246,0.25)',borderRadius:'16px',padding:'20px 18px',marginTop:'24px', marginBottom: '24px'}}>
+            <div style={{fontSize:'13px',fontWeight:700,letterSpacing:'0.12em',textTransform:'uppercase',color:'var(--purple-light)',marginBottom:'12px'}}>HASIL AKHIR MAGNETIC PRESENCE</div>
+            <img src={p_presence_cleopatra_secret} alt="Cleopatra Secret" style={{width: '100%', borderRadius: '12px', marginBottom: '16px', border: '1px solid rgba(255,255,255,0.1)'}} />
+            <img src={p_presence_softlife_v2} alt="Softlife Result" style={{width: '100%', borderRadius: '12px', marginBottom: '16px', border: '1px solid rgba(255,255,255,0.1)'}} />
+            <p style={{marginBottom:'12px'}}>Pria yang tadinya cuek akan berbalik memohon waktumu. Pria mapan di ruangan akan langsung menoleh saat kamu masuk.</p>
+            <p style={{marginBottom:'0'}}>Mereka tidak akan mengerti kenapa. Yang mereka tahu hanyalah: <strong>"Aku harus mendapatkan wanita ini, atau aku akan kehilangannya selamanya."</strong></p>
+        </div>
+        Berhenti menjadi pengemis perhatian. Mulailah menjadi <strong>Piala yang Diperebutkan</strong>.
+        </>,
         checks: [
             <>Seni <strong>MISTERI</strong> — bagaimana jadi wanita yang tidak bisa ditebak</>,
             <><strong>PUSH-PULL</strong> Dynamics — menarik dan mendorong bersamaan</>,
@@ -343,8 +355,7 @@ const contentData: any = {
             title: "Winning Techniques",
             sub: "Strategi Psikologi yang Telah Membantu Ribuan Wanita Mengubah Takdir Cintanya",
             images: [
-                "winnerSatuPerubahan",
-                "winnerCrAd"
+                "winnerSatuPerubahan"
             ]
         },
         faqs: [
@@ -356,33 +367,29 @@ const contentData: any = {
             { q: "Apakah berlaku untuk yang berjilbab / religius?", a: "Ya. Dark Feminine bukan soal pakaian atau penampilan fisik. Ini tentang AURA, MISTERI, dan CARA BERPIKIR. Banyak pembaca kami yang berjilbab." },
         ],
         pains: [
-            { icon: "⏱️", text: <>Kamu balas chatnya dalam 5 detik. Dia balas chatmu dalam <strong>5 JAM</strong> — kalau balas.</> },
-            { icon: "💔", text: <>Dia cerita masalah hidupnya ke kamu sampai jam 1 pagi. <strong>Besoknya dia nembak cewek lain.</strong></> },
-            { icon: "😤", text: <>Wanita yang "biasa aja" dapat pria mapan. Kamu yang lebih cantik dan pintar <strong>dapat ghosting.</strong></> },
-            { icon: "🍽️", text: <>Kamu booking restoran, beli baju baru, pakai parfum terbaik — dia cancel 2 jam sebelumnya: <strong>"Capek, rain check ya."</strong></> },
-            { icon: "🔄", text: <>Polanya selalu sama: 3 minggu intens, lalu menghilang. <strong>Orangnya beda, sakitnya sama.</strong></> },
-            { icon: "😶", text: <>Teman-temanmu bilang kamu "terlalu baik untuk cowok manapun." Terjemahan: kamu <strong>MEMBOSANKAN.</strong></> },
-            { icon: "📵", text: <>Dia punya waktu 2 jam scroll sosmed, tapi giliran kamu ajak ngobrol? <strong>"Nanti ya."</strong></> },
-            { icon: "🛏️", text: <>Tidur di samping seseorang tapi merasa <strong>lebih sendirian</strong> dari sebelumnya. Sentuhannya terasa mekanis.</> },
-            { icon: "👁️", text: <>Dia like foto wanita lain di IG. Chat dari istrinya sendiri <strong>cuma di-read.</strong></> },
-            { icon: "⏳", text: <>Setiap minggu yang berlalu tanpa kamu berubah — adalah seminggu lagi <strong>wanita lain mendapatkan apa yang seharusnya milikmu.</strong></> },
+            { icon: "👁️", text: <>Kamu dandan habis-habisan, tapi pria yang kamu taksir justru fokus pada wanita yang <strong>tampil biasa saja tapi punya "aura"</strong>.</> },
+            { icon: "🔇", text: <>Di chat kamu seru, tapi saat ketemu langsung <strong>suasana jadi garing</strong> dan dia cepat bosan.</> },
+            { icon: "🪞", text: <>Kamu merasa sudah melakukan segalanya dengan benar, tapi tetap jadi <strong>pilihan kedua</strong> atau dicampakkan.</> },
+            { icon: "🏃‍♀️", text: <>Selalu kamu yang inisiatif ngajak jalan, balas chat detik itu juga, dan <strong>terlihat terlalu "available"</strong>.</> },
+            { icon: "🌑", text: <>Lelah melihat wanita yang kurang menarik darimu mendapatkan <strong>pria mapan dan perlakuan ratu</strong>.</> },
+            { icon: "👑", text: <>Saatnya berhenti mengemis perhatian. Mulai <strong>mengendalikan ruangan tanpa bersuara</strong>.</> },
         ],
         stories: [
             {
-                img: 'df04',
-                title: 'Selalu Jadi Pelabuhan. Tidak Pernah Jadi Tujuan.',
-                body: `Dia cerita soal masalah hidupnya ke kamu sampai jam 1 pagi. Kamu dengarkan. Kamu support. Kamu kasih saran terbaik.\n\nDan keesokan harinya? Dia nembak cewek lain.\n\nKamu bingung. Marah. Tapi kamu tetap reply chat-nya. Karena kamu pikir — mungkin kalau kamu cukup sabar, cukup baik, cukup setia... akhirnya dia akan sadar.\n\nTapi itu tidak pernah terjadi. Karena kebaikan tanpa STRATEGI hanya akan membuat kamu jadi opsi, bukan prioritas.\n\nDan yang paling menyakitkan? Wanita yang dia pilih... BIASA SAJA. Tidak secantik kamu. Tidak sepintar kamu. Tapi dia menguasai sesuatu yang tidak pernah kamu pelajari.`
+                img: 'p_presence_presence_01_diam_membunuh_1777550881301',
+                title: 'Dia Diam. Tapi Setiap Pria Di Ruangan Itu Sadar Dia Ada.',
+                body: `Pernah lihat wanita seperti itu? Dia masuk ke kafe, ke kantor, ke ruang meeting — dan tanpa bicara, atmosfer ruangan berubah.\n\nDia tidak teriak. Tidak posting OOTD setiap hari. Tidak nge-flex apapun. Tapi setiap pria diam-diam mencuri pandang. Setiap wanita diam-diam menelaah caranya berdiri, caranya duduk, caranya melihat.\n\nDan kamu? Kamu sudah menyiapkan outfit terbaik, makeup paling rapi, caption paling clever — tapi tetap merasa transparan. Seperti tidak ada yang benar-benar melihatmu.\n\nMasalahnya bukan penampilanmu. Masalahnya frekuensi yang kamu pancarkan.`
             },
             {
-                img: 'p_nonggames_df_0424_ad02_centangbiru_v2',
-                title: 'Kamu Lebih Cantik, Lebih Pintar. Tapi Dia Pilih Yang Lain.',
-                body: `Ini yang paling membingungkan: kamu objektif lebih menarik. Karir lebih bagus. Lebih berpendidikan. Teman-temanmu bingung kenapa kamu masih single.\n\nTapi pria yang kamu suka — selalu memilih wanita yang "biasa saja." Wanita yang tidak lebih cantik, tidak lebih pintar, tidak lebih sukses darimu.\n\nDan pertanyaannya menghantam seperti palu: "Apa yang dia punya yang aku tidak?"\n\nJawabannya bukan di wajah. Bukan di tubuh. Bukan di prestasi. Tapi di FREKUENSI yang dia pancarkan tanpa sadar — frekuensi yang membuat otak pria secara biologis terkunci padanya. Frekuensi yang membuatnya TIDAK BISA DITINGGALKAN.\n\nCleopatra membuktikan ini 2.000 tahun lalu. Dia bukan yang tercantik di Mesir. Tapi 5 raja berlutut. Karena kharisma > kecantikan.`
+                img: 'p_presence_Campaign_Test_df_0412_g5',
+                title: 'Berhenti Mengejar. Mulai Menjadi Yang Dikejar.',
+                body: `Berapa banyak energi yang sudah kamu buang untuk "berusaha menarik perhatian"?\n\nReply chat dalam hitungan detik. Selalu jadi yang inisiatif. Selalu jadi yang bilang "kapan kita ketemu lagi?" duluan. Selalu jadi yang menyesuaikan jadwal.\n\nDan hasilnya? Mereka anggap kamu "selalu available" — alias mudah. Otak pria didesain untuk MENGEJAR. Yang terlalu mudah didapat, kehilangan nilainya secara biologis.\n\nMagnetic presence adalah kebalikannya. Kamu bukan menjadi sulit dijangkau — kamu menjadi seseorang yang nilainya terasa setiap dia mendekatimu.`
             },
             {
-                img: 'p_nonggames_nongames_01_ghosted_lagi_v2_1777551270430',
-                title: 'Polanya Selalu Sama. Orangnya Beda, Sakitnya Identik.',
-                body: `Minggu pertama: dia chat terus, perhatian penuh, kamu merasa "ini dia yang beda."\n\nMinggu kedua: masih intens, tapi mulai ada jeda yang lebih lama antara balasan.\n\nMinggu ketiga: dia mulai "sibuk." Meeting. Lembur. Acara keluarga. Selalu ada alasan.\n\nMinggu keempat: ghosting. Tanpa penjelasan. Tanpa goodbye. Hilang seperti kamu tidak pernah ada.\n\nDan 3 bulan kemudian — pola itu terulang. Dengan orang berbeda. Tapi alurnya identik. Copy-paste.\n\nIni bukan nasib buruk. Ini bukan "belum ketemu jodoh." Ini adalah FREKUENSI yang kamu pancarkan tanpa sadar — frekuensi yang membuat otaknya mengkategorikanmu sebagai "aman" dan "pasti." Dan otak pria secara biologis BERHENTI mengejar yang sudah pasti.\n\nKabar baiknya? Frekuensi itu bisa diubah. Dalam 14 hari.`
-            },
+                img: 'p_presence_df_0424_ad07_single_sahabat',
+                title: 'Aura Bukan Tentang Kecantikan. Tapi Tentang Sertifikasi Internal.',
+                body: `Wanita dengan aura magnetic tidak selalu yang paling cantik. Kadang kulitnya biasa. Kadang badannya tidak ideal. Kadang umurnya sudah 35+.\n\nTapi cara dia memegang gelas, cara dia tertawa, cara dia mendengarkan — semuanya seperti membawa pesan: "Aku tahu siapa diriku, dan aku tidak butuh persetujuan siapapun."\n\nItulah yang otak pria deteksi dalam 3 detik pertama. Sebelum percakapan. Sebelum kamu sempat menjelaskan apa-apa.\n\nDan itu yang akan kamu pelajari. Bukan "tips PDe murahan" — tapi protokol membangun frekuensi internal yang tidak bisa dipalsukan.`
+            }
         ],
         wifeSection: {
             label: "Dan Jikapun anda memiliki Pasangan",
@@ -432,17 +439,17 @@ const contentData: any = {
         },
         urgency: (t: React.ReactNode) => <>⚡ HARGA SPESIAL — Berakhir dalam {t} ⚡</>,
         heroBadge: "👑 DarkFeminine - Cleopatra Magnet",
-        heroH1a: "Kamu Sudah Melakukan Segalanya Dengan Benar.",
-        heroH1b: "Tapi Tetap Tidak Dipilih.",
-        heroSub: "Untuk wanita yang lelah jadi 'teman terbaik'. Yang selalu balas chat paling cepat, selalu ada saat dibutuhkan — tapi tidak pernah menjadi PILIHAN. Dan untuk istri yang tidur di samping seseorang tapi merasa sendirian. Bukan karena kamu kurang cantik. Tapi karena ada satu ILMU yang tidak pernah diajarkan ibu, guru, atau siapapun.",
+        heroH1a: "Dia Tidak Bicara.",
+        heroH1b: "Tapi Seluruh Ruangan Memperhatikannya.",
+        heroSub: "Untuk wanita yang lelah mengejar perhatian. Yang capek menjadi 'pilihan kedua' di setiap ruangan. Ada wanita yang masuk tanpa berkata apa-apa — dan semua mata otomatis menoleh. Auranya bicara duluan. Itu bukan keberuntungan. Itu protokol.",
         heroCta: "DAPATKAN 52 JURUS SEKARANG →",
         socialProof: "sudah membuktikan",
         socialProofNum: "4.200+ wanita",
-        painLabel: "KENYATAAN YANG TIDAK BERANI KAMU AKUI",
-        painH2a: "Kamu Sudah Tahu Ini Semua.",
-        painH2b: "Hanya Belum Berani Mengakuinya.",
-        agitH2a: 'Kenapa Yang "Biasa Saja"',
-        agitH2b: "Malah Dapat Segalanya?",
+        painLabel: "RASA SAKIT MENJADI INVISIBLE",
+        painH2a: "Semakin Kamu Berusaha Menarik Perhatian,",
+        painH2b: "Semakin Cepat Mereka Melupakanmu.",
+        agitH2a: "Kenapa Usahamu Selalu",
+        agitH2b: "Berakhir Dengan Penolakan?",
         solLabel: "JAWABANNYA",
         solH2a: "Dark Feminine",
         solH2b: "52 Jurus Rahasia",
