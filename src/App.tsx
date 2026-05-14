@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 
-const DEBUG_IMAGES = true;
+const DEBUG_IMAGES = import.meta.env.DEV;
 const DbgImg = ({ src, alt, className, style, label, priority }: { src: string; alt?: string; className?: string; style?: React.CSSProperties; label: string; priority?: boolean }) => {
     const [copied, setCopied] = useState(false);
     return (
