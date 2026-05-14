@@ -1112,41 +1112,34 @@ const DarkFeminineTSX = () => {
         heroH1a: "Dia Tidak Bicara.",
         heroH1b: "Tapi Seluruh Ruangan Memperhatikannya.",
         heroSub: "Untuk wanita yang lelah mengejar perhatian. Yang capek menjadi 'pilihan kedua' di setiap ruangan. Ada wanita yang masuk tanpa berkata apa-apa — dan semua mata otomatis menoleh. Auranya bicara duluan. Itu bukan keberuntungan. Itu protokol.",
-        painLabel: "PROTOKOL MAGNETIC PRESENCE",
-        painH2a: "Kenapa Kamu Berusaha Keras Agar Dilihat,",
-        painH2b: "Tapi Tetap Tidak Terlihat?",
-        stories: [
-            {
-                imgs: [],
-                title: 'Dia Diam. Tapi Setiap Pria Di Ruangan Itu Sadar Dia Ada.',
-                body: `Pernah lihat wanita seperti itu? Dia masuk ke kafe, ke kantor, ke ruang meeting — dan tanpa bicara, atmosfer ruangan berubah.\n\nDia tidak teriak. Tidak posting OOTD setiap hari. Tidak nge-flex apapun. Tapi setiap pria diam-diam mencuri pandang. Setiap wanita diam-diam menelaah caranya berdiri, caranya duduk, caranya melihat.\n\nDan kamu? Kamu sudah menyiapkan outfit terbaik, makeup paling rapi, caption paling clever — tapi tetap merasa transparan. Seperti tidak ada yang benar-benar melihatmu.\n\nMasalahnya bukan penampilanmu. Masalahnya frekuensi yang kamu pancarkan.`
-            },
-            {
-                imgs: [],
-                title: 'Berhenti Mengejar. Mulai Menjadi Yang Dikejar.',
-                body: `Berapa banyak energi yang sudah kamu buang untuk "berusaha menarik perhatian"?\n\nReply chat dalam hitungan detik. Selalu jadi yang inisiatif. Selalu jadi yang bilang "kapan kita ketemu lagi?" duluan. Selalu jadi yang menyesuaikan jadwal.\n\nDan hasilnya? Mereka anggap kamu "selalu available" — alias mudah. Otak pria didesain untuk MENGEJAR. Yang terlalu mudah didapat, kehilangan nilainya secara biologis.\n\nMagnetic presence adalah kebalikannya. Kamu bukan menjadi sulit dijangkau — kamu menjadi seseorang yang nilainya terasa setiap dia mendekatimu.`
-            },
-            {
-                imgs: [],
-                title: 'Aura Bukan Tentang Kecantikan. Tapi Tentang Sertifikasi Internal.',
-                body: `Wanita dengan aura magnetic tidak selalu yang paling cantik. Kadang kulitnya biasa. Kadang badannya tidak ideal. Kadang umurnya sudah 35+.\n\nTapi cara dia memegang gelas, cara dia tertawa, cara dia mendengarkan — semuanya seperti membawa pesan: "Aku tahu siapa diriku, dan aku tidak butuh persetujuan siapapun."\n\nItulah yang otak pria deteksi dalam 3 detik pertama. Sebelum percakapan. Sebelum kamu sempat menjelaskan apa-apa.\n\nDan itu yang akan kamu pelajari. Bukan "tips PDe murahan" — tapi protokol membangun frekuensi internal yang tidak bisa dipalsukan.`
-            }
-        ],
+        painLabel: "RASA SAKIT MENJADI INVISIBLE",
+        painH2a: "Semakin Kamu Berusaha Menarik Perhatian,",
+        painH2b: "Semakin Cepat Mereka Melupakanmu.",
         pains: [
-            { icon: "👁️", text: <>Kamu sudah dandan rapi, sudah hadir, sudah berusaha menarik perhatian — tapi <strong>tetap tidak terlihat</strong>.</> },
-            { icon: "🔇", text: <>Pria yang kamu suka justru tertarik pada wanita yang <strong>jarang bicara</strong>, sementara kamu sudah cerita panjang lebar.</> },
-            { icon: "🪞", text: <>Kamu tahu kamu menarik. Tapi entah kenapa, <strong>auramu tidak pernah sampai duluan</strong> sebelum kata-katamu.</> },
-            { icon: "🏃‍♀️", text: <>Lelah jadi yang <strong>selalu mengejar</strong>, selalu inisiatif, selalu menyesuaikan — dan tetap diabaikan.</> },
-            { icon: "🌑", text: <>Kamu tidak butuh trik manipulasi. Kamu butuh <strong>frekuensi yang membuat dunia menoleh dengan sendirinya</strong>.</> },
-            { icon: "👑", text: <>Saatnya berhenti mengetuk pintu. Mulai menjadi <strong>ruangan itu sendiri</strong>.</> },
+            { icon: "👁️", text: <>Kamu dandan habis-habisan, tapi pria yang kamu taksir justru fokus pada wanita yang <strong>tampil biasa saja tapi punya "aura"</strong>.</> },
+            { icon: "🔇", text: <>Di chat kamu seru, tapi saat ketemu langsung <strong>suasana jadi garing</strong> dan dia cepat bosan.</> },
+            { icon: "🪞", text: <>Kamu merasa sudah melakukan segalanya dengan benar, tapi tetap jadi <strong>pilihan kedua</strong> atau dicampakkan.</> },
+            { icon: "🏃‍♀️", text: <>Selalu kamu yang inisiatif ngajak jalan, balas chat detik itu juga, dan <strong>terlihat terlalu "available"</strong>.</> },
+            { icon: "🌑", text: <>Lelah melihat wanita yang kurang menarik darimu mendapatkan <strong>pria mapan dan perlakuan ratu</strong>.</> },
+            { icon: "👑", text: <>Saatnya berhenti mengemis perhatian. Mulai <strong>mengendalikan ruangan tanpa bersuara</strong>.</> },
         ],
         paramAgitation: {
-            label: "AGITASI — REALITA YANG TIDAK KAMU HITUNG",
-            h2a: "Berapa Banyak Pria",
-            h2b: "Yang Sudah Kamu Lepaskan?",
+            label: "AGITASI — REALITA YANG MENYAKITKAN",
+            h2a: "Kenapa Kamu Selalu Terlihat,",
+            h2b: "Tapi Tidak Pernah Diinginkan?",
             imgKey: 'p_presence_Campaign_Test_df_0412_g5', // IMG SLOT
-            body: <>Coba hitung. Lima tahun terakhir, berapa banyak pria yang awalnya intens, kemudian menghilang dalam 2-4 minggu? <strong>Bukan karena kamu kurang cantik.</strong> Bukan karena dia "tidak siap". Tapi karena auramu sudah <strong>"pasaran" sebelum dia sempat penasaran.</strong><br /><br />Setiap chat balasan dalam 5 detik. Setiap "iya, terserah kamu" untuk lokasi date. Setiap senyum yang terlalu cepat. Setiap "aku juga suka kamu" yang dilempar terlalu awal.<br /><br />Setiap pria yang lepas <strong>mengambil sebagian kepercayaan dirimu bersamanya</strong> — sampai akhirnya kamu mulai bertanya: "Apakah ada yang salah denganku?"<br /><br /><strong>Tidak ada yang salah denganmu.</strong> Yang salah adalah frekuensi yang kamu pancarkan tanpa sadar.</>,
+            body: <>Kamu selalu membalas chatnya dalam 3 detik. Kamu selalu siap sedia saat dia butuh teman curhat. Kamu membelikannya makanan kesukaannya, memberikan senyum terbaikmu, dan selalu <strong>mengalah demi dia</strong>.<br /><br /><strong>TAPI APA BALASANNYA?</strong><br /><br />Dia membalas chatmu 5 jam kemudian. Dia membatalkan janji di menit terakhir dengan alasan "sibuk". Dan yang paling menghancurkan... dia justru mati-matian mengejar wanita lain yang <strong>bahkan tidak peduli padanya</strong>.<br /><br />Kamu menangis di kamar, bertanya "Apa yang kurang dariku?"<br /><br />Kamu tidak kurang cantik. Kamu tidak kurang baik. <strong>Kamu hanya tidak punya KHARISMA.</strong> Kamu memancarkan energi "selalu ada" yang membuat otak pria memprosesmu sebagai barang obral yang tidak perlu diperjuangkan.</>,
         },
+        solText: <>Ini bukan sekadar tips "cara balas chat" dari TikTok. Ini adalah <strong>sistem psikologi kelas atas</strong> yang disembunyikan oleh wanita-wanita elit yang selalu mendapatkan apapun yang mereka inginkan.<br /><br />Dengan mempraktekkan Magnetic Presence, kamu akan mengubah frekuensi internalmu. Kamu akan memancarkan energi yang membuat pria secara biologis <strong>terobsesi</strong> untuk memenangkan perhatianmu.<br /><br />
+        <div style={{background:'rgba(139,92,246,0.08)',border:'1px solid rgba(139,92,246,0.25)',borderRadius:'16px',padding:'20px 18px',marginTop:'24px', marginBottom: '24px'}}>
+            <div style={{fontSize:'13px',fontWeight:700,letterSpacing:'0.12em',textTransform:'uppercase',color:'var(--purple-light)',marginBottom:'12px'}}>HASIL AKHIR MAGNETIC PRESENCE</div>
+            <img src={assets.p_presence_cleopatra_secret} alt="Cleopatra Secret" style={{width: '100%', borderRadius: '12px', marginBottom: '16px', border: '1px solid rgba(255,255,255,0.1)'}} />
+            <img src={assets.p_presence_softlife_v2} alt="Softlife Result" style={{width: '100%', borderRadius: '12px', marginBottom: '16px', border: '1px solid rgba(255,255,255,0.1)'}} />
+            <p style={{marginBottom:'12px'}}>Pria yang tadinya cuek akan berbalik memohon waktumu. Pria mapan di ruangan akan langsung menoleh saat kamu masuk.</p>
+            <p style={{marginBottom:'0'}}>Mereka tidak akan mengerti kenapa. Yang mereka tahu hanyalah: <strong>"Aku harus mendapatkan wanita ini, atau aku akan kehilangannya selamanya."</strong></p>
+        </div>
+        Berhenti menjadi pengemis perhatian. Mulailah menjadi <strong>Piala yang Diperebutkan</strong>.
+        </>,
         paramHope: {
             label: "VISI BARU — HIDUP YANG BISA MENJADI MILIKMU",
             h2a: "Bayangkan Kamu Masuk Ruangan",
@@ -1200,6 +1193,23 @@ const DarkFeminineTSX = () => {
                 },
             ],
         },
+        wifeSection: {
+            ...c.wifeSection,
+            items: c.wifeSection.items.filter((item: any) => {
+                const imgStr = item.imgs ? item.imgs.join(',') : (item.img || '');
+                return !imgStr.includes('newIstri6') && 
+                       !imgStr.includes('newIstri8') && 
+                       !imgStr.includes('singleC5S1') && 
+                       !imgStr.includes('newIstri9') &&
+                       !imgStr.includes('newIstri2');
+            }),
+            beforeAfterIstri: null,
+            beforeAfterSingle: null
+        },
+        winningGallery: {
+            ...c.winningGallery,
+            images: c.winningGallery.images.filter((img: string) => img !== 'winnerCrAd')
+        }
     };
 
     // === SEGMENT OVERRIDES (?istri / ?softlife / ?single / new winners) ===
