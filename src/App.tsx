@@ -2046,15 +2046,95 @@ const DarkFeminineTSX = () => {
             { icon: "⚖️", text: <>Kamu menjadikan dia pusat duniamu, sementara kamu hanya <strong>salah satu opsi</strong> di dunianya.</> },
             { icon: "👑", text: <>Saatnya membalik keadaan: <strong>Biarkan dia yang mengejar, cemas, dan berjuang mendapatkanmu.</strong></> },
         ],
+        agitH2a: "Kenapa Semakin Kamu Perhatian,",
+        agitH2b: "Semakin Dia Menjauh?",
+        agitText: <>Kamu mengalah terus. Kamu yang selalu chat duluan. Kamu yang merencanakan semua kencan. Kamu yang memaafkan setiap kali dia "lupa" atau "sibuk". <strong>DAN APA YANG KAMU DAPAT?</strong><br /><br />Dia semakin jarang membalas. Semakin sering scrolling sosmed saat kamu bicara. Semakin nyaman membatalkan janji di menit terakhir — karena di otaknya, kamu <strong>pasti akan tetap ada.</strong><br /><br />Pria tidak mengejar yang sudah pasti. Otak mereka butuh ketidakpastian untuk menyala. Ketika kamu terlalu "available", terlalu bisa ditebak, terlalu sabar — <strong>otaknya mematikan saklar ketertarikan.</strong><br /><br />Kamu bukan kurang cantik. Kamu bukan kurang baik. Kamu hanya memancarkan frekuensi <strong>"selalu ada"</strong> yang membuat otaknya berhenti bekerja keras untukmu.<br /><br />Dan yang paling menghancurkan? Wanita lain yang bahkan tidak semanis kamu — <strong>mendapatkan perhatian penuh darinya.</strong> Karena wanita itu tidak mengemis. Wanita itu membuat dia mengejar.</>,
+        solText: <>Ini bukan tips "jangan balas chat cepat-cepat" dari TikTok. Ini adalah <strong>protokol psikologi yang mengubah cara otaknya memprosesmu</strong> — dari "opsi aman" menjadi "wanita yang harus diperjuangkan setiap hari."<br /><br />Cleopatra tidak pernah meminta perhatian dari Julius Caesar. Dia menciptakan <strong>kekosongan strategis</strong> yang membuat otak Caesar gelisah, tidak bisa tidur, dan terobsesi untuk mengisi kekosongan itu.<br /><br />
+        <div style={{background:'rgba(139,92,246,0.08)',border:'1px solid rgba(139,92,246,0.25)',borderRadius:'16px',padding:'20px 18px',marginTop:'24px', marginBottom: '24px'}}>
+            <div style={{fontSize:'13px',fontWeight:700,letterSpacing:'0.12em',textTransform:'uppercase',color:'var(--purple-light)',marginBottom:'12px'}}>Studi Kasus: Nadia (28 Tahun)</div>
+            <p style={{marginBottom:'12px', fontStyle: 'italic', color: '#EEE5C8'}}>"Cowok yang saya suka selama 2 tahun — saya yang selalu chat duluan, selalu ngajak ketemu, selalu mengerti saat dia batal. Dia anggap saya sahabat. Bukan calon pacar."</p>
+            <p style={{marginBottom:'12px'}}>Nadia mempraktikkan <strong>Jurus 7: The Withdrawal Protocol</strong> dan <strong>Jurus 14: The Art of Invisible Withdrawal</strong>. Dia berhenti inisiatif. Berhenti selalu available.</p>
+            <p style={{marginBottom:'12px'}}>Minggu pertama: Dia tidak chat duluan. Cowok itu tidak sadar.<br/>Minggu kedua: Nadia posting story bareng teman-teman baru. Cowok itu mulai reply story-nya.<br/>Minggu ketiga: <strong>Cowok itu chat "Kamu kemana aja? Kok beda?"</strong><br/>Bulan kedua: Dia nembak Nadia. Sekarang sudah 8 bulan pacaran.</p>
+            <p style={{marginBottom:'0'}}><strong>"Yang berubah cuma satu: saya berhenti mengejar. Dan untuk pertama kalinya, dia merasa takut kehilangan saya."</strong></p>
+        </div>
+        Berhenti meminta perhatian. Mulailah menjadi <strong>alasan dia tidak bisa berhenti memikirkanmu.</strong>
+        </>,
+        paramAgitation: {
+            label: "AGITASI — KENAPA DIA SEMAKIN CUEK",
+            h2a: "Kamu Sudah Berikan Segalanya.",
+            h2b: "Dia Tetap Tidak Menghargai.",
+            imgKey: 'p_softlife_Campaign_Test_df_0412_g2', // IMG SLOT
+            body: <>Coba ingat. Berapa kali minggu ini kamu yang chat duluan? Berapa kali kamu bertanya "Kamu lagi apa?" dan jawabannya hanya "Biasa." Berapa kali kamu merencanakan quality time, dan dia <strong>membatalkan di menit terakhir?</strong><br /><br />Kamu sudah memberikan segalanya — waktu, energi, pengertian, bahkan harga dirimu. <strong>Dan apa balasannya?</strong> Dia scrolling TikTok saat kamu cerita. Dia bilang "Nanti ya" saat kamu butuh didengar. Dia punya energi 3 jam untuk main game, tapi <strong>5 menit untukmu saja berat.</strong><br /><br />Dan yang paling membunuh perlahan: kamu mulai bertanya pada dirimu sendiri, <strong>"Mungkin aku yang terlalu needy ya?"</strong><br /><br />Tidak. Kamu tidak needy. Kamu hanya memberikan perhatian pada orang yang otaknya sudah <strong>berhenti menganggapmu berharga</strong> — karena kamu terlalu mudah didapat. Terlalu pasti. Terlalu aman.<br /><br /><strong>Dan setiap hari yang berlalu tanpa kamu mengubah dinamika ini — adalah hari dia semakin nyaman mengabaikanmu.</strong></>,
+        },
+        paramHope: {
+            label: "VISI BARU — KETIKA DIA YANG MENGEJAR",
+            h2a: "Bayangkan Dia Yang Gelisah",
+            h2b: "Menunggu Balasanmu.",
+            imgKey: 'p_softlife_df_0413_ba_wife_s3_v2_1776175462649', // IMG SLOT
+            body: <>Bayangkan: kamu lagi asik di kafe bareng teman. HP berbunyi. <strong>Dia yang chat duluan.</strong> "Kamu dimana? Kok belum bales?" Kamu senyum, taruh HP, dan lanjut ngobrol. Bales 2 jam kemudian: "Oh sorry, lagi sama temen 😊"<br /><br />Bayangkan: malam Minggu, biasanya kamu yang nanya "Mau kemana kita?" Kali ini kamu diam. <strong>Dia yang panik:</strong> "Kok kamu ga ngajak jalan? Kamu udah ada rencana sendiri?"<br /><br />Bayangkan: di kantor, ada rekan pria yang tiba-tiba lebih sering ngobrol denganmu. Kamu santai aja. Tapi pacar/suamimu yang <strong>tiba-tiba perhatian 3x lipat</strong> — bawain kopi, tanyain makan siang, inisiatif date night yang sudah berbulan-bulan tidak pernah dia lakukan.<br /><br />Itulah yang terjadi ketika kamu berhenti mengemis dan mulai <strong>memancarkan frekuensi "aku baik-baik saja tanpamu".</strong> Pria tidak bisa menahan diri mengejar sesuatu yang terasa sedang pergi.</>,
+        },
+        paramHowItWorks: {
+            label: "BAGAIMANA INI BEKERJA",
+            h2a: "3 Tahap Membalik",
+            h2b: "Dinamika Perhatian.",
+            imgKey: 'p_softlife_df_0413_sl_s1_1776094453410', // IMG SLOT
+            steps: [
+                { num: '1', title: 'DETOX INISIATIF (Hari 1-7)', body: 'Kamu berhenti menjadi yang selalu memulai. Tidak chat duluan. Tidak nanya "udah makan?". Tidak merencanakan kencan. Ini akan terasa sangat berat — tapi otaknya akan mulai mendeteksi kekosongan yang belum pernah ada sebelumnya. Alarm internal-nya menyala: "Ada yang berubah."' },
+                { num: '2', title: 'BANGUN ORBIT BARU (Hari 8-21)', body: 'Kamu mulai mengisi waktumu dengan hal-hal yang bukan dia. Teman lama, hobi baru, kelas yang sudah lama tertunda. Bukan pura-pura sibuk — tapi genuinely membangun hidup di luar dia. Efeknya: otaknya melihat kamu bukan lagi "miliknya yang pasti" tapi "wanita menarik yang sedang bergerak menjauh."' },
+                { num: '3', title: 'CALIBRATE — HANGAT SAAT DIA BERUSAHA (Hari 22+)', body: 'Ketika dia mulai mengejar (dan dia akan mengejar), kamu tidak langsung kembali ke pola lama. Hangat saat dia berusaha. Sedikit mundur saat dia mulai santai lagi. Otaknya akan melatih dirinya sendiri: "Kalau aku ingin perhatian wanita ini, aku harus BEKERJA untuk mendapatkannya." Ini bukan manipulasi — ini mengembalikan dinamika alami yang seharusnya ada.' },
+            ],
+        },
+        paramObjections: {
+            label: "PERTANYAAN UMUM",
+            h2a: "Tapi Bagaimana",
+            h2b: "Kalau...?",
+            items: [
+                { q: "Kalau saya berhenti chat duluan, dia malah hilang selamanya gimana?", a: "Kalau dia hilang hanya karena kamu berhenti inisiatif — berarti sejak awal dia memang tidak pernah mengejarmu. Dia hanya menikmati KENYAMANAN dari perhatianmu. Lebih baik tahu sekarang daripada buang 5 tahun lagi untuk orang yang hanya hadir saat kamu yang memulai." },
+                { q: "Ini bukannya playing games? Saya tidak mau jadi manipulatif.", a: "Ini bukan games. Ini mengembalikan keseimbangan yang SUDAH RUSAK. Saat ini, kamu yang memberikan 90% dan dia memberikan 10%. Itu bukan hubungan — itu ketergantungan. Protokol ini mengajarkan kamu untuk menghargai dirimu sendiri terlebih dulu, dan secara alami membuat dia menghargaimu juga." },
+                { q: "Saya introvert, tidak bisa tiba-tiba jadi 'sibuk' dan punya banyak aktivitas.", a: "Kamu tidak perlu jadi social butterfly. Cukup 1-2 aktivitas baru yang genuinely kamu nikmati. Bahkan introvert yang duduk sendirian di kafe sambil baca buku — tanpa membalas chatnya selama 3 jam — sudah cukup untuk mengacaukan polanya dan membuat dia bertanya-tanya." },
+            ],
+        },
+        paramSocialProof: {
+            label: "BUKTI TRANSFORMASI — SEBELUM & SESUDAH",
+            h2a: "3 Wanita.",
+            h2b: "3 Pria Yang Tiba-tiba Mengejar.",
+            transformations: [
+                {
+                    name: 'Laras, 26 thn — Content Creator',
+                    imgKey: 'p_softlife_df_0413_sl_s3_1776094484568', // IMG SLOT
+                    before: 'Pacar saya selama 3 tahun makin cuek. Saya yang selalu chat duluan, selalu ngajak jalan, selalu tanya "kamu kenapa?". Dia bilang saya "terlalu banyak nanya". Saya merasa jadi beban. Saya nangis hampir tiap malam karena merasa tidak cukup untuk dia.',
+                    after: 'Saya stop chat duluan. Minggu pertama dia tidak sadar. Minggu kedua dia mulai lihat story saya (saya mulai jalan bareng teman). Minggu ketiga DIA yang chat "Kamu kenapa sih? Kok beda?" Bulan kedua dia ajak dinner — untuk pertama kalinya dalam 8 bulan DIA yang plan semuanya. Sekarang dia yang khawatir ditinggalin saya.',
+                },
+                {
+                    name: 'Vera, 31 thn — Akuntan',
+                    imgKey: 'p_softlife_df_0413_sl_s4_1776094503539', // IMG SLOT
+                    before: 'Suami cuek total setelah 5 tahun nikah. Pulang kerja langsung HP. Weekend main futsal. Saya protes, dia bilang saya "drama". Saya masak makanan kesukaannya, pakai lingerie baru — dia tetap lebih milih scrolling sosmed di kasur.',
+                    after: 'Saya berhenti protes. Berhenti masak spesial. Berhenti nanya "kapan kita quality time?". Saya daftar kelas keramik tiap Sabtu pagi. Minggu ke-3, suami tiba-tiba ikut bangun pagi dan tanya "Kamu mau pergi lagi?". Minggu ke-6, dia yang PLAN weekend trip ke Bandung — tanpa saya minta. Sekarang dia yang gelisah kalau saya keluar tanpa bilang.',
+                },
+                {
+                    name: 'Dina, 24 thn — Fresh Graduate',
+                    imgKey: 'p_softlife_softlife_01_dimanjakan_v2_1777551018247', // IMG SLOT
+                    before: 'Gebetan di kantor, saya suka banget. Saya yang selalu bawain kopi, selalu bantuin kerjaan dia, selalu ketawa di setiap candaannya. Teman-teman kantor bilang "Lo yang ngejar dia ya". Malu banget. Dia anggap saya teman doang.',
+                    after: 'Setelah baca jurus 7 dan 14, saya stop semua inisiatif. Tidak bawain kopi, tidak bantuin kerjaan, tidak ketawa berlebihan. Saya fokus ke diri sendiri — pakai outfit lebih rapi, ngobrol sama kolega lain. 2 minggu kemudian DIA yang bawain kopi ke meja saya. 1 bulan kemudian dia nembak. Teman-teman kantor sampai kaget "Lo ngapain sih?"',
+                },
+            ],
+        },
         wifeSection: {
             ...c.wifeSection,
             items: c.wifeSection.items.filter((item: any) => {
-                const imgStr = item.imgs.join(',');
-                return !imgStr.includes('singleC2S4') && 
-                       !imgStr.includes('singleC5S1') && 
+                const imgStr = item.imgs ? item.imgs.join(',') : (item.img || '');
+                return !imgStr.includes('singleC5S1') && 
                        !imgStr.includes('newIstri6') && 
-                       !imgStr.includes('newIstri8');
-            })
+                       !imgStr.includes('newIstri8') &&
+                       !imgStr.includes('newIstri9') &&
+                       !imgStr.includes('newIstri2');
+            }),
+            beforeAfterIstri: null,
+            beforeAfterSingle: null
+        },
+        winningGallery: {
+            ...c.winningGallery,
+            images: c.winningGallery.images.filter((img: string) => img !== 'winnerCrAd')
         }
     } : null;
 
