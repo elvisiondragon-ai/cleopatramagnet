@@ -626,6 +626,7 @@ const DarkFeminineTSX = () => {
     const hasHighvalue = searchParams.has('highvalue');         // General — angle11
     const hasNongames = searchParams.has('nongames');           // Single — DF_Ghosted_Lagi
     const hasGhosting = searchParams.has('ghosting');           // Single — Ghosting Victim
+    const hasPresence = searchParams.has('presence');
     const hasIstriFear = searchParams.has('istrifear');         // Istri — df_0424_ad04
     const hasIstriLegacy = searchParams.has('istrilegacy');     // Istri — istritest10
     const hasIstriVisible = searchParams.has('istrivisible');   // Istri — df_0412_i4
@@ -3714,12 +3715,11 @@ const DarkFeminineTSX = () => {
                     {/* FLOATING WHATSAPP BUTTON — kirim URL asal + pertanyaan manfaat spesifik per persona */}
                     <a
                         href={`https://wa.me/62895325633487?text=${encodeURIComponent(
-                            (segment === 'istri' && hasValue) ? `Halo kak, saya dari ${window.location.href}\n\nSaya istri yang udah lama struggle. Apa benefit paket Ultimate Rp399.000 untuk istri seperti saya? Workbook 30 hari-nya beneran bisa ngebalikin suami yang udah cuek?` :
-                            segment === 'istri' ? `Halo kak, saya dari ${window.location.href}\n\nSaya seorang istri. Manfaat apa yang saya dapat dari ebook Dark Feminine ini? Bisa ngembaliin rasa peduli suami yang udah berasa kayak orang asing?` :
-                            (hasSoftlife && hasValue) ? `Halo kak, saya dari ${window.location.href}\n\nSaya pengen jadi wanita Soft Life yang dimanjakan tanpa banyak gaya. Apa benefit paket Ultimate Rp399.000 untuk capai itu? Workbook 30 hari-nya ngajarin apa?` :
-                            hasSoftlife ? `Halo kak, saya dari ${window.location.href}\n\nSaya pengen jadi wanita Soft Life / High Value yang tenang tapi dapet segalanya. Manfaat nyata apa yang akan saya dapat dari ebook ini?` :
-                            hasValue ? `Halo kak, saya dari ${window.location.href}\n\nApa bedanya paket Ultimate Rp399.000 dengan paket biasa Rp199.000? Worth it ga buat saya bayar lebih?` :
-                            `Halo kak, saya dari ${window.location.href}\n\nManfaat apa yang akan saya dapat dari ebook Dark Feminine ini? Hasil nyata kayak gimana setelah baca?`
+                            hasIstriFear ? "Halo Kak, saya dari cleopatramagnet.com - saya merasa hubungan saya mulai renggang dan ingin tahu lebih lanjut tentang programnya" :
+                            hasGhosting ? "Halo Kak, saya dari cleopatramagnet.com - pasangan saya mulai menjauh dan saya ingin tahu bagaimana programnya bisa membantu" :
+                            hasPerhatian ? "Halo Kak, saya dari cleopatramagnet.com - saya merasa kurang mendapat perhatian dari pasangan dan tertarik dengan programnya" :
+                            hasPresence ? "Halo Kak, saya dari cleopatramagnet.com - tertarik tentang presence cleopatra magnet kak secara emosional, ingin tahu lebih lanjut" :
+                            "Halo Kak, saya dari cleopatramagnet.com - saya tertarik dengan program Cleopatra Magnet"
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"
