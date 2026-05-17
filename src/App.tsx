@@ -626,7 +626,7 @@ const DarkFeminineTSX = () => {
     const hasHighvalue = searchParams.has('highvalue');         // General — angle11
     const hasNongames = searchParams.has('nongames');           // Single — DF_Ghosted_Lagi
     const hasGhosting = searchParams.has('ghosting');           // Single — Ghosting Victim
-    const hasIstriFear = searchParams.has('istrifear');         // Istri — df_0424_ad04
+    const hasIstriFear = searchParams.has('istrifear') || hasIstri;         // Istri — df_0424_ad04
     const hasIstriLegacy = searchParams.has('istrilegacy');     // Istri — istritest10
     const hasIstriVisible = searchParams.has('istrivisible');   // Istri — df_0412_i4
     const isIstriSegment = hasIstri || hasIstriFear || hasIstriLegacy || hasIstriVisible;
