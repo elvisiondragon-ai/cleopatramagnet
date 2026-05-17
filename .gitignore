@@ -31,3 +31,9 @@ dist-ssr
 !.env.example
 .vercel
 .env*.local
+
+# Instagram Automation
+*instagram_token*
+instagram_token
+instagram_token.json
+
