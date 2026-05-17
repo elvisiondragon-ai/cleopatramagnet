@@ -2970,7 +2970,7 @@ const DarkFeminineTSX = () => {
                         <div className="df-wrap">
                             {/* PREMIUM BRAND TITLE BLOCK */}
                             <div className="df-brand-block">
-                                <img src="/cleo-nobg.png" alt="Cleopatra Magnet" style={{ width: '80px', height: '80px', filter: 'drop-shadow(0 0 18px rgba(212,175,55,0.5))', marginBottom: '16px' }} />
+                                <img src="/cleo-nobg.png" alt="Cleopatra Magnet" style={{ width: '80px', height: '80px', filter: 'drop-shadow(0 0 18px rgba(212,175,55,0.5))', marginBottom: '16px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />
 
                                 {/* Brand Name */}
                                 <span className="df-brand-label">Presents</span>
@@ -2988,7 +2988,6 @@ const DarkFeminineTSX = () => {
                                 <span className="df-brand-program-name">Dark Feminine</span>
                             </div>
 
-                            <div className="df-hero-badge">{sc.heroBadge}</div>
                             <h1 className="df-hero-h1">
                                 <span>{sc.heroH1a}</span>
                                 <span className="df-gold-italic">{sc.heroH1b}</span>
