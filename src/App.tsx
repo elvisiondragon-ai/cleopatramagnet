@@ -2876,31 +2876,6 @@ const DarkFeminineTSX = () => {
                     {/* HERO */}
                     <section id="df-hero">
                         <div className="df-wrap">
-                            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '24px' }}>
-                                <a 
-                                    href="https://t.me/cleopatramagnet" 
-                                    target="_blank" 
-                                    rel="noreferrer"
-                                    style={{
-                                        display: 'inline-flex',
-                                        alignItems: 'center',
-                                        gap: '8px',
-                                        background: 'rgba(36, 161, 222, 0.15)',
-                                        border: '1px solid rgba(36, 161, 222, 0.4)',
-                                        padding: '10px 20px',
-                                        borderRadius: '30px',
-                                        color: '#24A1DE',
-                                        textDecoration: 'none',
-                                        fontWeight: 'bold',
-                                        fontSize: '13px',
-                                        letterSpacing: '0.05em',
-                                        transition: 'all 0.3s ease',
-                                        boxShadow: '0 4px 15px rgba(36, 161, 222, 0.1)',
-                                    }}
-                                >
-                                    <span>💬</span> {lang === 'id' ? 'Gabung Telegram Cleopatra Magnet' : (lang === 'ph' ? 'Sumali sa Telegram' : 'Join Cleopatra Telegram')}
-                                </a>
-                            </div>
                             <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '32px' }}>
                                 <img src="/cleo-nobg.png" alt="Cleopatra Logo" style={{ width: '120px', height: '120px', filter: 'drop-shadow(0 0 15px rgba(139,92,246,0.5))' }} />
                             </div>
@@ -2928,6 +2903,32 @@ const DarkFeminineTSX = () => {
                             <div style={{ marginTop: '18px', display: 'flex', alignItems: 'center', gap: '10px', fontSize: '15px', color: 'var(--muted)' }}>
                                 <span>🔥</span>
                                 <span><strong>{c.socialProofNum}</strong> {c.socialProof}</span>
+                            </div>
+
+                            <div style={{ display: 'flex', justifyContent: 'flex-start', marginTop: '16px' }}>
+                                <a 
+                                    href="https://t.me/cleopatramagnet" 
+                                    target="_blank" 
+                                    rel="noreferrer"
+                                    style={{
+                                        display: 'inline-flex',
+                                        alignItems: 'center',
+                                        gap: '8px',
+                                        background: 'rgba(36, 161, 222, 0.15)',
+                                        border: '1px solid rgba(36, 161, 222, 0.4)',
+                                        padding: '10px 20px',
+                                        borderRadius: '30px',
+                                        color: '#24A1DE',
+                                        textDecoration: 'none',
+                                        fontWeight: 'bold',
+                                        fontSize: '14px',
+                                        letterSpacing: '0.05em',
+                                        transition: 'all 0.3s ease',
+                                        boxShadow: '0 4px 15px rgba(36, 161, 222, 0.1)',
+                                    }}
+                                >
+                                    <span>💬</span> {lang === 'id' ? 'Gabung Telegram Disini' : (lang === 'ph' ? 'Sumali sa Telegram Dito' : 'Join Telegram Here')}
+                                </a>
                             </div>
                         </div>
                     </section>
