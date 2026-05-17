@@ -2905,7 +2905,7 @@ const DarkFeminineTSX = () => {
                                 <span><strong>{c.socialProofNum}</strong> {c.socialProof}</span>
                             </div>
 
-                            <div style={{ display: 'flex', justifyContent: 'flex-start', marginTop: '16px' }}>
+                            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '24px', width: '100%' }}>
                                 <a 
                                     href="https://t.me/cleopatramagnet" 
                                     target="_blank" 
@@ -2913,21 +2913,27 @@ const DarkFeminineTSX = () => {
                                     style={{
                                         display: 'inline-flex',
                                         alignItems: 'center',
-                                        gap: '8px',
-                                        background: 'rgba(36, 161, 222, 0.15)',
-                                        border: '1px solid rgba(36, 161, 222, 0.4)',
-                                        padding: '10px 20px',
-                                        borderRadius: '30px',
-                                        color: '#24A1DE',
+                                        justifyContent: 'center',
+                                        background: '#24A1DE',
+                                        color: '#ffffff',
                                         textDecoration: 'none',
-                                        fontWeight: 'bold',
-                                        fontSize: '14px',
-                                        letterSpacing: '0.05em',
-                                        transition: 'all 0.3s ease',
-                                        boxShadow: '0 4px 15px rgba(36, 161, 222, 0.1)',
+                                        fontWeight: '800',
+                                        fontSize: '18px',
+                                        letterSpacing: '0.03em',
+                                        padding: '16px 32px',
+                                        borderRadius: '50px',
+                                        boxShadow: '0 8px 24px rgba(36, 161, 222, 0.4)',
+                                        transition: 'all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+                                        width: '90%',
+                                        maxWidth: '400px',
+                                        boxSizing: 'border-box',
+                                        border: '2px solid rgba(255, 255, 255, 0.1)',
                                     }}
                                 >
-                                    <span>💬</span> {lang === 'id' ? 'Gabung Telegram Disini' : (lang === 'ph' ? 'Sumali sa Telegram Dito' : 'Join Telegram Here')}
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ marginRight: '10px', flexShrink: 0 }}>
+                                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.64 8.8L14.86 17.18C14.73 17.78 14.37 17.92 13.87 17.64L11.16 15.64L9.85 16.9C9.7 17.05 9.58 17.18 9.29 17.18L9.48 14.39L14.56 9.8C14.78 9.6 14.51 9.49 14.22 9.68L7.94 13.63L5.24 12.78C4.65 12.6 4.64 12.19 5.36 11.91L15.93 7.83C16.42 7.65 16.85 7.94 16.64 8.8Z" fill="currentColor"/>
+                                    </svg>
+                                    {lang === 'id' ? 'Gabung Telegram Disini' : (lang === 'ph' ? 'Sumali sa Telegram Dito' : 'Join Telegram Here')}
                                 </a>
                             </div>
                         </div>
