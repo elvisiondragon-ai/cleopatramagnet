@@ -2955,6 +2955,39 @@ const DarkFeminineTSX = () => {
           transition: color 0.2s;
         }
         .df-guarantee-cta-hint:hover { color: var(--gold-light); }
+
+        /* --- Zero Risk Pill (under CTA) --- */
+        .df-zero-risk-pill {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          flex-wrap: wrap;
+          margin-top: 12px;
+          padding: 10px 16px;
+          border-radius: 50px;
+          background: rgba(212,175,55,0.07);
+          border: 1px solid rgba(212,175,55,0.2);
+        }
+        .df-zero-risk-pill span {
+          font-size: 12px;
+          font-weight: 700;
+          color: var(--gold-light);
+          letter-spacing: 0.04em;
+        }
+        .df-zero-risk-pill .dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(212,175,55,0.4); }
+
+        /* --- Package zero-risk line --- */
+        .df-pkg-zero-risk {
+          font-size: 11px;
+          font-weight: 700;
+          color: #4ade80;
+          letter-spacing: 0.06em;
+          margin-top: 6px;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
       `}</style>
 
                     <div id="df-progress-bar" style={{ width: `${scrollProgress}%` }}></div>
@@ -3021,10 +3054,16 @@ const DarkFeminineTSX = () => {
                     <div id="df-guarantee-card">
                         <div className="df-guarantee-badge">🛡️</div>
                         <h2 className="df-guarantee-headline">
-                            Garansi Uang Kembali 100%
+                            Pembelian Ini 100% Bebas Risiko
                         </h2>
                         <p className="df-guarantee-body">
-                            Jika dalam <strong>30 hari</strong> setelah membaca ebook ini kamu tidak merasakan perubahan — tidak ada rasa <strong>tenang, lepas, dan tentram</strong> dalam menjalani hubungan dengan pasangan atau calon pasangan — kami kembalikan uangmu <strong>100%, tanpa pertanyaan.</strong>
+                            <strong>Skenario terburuk?</strong> Dalam 30 hari kamu membaca, tidak ada perubahan yang kamu rasakan — kami kembalikan <strong>100% uangmu, tanpa pertanyaan, tanpa ribet.</strong> Kamu tidak rugi sepeser pun.
+                        </p>
+                        <p className="df-guarantee-body" style={{ marginTop: '-8px', fontSize: '15px' }}>
+                            <strong style={{ color: 'var(--gold-light)' }}>Skenario terbaik?</strong> Kakak akhirnya mengerti mengapa selama ini pola yang sama terus terulang — dan tahu persis apa yang harus diubah. Pria yang tepat mulai memperlakukanmu seperti yang selalu kamu layak dapatkan.
+                        </p>
+                        <p style={{ fontSize: '13px', color: 'rgba(212,175,55,0.7)', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', margin: '4px 0 16px' }}>
+                            🔒 Satu-satunya hal yang berisiko adalah <em style={{ fontStyle: 'normal', color: 'var(--gold-light)' }}>tidak mencobanya.</em>
                         </p>
                         <button
                             className="df-guarantee-cta-hint"
@@ -3033,7 +3072,7 @@ const DarkFeminineTSX = () => {
                                 if (el) el.scrollIntoView({ behavior: 'smooth' });
                             }}
                         >
-                            Cek review di bawah ↓
+                            Lihat 300+ review nyata di bawah ↓
                         </button>
                     </div>
 
@@ -3706,6 +3745,7 @@ const DarkFeminineTSX = () => {
                                                 <span style={{ fontSize: '10px', background: 'linear-gradient(90deg, var(--gold-dark), var(--gold-light))', color: '#000', padding: '2px 6px', borderRadius: '4px', fontWeight: 800, letterSpacing: '0.05em', whiteSpace: 'nowrap' }}>{lang === 'id' ? 'PROMO KHUSUS' : (lang === 'ph' ? 'Espesyal Na Promo' : 'SPECIAL PROMO')}</span>
                                             </div>
                                             <div style={{ fontSize: '13px', color: 'var(--muted)', lineHeight: 1.4 }}>{lang === 'id' ? 'Rahasia memikat pria idaman hanya lewat frekuensi suara.' : (lang === 'ph' ? 'Sikreto para akitin ang iyong pangarap na lalaki sa pamamagitan lamang ng dalas ng boses.' : 'Secret to captivating your dream man just through voice frequency.')} <span style={{ color: 'var(--red)', textDecoration: 'line-through' }}>{lang === 'id' ? '(Senilai Rp250.000)' : (lang === 'ph' ? '(Nagkakahalagang P850)' : '(Worth $19)')}</span></div>
+                                            {lang === 'id' && <div className="df-pkg-zero-risk">✓ Garansi 30 hari uang kembali · 0% risiko</div>}
                                         </div>
                                         <div style={{ fontSize: '16px', fontWeight: 800, color: addUpsell === 1 ? 'var(--gold-light)' : 'var(--cream)' }}>
                                             {isEnglish ? "$19.00" : (hasDisc ? "Rp200.000" : "Rp249.000")}
@@ -3727,7 +3767,7 @@ const DarkFeminineTSX = () => {
                                                     <div>✦ Semua isi paket + 8 Bonus + Audio Love Magnet</div>
                                                     <div>✦ Blueprint + Workbook 30 hari yang kamu isi & lakukan</div>
                                                     <div>✦ <strong style={{ color: addUpsell === 2 ? '#f472b6' : 'var(--cream)' }}>Q&A unlimited dengan admin</strong> — seperti punya terapis sendiri</div>
-                                                    <div>✦ <strong style={{ color: addUpsell === 2 ? '#f472b6' : 'var(--cream)' }}>Garansi uang kembali</strong> jika tidak merasakan perubahan setelah selesai workbook</div>
+                                                    <div>✦ <strong style={{ color: addUpsell === 2 ? '#f472b6' : 'var(--cream)' }}>Garansi uang kembali 100%</strong> jika tidak merasakan perubahan — <strong style={{ color: '#4ade80' }}>ZERO RISK</strong></div>
                                                 </div>
                                             </div>
                                             <div style={{ fontSize: '16px', fontWeight: 800, color: addUpsell === 2 ? '#f472b6' : 'var(--cream)', marginLeft: '10px', whiteSpace: 'nowrap' }}>Rp399.000</div>
@@ -3751,7 +3791,16 @@ const DarkFeminineTSX = () => {
                                 <button id="checkout-button" className="df-sbtn" onClick={submitOrder} disabled={loading}>
                                     {loading ? (lang === 'id' ? 'Memproses...' : (lang === 'ph' ? 'Pinoproseso...' : 'Processing...')) : `🛒 ${lang === 'id' ? 'Pesan Sekarang' : (lang === 'ph' ? 'Mag-order Ngayon' : 'Order Now')} — ${isEnglish ? (addUpsell === 1 ? "$19.00" : "$15.00") : (addUpsell === 2 ? "Rp399.000" : addUpsell === 1 ? (hasDisc ? "Rp200.000" : "Rp249.000") : "Rp199.000")}`}
                                 </button>
-                                <p style={{ fontSize: 12, color: "var(--muted)", textAlign: "center", lineHeight: 1.75 }}>🔒 {lang === 'id' ? 'Pembayaran aman & dienkripsi. Produk dikirim digital. Tidak ada tagihan mencurigakan.' : (lang === 'ph' ? 'Ligtas at naka-encrypt ang pagbabayad. Ipinadala nang digital ang produkto. Walang kahina-hinalang singil.' : 'Secure & encrypted payment. Product delivered digitally. No suspicious billing.')}</p>
+                                <div className="df-zero-risk-pill">
+                                    <span>🛡️ Garansi 30 Hari</span>
+                                    <span className="dot" />
+                                    <span>🔒 Pembayaran Aman</span>
+                                    <span className="dot" />
+                                    <span>✦ 0% Risiko</span>
+                                    <span className="dot" />
+                                    <span>💸 Uang Kembali 100%</span>
+                                </div>
+                                <p style={{ fontSize: 11, color: "rgba(212,175,55,0.5)", textAlign: "center", lineHeight: 1.75, marginTop: '8px' }}>Jika dalam 30 hari tidak ada perubahan yang kamu rasakan, kami refund 100% — tanpa pertanyaan.</p>
                             </div>
                         </div>
                     </section>
