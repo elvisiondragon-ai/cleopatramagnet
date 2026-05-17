@@ -2451,6 +2451,9 @@ const DarkFeminineTSX = () => {
           repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(139,92,246,0.04) 40px, rgba(139,92,246,0.04) 41px);
           pointer-events: none;
         }
+        /* ---- Google Fonts: Playfair Display for brand title ---- */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&display=swap');
+
         .df-hero-badge {
           display: inline-block; background: rgba(139,92,246,0.18);
           border: 1px solid rgba(139,92,246,0.4);
@@ -2458,6 +2461,75 @@ const DarkFeminineTSX = () => {
           letter-spacing: 0.12em; padding: 7px 16px; border-radius: 30px;
           margin-bottom: 22px; text-transform: uppercase;
         }
+
+        /* --- Brand Title Block --- */
+        .df-brand-block {
+          text-align: center;
+          margin-bottom: 28px;
+          position: relative;
+        }
+        .df-brand-label {
+          font-family: 'Playfair Display', Georgia, serif;
+          font-size: 13px;
+          font-weight: 400;
+          letter-spacing: 0.35em;
+          text-transform: uppercase;
+          color: rgba(212,175,55,0.7);
+          margin-bottom: 6px;
+          display: block;
+        }
+        .df-brand-name {
+          font-family: 'Playfair Display', Georgia, serif;
+          font-size: 52px;
+          font-weight: 900;
+          line-height: 1.0;
+          letter-spacing: -0.01em;
+          background: linear-gradient(135deg, #D4AF37 0%, #FFF5C0 45%, #B8860B 80%, #D4AF37 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          display: block;
+          filter: drop-shadow(0 2px 12px rgba(212,175,55,0.35));
+        }
+        .df-brand-divider {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 12px;
+          margin: 10px 0 8px;
+        }
+        .df-brand-divider span {
+          height: 1px;
+          width: 60px;
+          background: linear-gradient(90deg, transparent, rgba(212,175,55,0.5), transparent);
+          display: block;
+        }
+        .df-brand-divider em {
+          font-size: 16px;
+          color: rgba(212,175,55,0.6);
+          font-style: normal;
+        }
+        .df-brand-program-label {
+          font-family: var(--font-display), sans-serif;
+          font-size: 12px;
+          font-weight: 600;
+          letter-spacing: 0.25em;
+          text-transform: uppercase;
+          color: rgba(167,139,250,0.7);
+          display: block;
+          margin-bottom: 4px;
+        }
+        .df-brand-program-name {
+          font-family: 'Playfair Display', Georgia, serif;
+          font-size: 28px;
+          font-weight: 700;
+          font-style: italic;
+          color: rgba(167,139,250,0.95);
+          display: block;
+          letter-spacing: 0.04em;
+          text-shadow: 0 0 30px rgba(139,92,246,0.4);
+        }
+
         .df-hero-h1 {
           font-family: var(--font-display); font-size: 44px; font-weight: 700;
           line-height: 1.1; color: var(--white); margin-bottom: 8px;
@@ -2896,9 +2968,26 @@ const DarkFeminineTSX = () => {
                     {/* HERO */}
                     <section id="df-hero">
                         <div className="df-wrap">
-                            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '32px' }}>
-                                <img src="/cleo-nobg.png" alt="Cleopatra Logo" style={{ width: '120px', height: '120px', filter: 'drop-shadow(0 0 15px rgba(139,92,246,0.5))' }} />
+                            {/* PREMIUM BRAND TITLE BLOCK */}
+                            <div className="df-brand-block">
+                                <img src="/cleo-nobg.png" alt="Cleopatra Magnet" style={{ width: '80px', height: '80px', filter: 'drop-shadow(0 0 18px rgba(212,175,55,0.5))', marginBottom: '16px' }} />
+
+                                {/* Brand Name */}
+                                <span className="df-brand-label">Presents</span>
+                                <span className="df-brand-name">Cleopatra Magnet</span>
+
+                                {/* Ornamental Divider */}
+                                <div className="df-brand-divider">
+                                    <span />
+                                    <em>✦</em>
+                                    <span />
+                                </div>
+
+                                {/* Program / Technique */}
+                                <span className="df-brand-program-label">Program Eksklusif</span>
+                                <span className="df-brand-program-name">Dark Feminine</span>
                             </div>
+
                             <div className="df-hero-badge">{sc.heroBadge}</div>
                             <h1 className="df-hero-h1">
                                 <span>{sc.heroH1a}</span>
