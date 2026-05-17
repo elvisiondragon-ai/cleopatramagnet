@@ -2956,37 +2956,49 @@ const DarkFeminineTSX = () => {
         }
         .df-guarantee-cta-hint:hover { color: var(--gold-light); }
 
-        /* --- Zero Risk Pill (under CTA) --- */
-        .df-zero-risk-pill {
+        /* --- Mini Guarantee Card (reusable inline) --- */
+        .df-mini-guarantee {
           display: flex;
           align-items: center;
-          justify-content: center;
-          gap: 10px;
-          flex-wrap: wrap;
-          margin-top: 12px;
-          padding: 10px 16px;
-          border-radius: 50px;
-          background: rgba(212,175,55,0.07);
-          border: 1px solid rgba(212,175,55,0.2);
+          gap: 12px;
+          background: linear-gradient(135deg, rgba(212,175,55,0.06) 0%, rgba(139,92,246,0.04) 100%);
+          border: 1px solid rgba(212,175,55,0.25);
+          border-left: 3px solid var(--gold);
+          border-radius: 10px;
+          padding: 12px 16px;
+          margin: 24px 0 0;
         }
-        .df-zero-risk-pill span {
+        .df-mini-guarantee .shield {
+          font-size: 22px;
+          flex-shrink: 0;
+          filter: drop-shadow(0 0 6px rgba(212,175,55,0.4));
+        }
+        .df-mini-guarantee .text strong {
+          display: block;
           font-size: 12px;
-          font-weight: 700;
+          font-weight: 800;
           color: var(--gold-light);
-          letter-spacing: 0.04em;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          margin-bottom: 2px;
         }
-        .df-zero-risk-pill .dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(212,175,55,0.4); }
-
-        /* --- Package zero-risk line --- */
-        .df-pkg-zero-risk {
-          font-size: 11px;
-          font-weight: 700;
+        .df-mini-guarantee .text span {
+          font-size: 12px;
+          color: var(--muted);
+          line-height: 1.5;
+        }
+        .df-mini-guarantee .badge {
+          margin-left: auto;
+          flex-shrink: 0;
+          font-size: 10px;
+          font-weight: 800;
           color: #4ade80;
-          letter-spacing: 0.06em;
-          margin-top: 6px;
-          display: flex;
-          align-items: center;
-          gap: 5px;
+          background: rgba(74,222,128,0.1);
+          border: 1px solid rgba(74,222,128,0.25);
+          padding: 3px 8px;
+          border-radius: 20px;
+          letter-spacing: 0.08em;
+          white-space: nowrap;
         }
       `}</style>
 
@@ -3122,6 +3134,20 @@ const DarkFeminineTSX = () => {
                             </div>
                         </div>
                     </section>
+
+                    {/* MINI GUARANTEE AFTER PAIN */}
+                    {lang === 'id' && (
+                        <div className="df-wrap" style={{ paddingBottom: '8px' }}>
+                            <div className="df-mini-guarantee">
+                                <span className="shield">🛡️</span>
+                                <div className="text">
+                                    <strong>0 Risiko untuk Kakak</strong>
+                                    <span>Jika dalam 30 hari tidak ada perubahan yang kamu rasakan, kami refund 100% — tanpa pertanyaan.</span>
+                                </div>
+                                <span className="badge">GARANSI</span>
+                            </div>
+                        </div>
+                    )}
 
                     {/* SOLUTION */}
                     <section style={{ background: 'var(--bg-section)', padding: '44px 0' }}>
@@ -3352,6 +3378,20 @@ const DarkFeminineTSX = () => {
                         </div>
                     </section>
 
+                    {/* MINI GUARANTEE AFTER TESTIMONIALS */}
+                    {lang === 'id' && (
+                        <div className="df-wrap" style={{ paddingBottom: '8px' }}>
+                            <div className="df-mini-guarantee">
+                                <span className="shield">🛡️</span>
+                                <div className="text">
+                                    <strong>Tidak Ada Risiko. Sama Sekali.</strong>
+                                    <span>Jika dalam 30 hari tidak ada perubahan yang kamu rasakan, kami refund 100% — tanpa pertanyaan.</span>
+                                </div>
+                                <span className="badge">GARANSI</span>
+                            </div>
+                        </div>
+                    )}
+
                     {/* BONUSES */}
                     <section style={{ background: 'var(--bg-section)', padding: '44px 0' }}>
                         <div className="df-wrap df-fade-in">
@@ -3389,6 +3429,20 @@ const DarkFeminineTSX = () => {
                             </div>
                         </div>
                     </section>
+
+                    {/* MINI GUARANTEE AFTER BONUSES */}
+                    {lang === 'id' && (
+                        <div className="df-wrap" style={{ paddingBottom: '8px' }}>
+                            <div className="df-mini-guarantee">
+                                <span className="shield">🛡️</span>
+                                <div className="text">
+                                    <strong>Beli Sekarang, Tidak Ada yang Perlu Ditakutkan</strong>
+                                    <span>Jika dalam 30 hari tidak ada perubahan yang kamu rasakan, kami refund 100% — tanpa pertanyaan.</span>
+                                </div>
+                                <span className="badge">ZERO RISK</span>
+                            </div>
+                        </div>
+                    )}
 
                     {/* EXCLUSIVITY */}
                     <section style={{ background: 'var(--bg-section)', padding: '44px 0' }}>
@@ -3641,6 +3695,20 @@ const DarkFeminineTSX = () => {
                             </div>
                         </div>
                     </section>
+
+                    {/* MINI GUARANTEE ABOVE CHECKOUT */}
+                    {lang === 'id' && (
+                        <div className="df-wrap" style={{ paddingBottom: '8px' }}>
+                            <div className="df-mini-guarantee">
+                                <span className="shield">🛡️</span>
+                                <div className="text">
+                                    <strong>Terakhir Kali Kami Ingatkan: 100% Bebas Risiko</strong>
+                                    <span>Jika dalam 30 hari tidak ada perubahan yang kamu rasakan, kami refund 100% — tanpa pertanyaan. Tidak ada risiko.</span>
+                                </div>
+                                <span className="badge">ZERO RISK</span>
+                            </div>
+                        </div>
+                    )}
 
                     {/* CHECKOUT FORM */}
                     <section id="checkout" className="df-formsec">
