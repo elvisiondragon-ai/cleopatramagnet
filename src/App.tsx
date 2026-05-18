@@ -2160,7 +2160,7 @@ const DarkFeminineTSX = () => {
 
     // Merge: segment overrides on top of base content. Specific istri winners stack on top
     // of the istri segment base; general winners stack on top of default base.
-    const sc: any = istriFearContent
+    let sc: any = istriFearContent
         ? { ...c, ...segmentContent, ...istriFearContent }
         : istriLegacyContent
         ? { ...c, ...segmentContent, ...istriLegacyContent }
@@ -2181,6 +2181,24 @@ const DarkFeminineTSX = () => {
         : ghostingContent
         ? { ...c, ...ghostingContent }
         : { ...c, ...presenceObject };
+
+    let customMasalah = "kurangnya presence dan diabaikan";
+    if (hasIstriFear || hasIstri || isIstriSegment) customMasalah = "perselingkuhan, pengkhianatan, atau suami yang dingin";
+    else if (hasPerhatian) customMasalah = "pasangan yang cuek dan mulai mengabaikanmu";
+    else if (hasGhosting) customMasalah = "ditinggalkan tanpa kejelasan atau di-ghosting";
+    else if (hasPerubahan) customMasalah = "pria yang berubah dingin setelah mendapatkanmu";
+    else if (hasSoftlife) customMasalah = "kelelahan berjuang sendiri tanpa dimanjakan";
+    else if (hasHighvalue) customMasalah = "diremehkan atau dianggap bukan prioritas";
+    else if (hasNongames) customMasalah = "terjebak dalam permainan tarik-ulur pria";
+
+    const customFaqItem = {
+        q: "Kenapa Cleopatra magnet dark feminine berbeda?",
+        a: `Kami melakukan riset mendalam dari para winner ladies, yang ternyata memiliki karakter meniru dari nenek moyang wanita penakluk para raja - Cleopatra. Dengan mempelajari karakter Cleopatra, masalah ${customMasalah} tidak pernah dialami Cleopatra bukan karena kecantikan fisik, tapi karakter dan sikap yang bisa diaplikasikan di ebook ini, audio serta workbook.`
+    };
+
+    if (sc && sc.faqs) {
+        sc.faqs = [customFaqItem, ...sc.faqs];
+    }
 
     const [countdown, setCountdown] = useState("00:00:00");
     const [scrollProgress, setScrollProgress] = useState(0);
