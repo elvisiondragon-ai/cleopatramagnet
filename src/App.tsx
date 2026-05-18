@@ -1137,7 +1137,7 @@ const DarkFeminineTSX = () => {
                 .maybeSingle();
                 
             if (paidEntry) {
-                window.open('https://wa.me/62895325633487?text=Halo%20Admin%20Cleopatra%20Magnet', '_blank');
+                window.location.href = 'https://wa.me/62895325633487?text=Halo%20Admin%20Cleopatra%20Magnet';
                 setIsSupportModalOpen(false);
                 setSupportEmail('');
             } else {
@@ -4077,15 +4077,15 @@ const DarkFeminineTSX = () => {
                             position: 'fixed',
                             bottom: showSticky ? '90px' : '20px',
                             right: '20px',
-                            backgroundColor: '#25D366',
-                            color: 'white',
+                            background: 'linear-gradient(135deg, #aa7c11, #d4af37)',
+                            color: '#000',
                             width: '56px',
                             height: '56px',
                             borderRadius: '50%',
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
-                            boxShadow: '0 4px 12px rgba(37, 211, 102, 0.4)',
+                            boxShadow: '0 4px 12px rgba(170, 124, 17, 0.4)',
                             zIndex: 998,
                             transition: 'all 0.3s ease',
                             border: 'none',
