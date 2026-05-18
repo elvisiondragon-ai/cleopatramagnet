@@ -1126,6 +1126,10 @@ const DarkFeminineTSX = () => {
             setSupportError('Silahkan masukkan email Anda');
             return;
         }
+
+        // Open a blank new tab immediately in the synchronous user action stack
+        const newTab = window.open('about:blank', '_blank');
+
         setSupportLoading(true);
         setSupportError('');
         try {
@@ -1137,13 +1141,20 @@ const DarkFeminineTSX = () => {
                 .maybeSingle();
                 
             if (paidEntry) {
-                window.location.href = 'https://wa.me/62895325633487?text=Halo%20Admin%20Cleopatra%20Magnet';
+                const finalUrl = 'https://wa.me/62895325633487?text=Halo%20Admin%20Cleopatra%20Magnet';
+                if (newTab) {
+                    newTab.location.href = finalUrl;
+                } else {
+                    window.location.href = finalUrl;
+                }
                 setIsSupportModalOpen(false);
                 setSupportEmail('');
             } else {
+                if (newTab) newTab.close();
                 setSupportError('Akun ini belum tertulis pernah membeli, silahkan membeli paket terlebih dahulu');
             }
         } catch (err) {
+            if (newTab) newTab.close();
             setSupportError('Terjadi kesalahan, silahkan coba lagi');
         }
         setSupportLoading(false);
