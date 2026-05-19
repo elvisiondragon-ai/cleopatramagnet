@@ -717,21 +717,39 @@ const DarkFeminineTSX = () => {
         // Auto-detect traffic from Meta Ads campaigns via UTM parameters or fbclid
         const hasUtmOrFb = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'fbclid'].some(p => searchParams.has(p));
         
-        const shouldTriggerSplit = hasTestParam || hasUtmOrFb;
+        const storageKey = 'cleo_split_version';
         
-        if (shouldTriggerSplit) {
-            // Check if we already have explicitly locked version in URL query
+        if (hasUtmOrFb) {
+            // TRAFFIC FROM META ADS: FORCE FLIP NO MATTER WHAT (overrides &value or &normal in URL)
+            let version = localStorage.getItem(storageKey);
+            
+            if (!version) {
+                // First landing coin flip
+                version = Date.now() % 2 === 0 ? 'value' : 'normal';
+                localStorage.setItem(storageKey, version);
+            }
+            
+            // Ensure the URL parameter exactly matches the determined version
+            const currentHasTargetVersion = searchParams.has(version);
+            const otherVersion = version === 'value' ? 'normal' : 'value';
+            const currentHasOtherVersion = searchParams.has(otherVersion);
+            
+            if (!currentHasTargetVersion || currentHasOtherVersion) {
+                const newParams = new URLSearchParams(searchParams.toString());
+                newParams.delete(otherVersion);
+                newParams.set(version, '');
+                setSearchParams(newParams, { replace: true });
+            }
+        } else if (hasTestParam) {
+            // WHATSAPP / NON-META TRAFFIC: ONLY FLIP IF NOT EXPLICITLY LOCKED
             if (!searchParams.has('value') && !searchParams.has('normal')) {
-                const storageKey = 'cleo_split_version';
                 let version = localStorage.getItem(storageKey);
                 
                 if (!version) {
-                    // Extremely fair millisecond-based coin flip upon first landing
                     version = Date.now() % 2 === 0 ? 'value' : 'normal';
                     localStorage.setItem(storageKey, version);
                 }
                 
-                // Programmatically update URL params to lock the A/B choice
                 const newParams = new URLSearchParams(searchParams.toString());
                 newParams.set(version, '');
                 setSearchParams(newParams, { replace: true });
