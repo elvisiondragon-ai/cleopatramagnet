@@ -714,7 +714,12 @@ const DarkFeminineTSX = () => {
         const testParams = ['presence', 'perhatian', 'softlife', 'istrifear', 'istri', 'perubahan', 'highvalue', 'nonggames', 'ghosting', 'istrilegacy', 'istrivisible'];
         const hasTestParam = testParams.some(p => searchParams.has(p));
         
-        if (hasTestParam) {
+        // Auto-detect traffic from Meta Ads campaigns via UTM parameters or fbclid
+        const hasUtmOrFb = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'fbclid'].some(p => searchParams.has(p));
+        
+        const shouldTriggerSplit = hasTestParam || hasUtmOrFb;
+        
+        if (shouldTriggerSplit) {
             // Check if we already have explicitly locked version in URL query
             if (!searchParams.has('value') && !searchParams.has('normal')) {
                 const storageKey = 'cleo_split_version';
