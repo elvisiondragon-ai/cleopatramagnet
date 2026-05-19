@@ -614,7 +614,7 @@ const IstriCarousel = ({ story, assets }: { story: any; assets: any }) => {
 };
 
 const DarkFeminineTSX = () => {
-    const [searchParams] = useSearchParams();
+    const [searchParams, setSearchParams] = useSearchParams();
     const hasIstri = searchParams.has('istri');
     const hasSoftlife = searchParams.has('softlife');
     const hasDisc = searchParams.has('disc');
@@ -708,6 +708,31 @@ const DarkFeminineTSX = () => {
             window.open(url, '_blank');
         }
     };
+
+    useEffect(() => {
+        // A/B Split Testing Round-Robin Queue Logic
+        const testParams = ['presence', 'perhatian', 'softlife', 'istrifear', 'istri', 'perubahan', 'highvalue', 'nonggames', 'ghosting', 'istrilegacy', 'istrivisible'];
+        const hasTestParam = testParams.some(p => searchParams.has(p));
+        
+        if (hasTestParam) {
+            // Check if we already have explicitly locked version in URL query
+            if (!searchParams.has('value') && !searchParams.has('normal')) {
+                const storageKey = 'cleo_split_version';
+                let version = localStorage.getItem(storageKey);
+                
+                if (!version) {
+                    // Extremely fair millisecond-based coin flip upon first landing
+                    version = Date.now() % 2 === 0 ? 'value' : 'normal';
+                    localStorage.setItem(storageKey, version);
+                }
+                
+                // Programmatically update URL params to lock the A/B choice
+                const newParams = new URLSearchParams(searchParams.toString());
+                newParams.set(version, '');
+                setSearchParams(newParams, { replace: true });
+            }
+        }
+    }, [searchParams, setSearchParams]);
 
     useEffect(() => {
         // Preload all carousel images into browser cache so clicks are instant
